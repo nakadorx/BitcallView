@@ -1,0 +1,98 @@
+/* Start Hero Section */
+.heroSectionBg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  inset-block-start: -12%;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.heroSecDashboard {
+  min-height: auto;
+  inline-size: 100%;
+  z-index: -1;
+  transition: all 0.3s ease;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile override for dashboard image */
+@media (max-width: 600px) {
+  .heroSecDashboard {
+    min-height: auto;
+    inline-size: 100%; /* Allow full container width */
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.heroSectionElements {
+  inset-block-start: 18%;
+  inset-inline-end: 3%;
+}
+
+.heroSectionElements img {
+  inline-size: 100%;
+}
+
+.heading {
+  font-weight: 800;
+  color: var(--mui-palette-primary-main);
+  font-size: 24px;
+  line-height: 44px;
+  margin-block: 1rem;
+}
+.headingDefault {
+  color: var(--mui-palette-text-primary);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.headingHighlight {
+  color: var(--mui-palette-primary-main);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.description {
+  color: var(--text-primary);
+  font-weight: 200;
+  line-height: 1.6;
+}
+.descriptionHighlight {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ctaButton {
+  color: white;
+  padding: 1rem 3.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* End Hero Section */
+
+/* Start Feature Section */
+.featureIconContainer {
+  cursor: pointer;
+}
+.featureIconContainer > div:hover {
+  background-color: var(--mui-palette-primary-mainOpacity);
+}
+.featureIconContainer > div:hover svg {
+  pointer-events: none;
+}
+.featureIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.4px solid var(--mui-palette-secondary-main);
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  padding: 10px;
+  font-size: rem;
+}
+/* End Features Section */

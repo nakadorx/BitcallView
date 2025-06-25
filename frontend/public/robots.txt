@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.demo-bc.site
+
+# Sitemaps
+Sitemap: https://www.demo-bc.site/sitemap.xml

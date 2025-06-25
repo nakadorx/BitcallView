@@ -1,0 +1,23 @@
+@keyframes heroBackgroundFloat {
+  0%,
+  100% {
+    background-size: 110%;
+    background-position: center center;
+  }
+  25% {
+    background-size: 115%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 112%;
+    background-position: center top;
+  }
+  75% {
+    background-size: 118%;
+    background-position: right center;
+  }
+}
+
+.hero-float {
+  animation: heroBackgroundFloat 20s ease-in-out infinite;
+}

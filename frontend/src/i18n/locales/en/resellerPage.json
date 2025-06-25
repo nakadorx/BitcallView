@@ -1,0 +1,140 @@
+{
+  "heroSection": {
+    "title1": "Resell & Grow ",
+    "title2": "With Bitcall OS",
+    "description": "Launch Your <strong>Own Branded</strong> Telecom Business <strong>in Minutes</strong>,\nwith our <strong>all-in-one Self-Managed Dashboard</strong> that offers\nthe <strong>cheapest calling rates</strong> you'll find anywhere.",
+    "mainButton": "Become a Reseller NOW"
+  },
+  "whoIsItFor": {
+    "title": "Who Is It For ? Who can use this ?",
+    "subtitle": "Whether you're an IT professional, marketing agency, telecom consultant, or entrepreneur our platform offers you to:",
+    "feature1": "<strong>Provide reliable business VOIP solutions</strong> to your clients",
+    "feature2": "<strong>Serve SMBs, freelancers, and call centers</strong> with high-demand communication tools",
+    "feature3": "<strong>Launch</strong> a scalable, recurring revenue stream under your own name"
+  },
+  "everythingYouNeedSection": {
+    "title1": "Everything You Need ",
+    "title2": "to Get Started Today",
+    "description": "Our reseller platform gives you everything needed to start, scale, and profit from your own branded communication service."
+  },
+  "fastSetupSection": {
+    "title": "Fast Setup & Flexible Payments",
+    "subtitle": "Start selling telecom services in 15 minutes.",
+    "features": {
+      "oneClickProvisioning": {
+        "title": "One-click provisioning",
+        "description": "for numbers, trunks, and accounts"
+      },
+      "noHardware": {
+        "title": "No hardware required",
+        "description": "works with softphones or existing desk phones"
+      },
+      "acceptPayments": {
+        "title": "Accept payments",
+        "description": "via Credit Card, Stripe, PayPal, or Crypto"
+      },
+      "monthToMonth": {
+        "title": "Month-to-month plans",
+        "description": "no contracts, no commitments"
+      },
+      "box": {
+        "title": "One-click provisioning",
+        "description": "for numbers, trunks, and accounts"
+      }
+    }
+  },
+  "whiteLabelSection": {
+    "title": "Complete White-Label Control",
+    "subtitle": "Your brand. Your clients. Our technology.",
+    "features": {
+      "portalAccess": {
+        "title": "Branded Portal Access",
+        "description": "Add your logo, colors, and custom login domain"
+      },
+      "sipAddress": {
+        "title": "Your Own SIP Address",
+        "description": "e.g., calls.yourcompany.com"
+      },
+      "whiteLabeledExperience": {
+        "title": "Fully White-Labeled Experience",
+        "description": "Your clients never see us"
+      },
+      "brandedReports": {
+        "title": "Branded Invoices, Emails & Reports",
+        "description": ""
+      },
+      "customTemplates": {
+        "title": "Custom Website Templates",
+        "description": "included on higher plans"
+      }
+    },
+    "footerNote": "You focus on client relationships and growth. We provide the tech backbone."
+  },
+  "realTimeInsightsSection": {
+    "title": "Make Smarter Decisions With Real-Time Insights",
+    "subtitle": "Stay on top of operations and show clients the real value of your service:",
+    "features": {
+      "dashboards": "Live call dashboards",
+      "reports": "  Detailed call and user reports",
+      "monitoring": "Quality monitoring and uptime stats",
+      "export": "Easy export for billing, tracking, or integrations",
+      "analytics": "Help clients optimize \n communication  with usage analytics"
+    }
+  },
+  "pricingSection": {
+    "choose_plan": "Choose Your Reseller Plan Now",
+    "common": {
+      "popularLabel": "Popular",
+      "currencySymbol": "$",
+      "periodText": "Per month",
+      "discountText": "10% off for yearly subscription",
+      "currentPlanText": "Your Current Plan",
+      "upgradeText": "Upgrade"
+    },
+    "basic_plan": {
+      "title": "Basic Plan",
+      "price": "$20",
+      "per_month": "Per month",
+      "discount": "10% off for yearly subscription",
+      "features": [
+        "Timeline",
+        "Basic search",
+        "Live chat widget",
+        "Email marketing",
+        "Custom Forms",
+        "Traffic analytics"
+      ],
+      "button": "Get started"
+    },
+    "favourite_plan": {
+      "title": "Favourite Plan",
+      "price": "$51",
+      "per_month": "Per month",
+      "discount": "10% off for yearly subscription",
+      "features": [
+        "Everything in basic",
+        "Timeline with database",
+        "Advanced search",
+        "Marketing automation",
+        "Advanced chatbot",
+        "Campaign management"
+      ],
+      "button": "Get started"
+    },
+    "standard_plan": {
+      "title": "Standard Plan",
+      "price": "$99",
+      "per_month": "Per month",
+      "discount": "10% off for yearly subscription",
+      "features": [
+        "Everything in premium",
+        "Timeline with database",
+        "Fuzzy search",
+        "A/B testing sanbox",
+        "Custom permissions",
+        "Social media automation"
+      ],
+      "button": "Get started"
+    }
+  }
+}

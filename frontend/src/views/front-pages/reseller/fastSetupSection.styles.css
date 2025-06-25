@@ -1,0 +1,14 @@
+/* Floating animation for the image */
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: floatAnimation 3s ease-in-out infinite;
+}

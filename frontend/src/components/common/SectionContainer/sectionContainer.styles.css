@@ -1,0 +1,79 @@
+@keyframes heroBackgroundFloat {
+  0%,
+  100% {
+    background-size: 110%;
+    background-position: center center;
+  }
+  25% {
+    background-size: 115%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 112%;
+    background-position: center top;
+  }
+  75% {
+    background-size: 118%;
+    background-position: right center;
+  }
+}
+
+.hero-float {
+  animation: heroBackgroundFloat 20s ease-in-out infinite;
+}
+
+@keyframes heroBackgroundFloat {
+  0%,
+  100% {
+    background-size: 110%;
+    background-position: center center;
+  }
+  25% {
+    background-size: 105%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 102%;
+    background-position: center top;
+  }
+  75% {
+    background-size: 108%;
+    background-position: right center;
+  }
+}
+
+.hero-float {
+  animation: heroBackgroundFloat 20s ease-in-out infinite;
+}
+
+/* Predefined background classes */
+
+.bg-section-1 {
+  background-image: url('/images/assets/Section1BG.png');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.bg-bleu-1 {
+  background-image: url('/images/assets/HeroSectionBG.png');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.bg-bleu-2 {
+  /* background-image: url('/images/assets/LabelControl.png'); */
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.bg-bleu-3 {
+  background-image: url('/images/assets/LabelControl2.png');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* Add more predefined backgrounds as needed */

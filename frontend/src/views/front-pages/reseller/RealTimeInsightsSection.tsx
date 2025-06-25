@@ -1,0 +1,108 @@
+'use client'
+// TODO: check for server side rendering need
+import { SectionContainer } from '@/components/common/SectionContainer/SectionContainer'
+import { useT } from '@/i18n/client'
+import { useMediaQuery, useTheme } from '@mui/material'
+import { CardList } from '@/components/common/cards/CardList'
+import Image from 'next/image'
+import { Text } from '@/components/common/text'
+
+const RealTimeInsightsSection = () => {
+  const { t } = useT('resellerPage')
+
+  const data = [
+    {
+      CardCustomContent: CardCustomContent({ icon: '📊', text: t('realTimeInsightsSection.features.dashboards') })
+    },
+    {
+      CardCustomContent: CardCustomContent({ icon: '✅', text: t('realTimeInsightsSection.features.reports') })
+    },
+    {
+      CardCustomContent: CardCustomContent({ icon: '🔍', text: t('realTimeInsightsSection.features.monitoring') })
+    },
+    {
+      CardCustomContent: CardCustomContent({ icon: '📤', text: t('realTimeInsightsSection.features.export') })
+    },
+    {
+      CardCustomContent: CardCustomContent({ icon: '📈', text: t('realTimeInsightsSection.features.analytics') })
+    }
+  ]
+
+  const theme = useTheme()
+  const userIsMobile = useMediaQuery(theme.breakpoints.down('lg'))
+  // TODO:
+  //  🟡 Emoji use	Medium	Emojis are visually helpful but should have aria-hidden="true" or replaced with icons for better accessibility.
+  // 🟡 ARIA usage	Okay	You use aria-label on the section, which is good. Emojis could use some more clarification or be hidden from screen readers.
+  // 🟡 Section width (SEO crawlability)	Okay	The layout is wrapped well, but a bit of div nesting could be simplified.
+  return (
+    <SectionContainer bgClass='bg-bleu-3' ariaLabel={t('realTimeInsightsSection.title')}>
+      <div className='grid grid-cols-1 lg:grid-cols-2 h-[1100px] md:h-[1000px] lg:h-auto'>
+        {!userIsMobile && (
+          <div className='w-full h-full flex md:justify-center lg:justify-end mg:items-end px-4'>
+            <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={470} height={500} />
+          </div>
+        )}
+        <div className='w-full'>
+          <CardList
+            title={t('realTimeInsightsSection.title')}
+            subtitle={t('realTimeInsightsSection.subtitle')}
+            data={data}
+            cardContainerClassName='bg-white dark:bg-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:transform hover:scale-105'
+            containerClassName='p-4'
+            headerExtraContent={
+              userIsMobile && (
+                <div className='flex justify-center items-center p-2'>
+                  <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={470} height={500} />
+                </div>
+              )
+            }
+            hideSelector
+          />
+        </div>
+      </div>
+      <div aria-hidden='true'>
+        <Image
+          src={'/images/assets/Arrows/4.png'}
+          alt='arrow button'
+          className=' float-animation absolute lg:top-4 lg:left-[16rem] md:top-[9rem] md:left-[12rem] top-[12rem] left-[0rem]'
+          width={70}
+          aria-hidden='true'
+          height={70}
+        />
+        <Image
+          src={'/images/assets/Arrows/2.png'}
+          alt='arrow right'
+          className=' float-animation absolute lg:top-[4rem] lg:right-[15rem] md:top-[10rem] md:right-[12rem] top-[12rem] right-[0rem]'
+          width={70}
+          aria-hidden='true'
+          height={70}
+        />
+        <Image
+          src={'/images/assets/Arrows/3.png'}
+          alt='arrow right'
+          className=' float-animation absolute lg:top-[30rem] lg:right-[14rem] md:top-[37rem] md:right-[10rem] top-[30rem] right-[0rem]'
+          width={70}
+          aria-hidden='true'
+          height={70}
+        />
+      </div>
+    </SectionContainer>
+  )
+}
+
+export default RealTimeInsightsSection
+
+const CardCustomContent = ({ icon, text }: { icon: string; text: string }) => {
+  return (
+    <div className='flex items-center gap-2'>
+      <span aria-hidden='true' aria-label={text} role='img'>
+        {icon}
+      </span>
+      <Text
+        value={text}
+        as='p'
+        className='text-[1.1rem] md:text-[1.3rem] font-roboto leading-relaxed text-gray-700 dark:text-gray-300'
+      />
+    </div>
+  )
+}

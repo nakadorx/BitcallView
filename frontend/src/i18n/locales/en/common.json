@@ -1,0 +1,411 @@
+{
+  "topbar": {
+    "announcementParagraph": "📢 No Limits. No Restrictions! The Cheapest Calling Rates—Guaranteed!",
+    "announcementParagraphMobile": "📢 Cheapest Calling Rates—Guaranteed!"
+  },
+  "navigation": {
+    "dashboards": "Dashboards",
+    "crm": "CRM",
+    "analytics": "Analytics",
+    "blog": "blog",
+    "academy": "Academy",
+    "logistics": "Logistics",
+    "frontPages": "Front Pages",
+    "landing": "Landing",
+    "pricing": "Pricing",
+    "payment": "Payment",
+    "checkout": "Checkout",
+    "helpCenter": "Help Center",
+    "appsPages": "Apps & Pages",
+    "apps": "Apps",
+    "dashboard": "Dashboard",
+    "posts": "Posts",
+    "articles": "Articles",
+    "list": "List",
+    "add": "Add",
+    "category": "Category",
+    "orders": "Orders",
+    "details": "Details",
+    "customers": "Customers",
+    "manageReviews": "Manage Reviews",
+    "referrals": "Referrals",
+    "settings": "Settings",
+    "myCourses": "My Courses",
+    "courseDetails": "Course Details",
+    "fleet": "Fleet",
+    "email": "Email",
+    "chat": "Chat",
+    "calendar": "Calendar",
+    "kanban": "Kanban",
+    "invoice": "Invoice",
+    "preview": "Preview",
+    "edit": "Edit",
+    "user": "User",
+    "view": "View",
+    "rolesPermissions": "Roles & Permissions",
+    "roles": "Roles",
+    "permissions": "Permissions",
+    "pages": "Pages",
+    "userProfile": "User Profile",
+    "accountSettings": "Account Settings",
+    "faq": "FAQ",
+    "miscellaneous": "Miscellaneous",
+    "comingSoon": "Coming Soon",
+    "underMaintenance": "Under Maintenance",
+    "pageNotFound404": "Page Not Found - 404",
+    "notAuthorized401": "Not Authorized - 401",
+    "authPages": "Auth Pages",
+    "login": "Login",
+    "loginV1": "Login v1",
+    "loginV2": "Login v2",
+    "register": "Register",
+    "registerV1": "Register v1",
+    "registerV2": "Register v2",
+    "registerMultiSteps": "Register Multi-Steps",
+    "verifyEmail": "Verify Email",
+    "verifyEmailV1": "Verify Email v1",
+    "verifyEmailV2": "Verify Email v2",
+    "forgotPassword": "Forgot Password",
+    "forgotPasswordV1": "Forgot Password v1",
+    "forgotPasswordV2": "Forgot Password v2",
+    "resetPassword": "Reset Password",
+    "resetPasswordV1": "Reset Password v1",
+    "resetPasswordV2": "Reset Password v2",
+    "twoSteps": "Two Steps",
+    "twoStepsV1": "Two Steps v1",
+    "twoStepsV2": "Two Steps v2",
+    "wizardExamples": "Wizard Examples",
+    "propertyListing": "Property Listing",
+    "createDeal": "Create Deal",
+    "dialogExamples": "Dialog Examples",
+    "widgetExamples": "Widget Examples",
+    "basic": "Basic",
+    "advanced": "Advanced",
+    "statistics": "Statistics",
+    "gamification": "Gamification",
+    "actions": "Actions",
+    "formsAndTables": "Forms & Tables",
+    "formLayouts": "Form Layouts",
+    "formValidation": "Form Validation",
+    "formWizard": "Form Wizard",
+    "reactTable": "React Table",
+    "formELements": "Form Elements",
+    "muiTables": "MUI Tables",
+    "chartsMisc": "Charts & Misc",
+    "charts": "Charts",
+    "recharts": "Recharts",
+    "apex": "Apex",
+    "foundation": "Foundation",
+    "components": "Components",
+    "menuExamples": "Menu Examples",
+    "raiseSupport": "Raise Support",
+    "documentation": "Documentation",
+    "others": "Others",
+    "itemWithBadge": "Item with Badge",
+    "externalLink": "External Link",
+    "menuLevels": "Menu Levels",
+    "menuLevel2": "Menu Level 2",
+    "menuLevel3": "Menu Level 3",
+    "disabledMenu": "Disabled Menu",
+    "frontMenu1": "Bitcall OS",
+    "frontMenu2": "Become a Reseller",
+    "frontMenu3": "Our eSIMs",
+    "frontMenu4": "Contact us",
+    "frontMenu5": "Blog",
+    "frontMenu6": "Help center"
+  },
+  "heroSection": {
+    "title": "The Best eSIMs for Travelers",
+    "titlePart1": "Scale More",
+    "titlePart2": "Spend Less",
+    "descriptionPart1": "We’ve built an all-in-one ",
+    "boldPart1": "Self-Managed Dashboard",
+    "descriptionPart2": " designed to ",
+    "boldPart2": "optimize",
+    "descriptionPart3": " and ",
+    "boldPart3": "scale Telecom operations",
+    "descriptionPart4": " with the ",
+    "boldPart4": "cheapest calling rates",
+    "descriptionPart5": " you’ll ever find.",
+    "cta1": "Book a demo",
+    "cta2": "Get Started"
+  },
+  "trustSection": {
+    "headline.prefix": "TRUSTED BY",
+    "headline.suffix": "BUSINESSES AND CALL CENTERS WORLDWIDE",
+    "description": "For a decade, we’ve <1>helped</1> businesses <3>scale</3> and <5>achieve</5> significant <7>growth</7> by leveraging innovative strategies and cutting-edge technology."
+  },
+  "advantages": {
+    "headline": "Easy-to-use • Self managed",
+    "subheadline": "No Limits & No Restrictions",
+    "items": [
+      {
+        "title": "Set Up in 1 Minute—Literally one minute",
+        "description": "Instantly claim virtual numbers, configure SIP trunks, and manage your entire telecom infrastructure from one intuitive dashboard. No complex steps or hidden fees."
+      },
+      {
+        "title": "Perfect for Sales, Customer Support, & More",
+        "description": "Empower teams—whether in sales, call centers, customer service, or marketing—to handle all inbound and outbound calls in one place, ensuring efficient and effective communication."
+      },
+      {
+        "title": "Stay Ahead with Data",
+        "description": "Access advanced analytics around productivity, make data-driven decisions, and keep your bottom line healthy with real-time call logs and performance insights."
+      },
+      {
+        "title": "Flexible Payment Options",
+        "description": "Pay with credit card, Stripe, PayPal, or crypto—no extra overhead. Keep costs down and your operations running smoothly."
+      }
+    ]
+  },
+  "benefits": {
+    "headline": "Real business growth starts here..",
+    "subheadline": "Here's what Bitcall OS Provides",
+    "items": [
+      {
+        "title": "Crystal-Clear Voice Calls",
+        "description": "Experience superior audio quality in all your communications."
+      },
+      {
+        "title": "Multi-Channel Messaging",
+        "description": "Reach customers via SMS, MMS, and popular chat apps."
+      },
+      {
+        "title": "Global Number Coverage",
+        "description": "Establish local presence with international phone numbers."
+      },
+      {
+        "title": "Intelligent Call Routing",
+        "description": "Optimize call flows for efficient customer interactions."
+      },
+      {
+        "title": "Secure Communication",
+        "description": "Protect your data with enterprise-grade encryption."
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Gain insights from comprehensive communication data."
+      }
+    ]
+  },
+  "whyChoose": {
+    "headline": "Why choose Bitcall?",
+    "description": "Because We offer the only easy-to-use & self-managed Dashboard with 24/7 support in the Market of Telecommunication.\nWe basically handle the technical heavy-lifting so you can focus on delivering exceptional experiences to your customers.",
+    "cta": "Get Started",
+    "benefits": [
+      {
+        "title": "Easy Dashboard",
+        "description": "Self-managed interface for quick insights."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Always here to help you anytime."
+      },
+      {
+        "title": "Technical Excellence",
+        "description": "We handle all the heavy lifting so you don't have to."
+      }
+    ]
+  },
+  "allInOne": {
+    "headline": "All-in-One Communication Hub",
+    "subheadline": "No Limits. No Restrictions",
+    "columns": [
+      {
+        "alt": "Phone Numbers",
+        "title": "Phone Numbers",
+        "description": "Establish a global presence with our comprehensive Phone Numbers solutions. Access local, toll-free, and international numbers to reach your customers wherever they are.",
+        "list": [
+          "Virtual Phone Number",
+          "Second Phone Number",
+          "Local Phone Number",
+          "Vanity Number",
+          "Voice Organization",
+          "Voice Wholesaler"
+        ]
+      },
+      {
+        "alt": "Voice Services",
+        "title": "Voice",
+        "description": "Experience crystal-clear communication with our advanced VoIP solutions. Get high-quality audio, intelligent call routing, and comprehensive analytics—all in one.",
+        "list": [
+          "Voice Termination",
+          "VoIP Providers",
+          "Voice Organization",
+          "Voice Wholesaler",
+          "Voice API",
+          "SIP Trunking Providers"
+        ]
+      }
+    ],
+    "cta": "Learn more"
+  },
+  "callToAction": {
+    "headline": "Activate Bitcall on any device you already use.",
+    "description.part1": "No hardware, no downtime—just simple,",
+    "description.part2": "efficient and cheap global communication",
+    "cta": "Get Started now"
+  },
+  "ratesSection": {
+    "headline": {
+      "part1": "Reliable A-Z Voice Termination At",
+      "part2": "The Best Rates!"
+    },
+    "description": "Find the best Calling Rates Instantly!",
+    "descriptionSub": "Enter a Country, Prefix, Or Description Below.",
+    "seeAllCountries": "See all countries",
+    "searchPlaceholder": "Search by prefix, country, or description",
+    "tabs": {
+      "CC": "CC",
+      "Retail": "Retail",
+      "Low Cost": "Low Cost"
+    },
+    "table": {
+      "prefix": "Prefix",
+      "country": "Country",
+      "description": "Description",
+      "price": "Starting Price (USD)"
+    },
+    "noMatchingData": "No matching data available."
+  },
+  "customerReviews": {
+    "title": "Success Stories From Our Clients",
+    "subtitle": "See what our customers have to say about their experience.",
+    "items": [
+      {
+        "desc": "“We’ve cut our telecom costs by 70%!”\n\nSwitching to Bitcall was one of the best decisions we’ve made. We were spending a fortune on international calls—now we pay a fraction of that and still get crystal-clear voice quality. The dashboard is super intuitive, and our team was set up in minutes.",
+        "rating": 5,
+        "name": "Sophie Martinez",
+        "position": "Operations Lead at Callbox CRM (Spain)"
+      },
+      {
+        "desc": "“Bitcall helped me start my own telecom business”\n\nI launched my reseller panel in under a day and already have 15 recurring clients. Bitcall handles all the backend work, I just focus on selling. It feels like I’m running my own VoIP company—without the huge overhead.",
+        "rating": 5,
+        "name": "Ahmed Elmasry",
+        "position": "Reseller from Egypt"
+      },
+      {
+        "desc": "“The analytics changed everything for us”\n\nHaving real-time data on call durations, answer rates, and agent performance has helped us restructure our entire sales process. We used to guess—now we know exactly what’s happening and why.",
+        "rating": 5,
+        "name": "Julie Reynolds",
+        "position": "Sales Manager at Orbit Communications (UK)"
+      },
+      {
+        "desc": "“Perfect for remote teams”\n\nWe have agents across 4 countries, and Bitcall makes it feel like they’re all in the same room. Call quality is amazing, setup took less than 5 minutes, and we’ve had zero downtime in 9 months.",
+        "rating": 5,
+        "name": "Daniel Kowalski",
+        "position": "Head of Support at Skynote (Poland)"
+      },
+      {
+        "desc": "“Unbeatable support & reliability”\n\nWhenever we’ve had a question—even during odd hours—the Bitcall team responds fast and professionally. Their 24/7 support is a real game-changer. You don’t see that level of dedication anymore.",
+        "rating": 5,
+        "name": "Natalie Carter",
+        "position": "Founder of VoxBridge Media (Canada)"
+      },
+      {
+        "desc": "“Rates so good, I thought it was a mistake”\n\nI double-checked the rate list because I couldn’t believe how low the prices were. We now call France, the US, and Nigeria every day without worrying about costs. Bitcall is the real deal.",
+        "rating": 5,
+        "name": "Seyi Oluwa",
+        "position": "Marketing Agency Owner (Nigeria)"
+      },
+      {
+        "desc": "“From zero to profitable in 2 weeks”\n\nI started with Bitcall as a side hustle. Just two weeks later, I had 20 paying users and a steady income stream. No tech background, no fancy setup. Just a laptop, some hustle, and Bitcall.",
+        "rating": 5,
+        "name": "Nina Patel",
+        "position": "Independent Reseller (India)"
+      }
+    ]
+  },
+  "faq": {
+    "questions": {
+      "q1": "What VoIP services does Bitcall offer?",
+      "q2": "How does your reseller panel work?",
+      "q3": "Can I get data-only eSIM plans?",
+      "q4": "What payment methods do you accept?",
+      "q5": "How do I get started?"
+    },
+    "answers": {
+      "a1": "We cover A-Z termination, outbound call center routes, CLI/NCLI routes, and inbound virtual numbers.",
+      "a2": "Our reseller panel is a turnkey solution. You buy at wholesale rates and sell at your own price—no infrastructure investment needed.",
+      "a3": "Yes! Our eSIM plans are available in daily, weekly, or monthly packages with broad global coverage.",
+      "a4": "We accept ALL payment methods. Visa and Mastercard, and we also accept BTC, USDT, ETH, SOL, and BNB. It’s never been easier or more flexible to start calling worldwide.",
+      "a5": "Simply sign up, add your IPs, and make a test payment starting from just $1 to start exploring our services."
+    }
+  },
+  "contact": {
+    "headline": "Let's work together",
+    "subheading": "Any question or remark? Just write us a message",
+    "leftTitle": "Let's contact with us",
+    "leftSubtitle": "Share your ideas or requirements with our experts.",
+    "form": {
+      "fullName": "Full name",
+      "email": "Email address",
+      "message": "Message"
+    },
+    "button": {
+      "submit": "Get Started",
+      "loading": "Sending..."
+    }
+  },
+  "footer": {
+    "tagline": "Connect without limits, grow without boundaries.",
+    "subscribeLabel": "Subscribe to newsletter",
+    "subscribePlaceholder": "Your email",
+    "subscribeButton": "Subscribe",
+    "sections": {
+      "explore": "Explore",
+      "getStarted": "Get Started"
+    },
+    "exploreLinks": {
+      "home": "Home",
+      "esims": "Our eSIMs",
+      "reseller": "Reseller Program",
+      "blog": "Blog",
+      "helpCenter": "Help Center",
+      "contact": "Contact Us"
+    },
+    "getStartedLinks": {
+      "demo": "Book a Demo",
+      "startReselling": "Start Your Reselling Business",
+      "pricing": "Pricing",
+      "activateEsim": "Activate your eSIM",
+      "reviews": "Customer Reviews",
+      "blog": "Blog",
+      "helpCenter": "Help Center",
+      "contact": "Contact Us"
+    },
+    "copyright": {
+      "madeWith": "Made with ❤️ by"
+    },
+    "legal": "Legal"
+  },
+  "esim": {
+    "titleLine1": "eSIM Data & Calling Plans ",
+    "titleLine2": "for travellers",
+    "subtitlePart1": "for instant",
+    "subtitlePart2": "connectivity",
+    "tabs": {
+      "local": "Local eSIMs",
+      "regional": "Regional eSIMs",
+      "global": "Global eSIM"
+    },
+    "search": {
+      "globalPlaceholder": "Search for global plan...",
+      "countryPlaceholder": "Search plans in {{country}}...",
+      "defaultPlaceholder": "Search by a country or region",
+      "globalTag": "Global"
+    },
+    "loadMore": "Load more",
+    "loadingPlans": "Loading Plans, please wait...",
+    "loadingCountryPlans": "Loading Plan Details, please wait..."
+  },
+  "plansDetails": {
+    "filterTitle": "Filter Plans",
+    "cheapest": "Cheapest",
+    "longest": "Longest Validity",
+    "largest": "Largest GB",
+    "validity": "Validity",
+    "data": "Data",
+    "noPlans": "No plans available.",
+    "loading": "Loading plans, please wait..."
+  }
+}

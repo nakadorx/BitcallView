@@ -1,0 +1,332 @@
+{
+    "breadcrumbs": {
+        "home": "Home",
+        "legal": "Legal"
+    },
+    "hub": {
+        "title": "Legal Documents",
+        "description": "Access all legal documents for BitCall LTD including our Terms of Service, Acceptable Use Policy, Privacy Policy, and Vendor Agreement.",
+        "readMore": "Read more",
+        "terms": "Terms of Service",
+        "aup": "Acceptable Use Policy",
+        "privacy": "Privacy Policy",
+        "vendor": "Vendor Agreement"
+    },
+    "aup": {
+        "title": "Acceptable Use Policy",
+        "effectiveDateLabel": "Effective Date",
+        "lastUpdatedLabel": "Last Updated",
+        "purpose": "Our mission is to provide reliable telecommunications solutions in a secure, lawful, and respectful manner. By using our Services, you agree to comply with this AUP.",
+        "enforcement": "We reserve the right to investigate violations...",
+        "liability": "You are liable for any prohibited activities...",
+        "changes": "We may modify this AUP from time to time...",
+        "activities": {
+            "violateLaws": {
+                "title": "Violate Laws",
+                "content": "Send or facilitate any communication that violates local, national, or international laws."
+            },
+            "spam": {
+                "title": "Spam / Unsolicited Communications",
+                "content": "Engage in mass spam, robocalling, or any unsolicited marketing without recipients’ consent."
+            },
+            "fraud": {
+                "title": "Fraud / Misrepresentation",
+                "content": "Engage in scams, phishing, identity theft, or any deceptive activity (e.g., CLI spoofing for fraudulent gain)."
+            },
+            "networkAbuse": {
+                "title": "Network Abuse",
+                "content": "Attempt to gain unauthorized access to any system, disrupt network services, or transmit harmful code or software viruses."
+            },
+            "offensiveContent": {
+                "title": "Offensive Content",
+                "content": "Transmit hateful, threatening, or otherwise objectionable content that may incite violence or discrimination."
+            }
+        },
+        "responsibilities": {
+            "security": {
+                "title": "Security",
+                "content": "Maintain secure passwords and authentication methods to prevent unauthorized use."
+            },
+            "monitoring": {
+                "title": "Monitoring & Reporting",
+                "content": "Immediately notify BitCall of any suspicious or prohibited use of your account."
+            },
+            "compliance": {
+                "title": "Compliance with Terms",
+                "content": "Use the Services according to our Terms of Service."
+            },
+            "vendor": {
+                "title": "Vendor-Specific Obligations",
+                "content": "Vendors must ensure routes comply with relevant telecom regulations and not enable illegal traffic."
+            }
+        },
+        "toc": {
+            "purpose": "Purpose",
+            "prohibitedActivities": "Prohibited Activities",
+            "responsibilities": "Responsibilities",
+            "enforcement": "Enforcement",
+            "liability": "Liability",
+            "changes": "Changes to this AUP",
+            "contact": "Contact Information"
+        },
+        "contact": {
+            "company": "Company",
+            "companyNumber": "Company Number",
+            "office": "Registered Office",
+            "email": "Email"
+        }
+    },
+    "terms": {
+        "title": "Terms of Service",
+        "effectiveDateLabel": "Effective Date",
+        "lastUpdatedLabel": "Last Updated",
+        "toc": {
+            "introduction": "Introduction",
+            "scope": "Scope of Services",
+            "responsibilities": "User Responsibilities",
+            "payment": "Payment & Billing",
+            "retention": "Data Storage & Retention",
+            "ip": "Intellectual Property",
+            "disclaimer": "Disclaimer of Warranties",
+            "liability": "Limitation of Liability",
+            "indemnification": "Indemnification",
+            "termination": "Termination",
+            "law": "Governing Law & Dispute Resolution",
+            "changes": "Changes to Terms",
+            "contact": "Contact Information"
+        },
+        "labels": {
+            "byUser": "By You",
+            "byUs": "By Us",
+            "effects": "Effects of Termination",
+            "disputeResolution": "Dispute Resolution"
+        },
+        "introduction": {
+            "company": "BitCall LTD",
+            "companyNumber": "15288134",
+            "registeredOffice": "124 City Road, London, United Kingdom, EC1V 2NX",
+            "description": "By accessing or using the services provided by BitCall LTD (\"BitCall,\" \"we,\" \"us,\" or \"our\"), you (\"User,\" \"Client,\" or \"you\") agree to these Terms of Service (\"Terms\"). If you do not agree, you must stop using our Services immediately."
+        },
+        "scopeOfServices": [
+            {
+                "title": "VoIP & Telecom Offerings",
+                "content": "BitCall provides voice-over-IP (VoIP) routes (standard and alternative), DID numbers, SIP trunking, and related telecommunications solutions."
+            },
+            {
+                "title": "Account Creation",
+                "content": "You are required to create an account and confirm acceptance of these Terms. You must keep your login details secure and up-to-date."
+            },
+            {
+                "title": "Service Availability",
+                "content": "While we strive to keep our systems online, we cannot guarantee uninterrupted access."
+            }
+        ],
+        "userResponsibilities": [
+            {
+                "title": "Legal Compliance",
+                "content": "You agree to comply with all relevant laws and regulations when using the Services."
+            },
+            {
+                "title": "Acceptable Use",
+                "content": "You agree to adhere to our Acceptable Use Policy."
+            },
+            {
+                "title": "Account Security",
+                "content": "You are responsible for safeguarding your credentials; any activity under your account is your responsibility."
+            },
+            {
+                "title": "No Call Recording",
+                "content": "BitCall does not record or listen to call audio. We keep only minimal metadata necessary for billing (see Privacy Policy)."
+            }
+        ],
+        "paymentAndBilling": [
+            {
+                "title": "Prepaid Model",
+                "content": "Services are typically offered on a prepaid basis. You must maintain sufficient balance."
+            },
+            {
+                "title": "Invoices & Charges",
+                "content": "Accurate billing is dependent on call detail records (CDRs). You agree to review invoices promptly and raise disputes within the period stated in your account or invoice."
+            },
+            {
+                "title": "No Refund Policy",
+                "content": "Except where required by UK law, no refunds are provided once credit is used."
+            }
+        ],
+        "dataStorageRetention": {
+            "cdrs": "We store call detail records for a limited time (e.g., 30 days) for billing and dispute resolution. They do not include call audio content.",
+            "deletion": "After the specified retention period, CDRs are automatically deleted unless required by law."
+        },
+        "intellectualProperty": "BitCall retains all rights, title, and interest in and to any software, branding, trademarks, and other IP used or provided as part of the Services.",
+        "disclaimerOfWarranties": "The Services are provided “as is” and “as available” without any warranties of any kind, unless explicitly stated by UK law.",
+        "limitationOfLiability": {
+            "content": "To the fullest extent permitted by law, BitCall shall not be liable for any indirect, consequential, or special damages, including loss of revenue or data.",
+            "cap": "Our total liability for any claim shall not exceed the amount you paid BitCall in the three months preceding the event."
+        },
+        "indemnification": "You agree to indemnify and hold harmless BitCall LTD, its officers, employees, and affiliates from any claim arising from your misuse of the Services, violation of these Terms, or breach of any law.",
+        "termination": {
+            "byUser": "You may close your account at any time by contacting support.",
+            "byUs": "We may suspend or terminate your account if we determine a breach of these Terms or any suspicious activity.",
+            "effects": "No refunds for unused credits, unless otherwise required by law."
+        },
+        "governingLaw": {
+            "content": "These Terms are governed by the laws of England and Wales.",
+            "disputeResolution": "Any dispute shall be resolved in the courts of England and Wales."
+        },
+        "changesToTerms": "We reserve the right to update or modify these Terms at any time. Continued use of the Services after changes means you accept the revised Terms.",
+        "contact": {
+            "company": "Company",
+            "companyNumber": "Company Number",
+            "office": "Registered Office",
+            "email": "Email"
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "effectiveDateLabel": "Effective Date",
+        "lastUpdatedLabel": "Last Updated",
+        "toc": {
+            "scope": "Scope",
+            "dataWeCollect": "Data We Collect",
+            "howWeUseData": "How We Use Your Data",
+            "retentionDeletion": "Retention & Deletion",
+            "sharing": "Sharing Your Data",
+            "cookies": "Cookies & Tracking",
+            "security": "Data Security",
+            "rights": "Your Rights (UK/EU)",
+            "updates": "Updates to This Policy",
+            "contact": "Contact Information"
+        },
+        "scope": {
+            "details": [
+                "Covers personal data collected through our website, dashboard, APIs, and telecommunications services.",
+                "Does not cover third-party websites or services linked from our platform."
+            ]
+        },
+        "dataWeCollect": {
+            "accountInformation": "Name, email address, billing details, and login credentials when you sign up.",
+            "usageData": "Call detail records (CDRs) including caller number, called number, duration, timestamps, and cost.",
+            "technicalData": "IP addresses, device identifiers, and analytics data for security and troubleshooting."
+        },
+        "howWeUseData": {
+            "serviceProvision": "To provide VoIP and telecom services (billing, routing, support, etc.).",
+            "accountManagement": "Authentication, security alerts, and user preferences.",
+            "legalCompliance": "To comply with UK laws, regulations, or valid legal requests."
+        },
+        "retentionDeletion": {
+            "cdrRetention": "CDRs are retained for [30 days] (or required by law) for billing and dispute resolution. After that, they are deleted.",
+            "noCallAudio": "We do not record or store the audio content of calls.",
+            "accountDeletion": "If you close your account, we will securely delete or anonymize your personal data, except where legally required to retain it."
+        },
+        "sharingData": {
+            "serviceProviders": "We may share data with trusted partners for billing or technical support, bound by confidentiality obligations.",
+            "legalRequirements": "We may disclose data if required by law, court order, or to protect our rights or safety."
+        },
+        "cookiesTracking": "We use cookies or similar technologies to improve user experience and analyze traffic. You can control cookies via browser settings.",
+        "dataSecurity": "We implement reasonable security measures (e.g., encryption, access controls) but cannot guarantee absolute security against breaches.",
+        "yourRights": "Subject to UK GDPR, you have the right to access, correct, or request deletion of your personal data. Contact us to exercise these rights.",
+        "updates": "We may update this Privacy Policy. Notice of significant changes will be provided. Continued use of our Services following updates means you accept the revised policy.",
+        "contact": {
+            "company": "Company",
+            "companyNumber": "Company Number",
+            "office": "Registered Office",
+            "email": "Email"
+        },
+        "labels": {
+            "accountInfo": "Account Information",
+            "usageData": "Usage Data",
+            "technicalData": "Technical Data",
+            "service": "Service Provision",
+            "account": "Account Management",
+            "legal": "Legal Compliance",
+            "cdr": "CDR Retention",
+            "audio": "No Call Audio Storage",
+            "deletion": "Account Deletion",
+            "providers": "Service Providers",
+            "requirements": "Legal Requirements"
+        }
+    },
+    "vendor": {
+        "title": "Vendor Agreement",
+        "scope.details": [
+            "Covers personal data collected through our website, dashboard, APIs, and telecommunications services.",
+            "Does not cover third-party websites or services linked from our platform."
+        ],
+        "effectiveDateLabel": "Effective Date",
+        "lastUpdatedLabel": "Last Updated",
+        "toc": {
+            "relationship": "Relationship of the Parties",
+            "provision": "Provision of Services",
+            "warranties": "Warranties & Representations",
+            "indemnification": "Indemnification",
+            "confidentiality": "Data & Confidentiality",
+            "fees": "Fees & Payment",
+            "termination": "Term & Termination",
+            "liability": "Limitation of Liability",
+            "law": "Governing Law & Jurisdiction",
+            "contact": "Contact Information"
+        },
+        "relationship": {
+            "independentContractors": "Nothing in this Agreement creates an agency, partnership, or joint venture.",
+            "legalCompliance": "Vendors must comply with all applicable laws and regulations for telecommunications services provided to BitCall."
+        },
+        "provisionOfServices": {
+            "routeCompliance": "All routes you supply must comply with relevant telecom regulations, including local and international laws.",
+            "greyRoutes": "If you offer alternative/grey routes, it is your responsibility to ensure these do not facilitate illegal activities and adhere to any applicable local laws."
+        },
+        "warrantiesRepresentations": {
+            "authority": "You represent that you have the right to provide the routes, and that their use by BitCall does not infringe third-party rights.",
+            "quality": "You warrant that you will maintain route stability, call quality, and uptime as reasonably required."
+        },
+        "indemnification": "You agree to defend, indemnify, and hold harmless BitCall from all claims, damages, or liabilities arising out of your routes’ misuse, non-compliance with laws, or breaches of this Agreement.",
+        "dataConfidentiality": {
+            "businessData": "You shall keep confidential any data or information provided by BitCall regarding usage, prices, or volumes.",
+            "userData": "You must handle any personal data in compliance with applicable privacy laws, including UK GDPR where relevant."
+        },
+        "feesPayment": {
+            "pricing": "Agreed upon in writing or via separate contract.",
+            "paymentTerms": "BitCall will pay within the agreed timeframe upon receiving valid invoices.",
+            "disputeResolution": "Discrepancies in usage or billing should be raised promptly in writing."
+        },
+        "termTermination": {
+            "term": "This Agreement remains in force until terminated by either party.",
+            "termination": "Either party may terminate for convenience with notice or immediately for breach.",
+            "effect": "Vendor must cease provision of routes, and BitCall will settle outstanding invoices in due course."
+        },
+        "limitationOfLiability": {
+            "content": "Neither party shall be liable for indirect or consequential damages.",
+            "cap": "Total liability, if any, shall not exceed the amount paid by BitCall to Vendor in the preceding three months."
+        },
+        "governingLaw": {
+            "content": "This Agreement is governed by the laws of England and Wales.",
+            "disputes": "Disputes shall be settled in the courts of England and Wales."
+        },
+        "contact": {
+            "company": "Company",
+            "companyNumber": "Company Number",
+            "office": "Registered Office",
+            "email": "Email"
+        },
+        "labels": {
+            "independent": "Independent Contractors",
+            "compliance": "Legal Compliance",
+            "route": "Route Compliance",
+            "grey": "Grey Routes",
+            "authority": "Authority",
+            "quality": "Quality",
+            "business": "Business Data",
+            "user": "User Data",
+            "pricing": "Pricing",
+            "payment": "Payment Terms",
+            "disputes": "Dispute Resolution",
+            "term": "Term",
+            "terminate": "Termination",
+            "effect": "Effect of Termination",
+            "cap": "Cap",
+            "company": "Company",
+            "number": "Company Number",
+            "office": "Registered Office",
+            "email": "Email"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+/* Card floating animation */
+@keyframes cardFloat {
+  0%,
+  100% {
+    transform: translateY(-8px) scale(1.02);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.02);
+  }
+}
+
+/* Card glow animation */
+@keyframes cardGlow {
+  0%,
+  100% {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 16px 32px rgba(0, 123, 255, 0.2);
+  }
+}
+
+/* Dark mode glow animation */
+@keyframes cardGlowDark {
+  0%,
+  100% {
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 16px 32px rgba(0, 123, 255, 0.3);
+  }
+}
+
+/* Apply animations */
+.card-float {
+  animation: cardFloat 2s ease-in-out infinite;
+}
+
+.card-glow {
+  animation: cardGlow 3s ease-in-out infinite;
+}
+
+/* Dark mode specific glow */
+.dark .card-glow {
+  animation: cardGlowDark 3s ease-in-out infinite;
+}

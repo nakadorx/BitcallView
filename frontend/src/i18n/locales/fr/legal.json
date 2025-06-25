@@ -1,0 +1,332 @@
+{
+    "breadcrumbs": {
+        "home": "Accueil",
+        "legal": "Mentions légales"
+    },
+    "hub": {
+        "title": "Documents légaux",
+        "description": "Accédez à tous les documents légaux de BitCall LTD, y compris nos Conditions d'utilisation, Politique d'utilisation acceptable, Politique de confidentialité et Accord fournisseur.",
+        "readMore": "En savoir plus",
+        "terms": "Conditions d'utilisation",
+        "aup": "Politique d'utilisation acceptable",
+        "privacy": "Politique de confidentialité",
+        "vendor": "Accord fournisseur"
+    },
+    "aup": {
+        "title": "Politique d'utilisation acceptable",
+        "effectiveDateLabel": "Date d'entrée en vigueur",
+        "lastUpdatedLabel": "Dernière mise à jour",
+        "purpose": "Notre mission est de fournir des solutions de télécommunication fiables de manière sécurisée, légale et respectueuse. En utilisant nos Services, vous acceptez de vous conformer à cette Politique d'utilisation acceptable.",
+        "enforcement": "Nous nous réservons le droit d’enquêter sur les violations…",
+        "liability": "Vous êtes responsable de toute activité interdite…",
+        "changes": "Nous pouvons modifier cette Politique d'utilisation acceptable de temps à autre…",
+        "activities": {
+            "violateLaws": {
+                "title": "Violation des lois",
+                "content": "Envoyer ou faciliter toute communication qui viole les lois locales, nationales ou internationales."
+            },
+            "spam": {
+                "title": "Spam / Communications non sollicitées",
+                "content": "Participer à des spams de masse, des appels automatisés ou tout marketing non sollicité sans le consentement des destinataires."
+            },
+            "fraud": {
+                "title": "Fraude / Tromperie",
+                "content": "Participer à des escroqueries, du phishing, du vol d’identité ou toute activité trompeuse (par exemple, usurpation de CLI à des fins frauduleuses)."
+            },
+            "networkAbuse": {
+                "title": "Abus du réseau",
+                "content": "Tenter d’accéder de manière non autorisée à tout système, perturber les services réseau ou transmettre du code malveillant ou des virus informatiques."
+            },
+            "offensiveContent": {
+                "title": "Contenu offensant",
+                "content": "Transmettre du contenu haineux, menaçant ou autrement répréhensible susceptible d’inciter à la violence ou à la discrimination."
+            }
+        },
+        "responsibilities": {
+            "security": {
+                "title": "Sécurité",
+                "content": "Maintenir des mots de passe et des méthodes d’authentification sécurisés pour prévenir toute utilisation non autorisée."
+            },
+            "monitoring": {
+                "title": "Surveillance & Rapport",
+                "content": "Notifier immédiatement BitCall de toute utilisation suspecte ou interdite de votre compte."
+            },
+            "compliance": {
+                "title": "Conformité aux Conditions",
+                "content": "Utiliser les Services conformément à nos Conditions d’utilisation."
+            },
+            "vendor": {
+                "title": "Obligations spécifiques aux fournisseurs",
+                "content": "Les fournisseurs doivent s’assurer que les routes sont conformes aux réglementations télécom pertinentes et ne pas permettre un trafic illégal."
+            }
+        },
+        "toc": {
+            "purpose": "Objet",
+            "prohibitedActivities": "Activités interdites",
+            "responsibilities": "Responsabilités",
+            "enforcement": "Application",
+            "liability": "Responsabilité",
+            "changes": "Modifications de cette Politique",
+            "contact": "Informations de contact"
+        },
+        "contact": {
+            "company": "Société",
+            "companyNumber": "Numéro d’entreprise",
+            "office": "Siège social",
+            "email": "E‑mail"
+        }
+    },
+    "terms": {
+        "title": "Conditions d'utilisation",
+        "effectiveDateLabel": "Date d'entrée en vigueur",
+        "lastUpdatedLabel": "Dernière mise à jour",
+        "toc": {
+            "introduction": "Introduction",
+            "scope": "Champ d'application",
+            "responsibilities": "Responsabilités de l'utilisateur",
+            "payment": "Paiement & Facturation",
+            "retention": "Stockage & Conservation des données",
+            "ip": "Propriété intellectuelle",
+            "disclaimer": "Exclusion de garanties",
+            "liability": "Limitation de responsabilité",
+            "indemnification": "Indemnisation",
+            "termination": "Résiliation",
+            "law": "Loi applicable & Résolution des litiges",
+            "changes": "Modifications des Conditions",
+            "contact": "Informations de contact"
+        },
+        "labels": {
+            "byUser": "Par vous",
+            "byUs": "Par nous",
+            "effects": "Effets de la résiliation",
+            "disputeResolution": "Résolution des litiges"
+        },
+        "introduction": {
+            "company": "BitCall LTD",
+            "companyNumber": "15288134",
+            "registeredOffice": "124 City Road, Londres, Royaume‑Uni, EC1V 2NX",
+            "description": "En accédant ou en utilisant les services fournis par BitCall LTD (\"BitCall\", \"nous\", \"notre\"), vous (\"Utilisateur\", \"Client\", \"vous\") acceptez ces Conditions d’utilisation (\"Conditions\"). Si vous n’acceptez pas, vous devez cesser immédiatement d’utiliser nos Services."
+        },
+        "scopeOfServices": [
+            {
+                "title": "Offres VoIP & Télécom",
+                "content": "BitCall fournit des routes voix sur IP (VoIP) (standard et alternatives), des numéros DID, du trunk SIP et des solutions de télécommunications associées."
+            },
+            {
+                "title": "Création de compte",
+                "content": "Vous devez créer un compte et confirmer votre acceptation de ces Conditions. Vous devez garder vos identifiants sécurisés et à jour."
+            },
+            {
+                "title": "Disponibilité du service",
+                "content": "Bien que nous nous efforcions de maintenir nos systèmes en ligne, nous ne pouvons garantir un accès ininterrompu."
+            }
+        ],
+        "userResponsibilities": [
+            {
+                "title": "Conformité légale",
+                "content": "Vous acceptez de respecter toutes les lois et réglementations applicables lors de l’utilisation des Services."
+            },
+            {
+                "title": "Utilisation acceptable",
+                "content": "Vous acceptez de respecter notre Politique d'utilisation acceptable."
+            },
+            {
+                "title": "Sécurité du compte",
+                "content": "Vous êtes responsable de la protection de vos identifiants ; toute activité sous votre compte est de votre responsabilité."
+            },
+            {
+                "title": "Pas d’enregistrement d’appels",
+                "content": "BitCall n’enregistre ni n’écoute le contenu audio des appels. Nous conservons uniquement les métadonnées minimales nécessaires à la facturation (voir Politique de confidentialité)."
+            }
+        ],
+        "paymentAndBilling": [
+            {
+                "title": "Modèle prépayé",
+                "content": "Les Services sont généralement proposés sur une base prépayée. Vous devez maintenir un solde suffisant."
+            },
+            {
+                "title": "Factures & Charges",
+                "content": "Une facturation précise dépend des enregistrements détaillés d'appels (CDR). Vous acceptez de vérifier les factures rapidement et de signaler tout litige dans le délai indiqué sur votre compte ou votre facture."
+            },
+            {
+                "title": "Politique de non‑remboursement",
+                "content": "Sauf si la loi britannique l’exige, aucun remboursement n’est accordé une fois le crédit utilisé."
+            }
+        ],
+        "dataStorageRetention": {
+            "cdrs": "Nous conservons les enregistrements détaillés d'appels pendant une durée limitée (par exemple, 30 jours) pour la facturation et la résolution des litiges. Ils n’incluent pas le contenu audio des appels.",
+            "deletion": "Après la période de conservation spécifiée, les CDR sont automatiquement supprimés, sauf si la loi l’exige."
+        },
+        "intellectualProperty": "BitCall conserve tous les droits, titres et intérêts sur tout logiciel, marque, marque déposée et autre propriété intellectuelle utilisée ou fournie dans le cadre des Services.",
+        "disclaimerOfWarranties": "Les Services sont fournis « tels quels » et « selon disponibilité » sans aucune garantie d’aucune sorte, sauf indication explicite de la loi britannique.",
+        "limitationOfLiability": {
+            "content": "Dans toute la mesure permise par la loi, BitCall ne pourra être tenu responsable d’aucun dommage indirect, accessoire ou spécial, y compris la perte de revenus ou de données.",
+            "cap": "Notre responsabilité totale pour toute réclamation ne dépassera pas le montant que vous avez payé à BitCall au cours des trois mois précédant l’événement."
+        },
+        "indemnification": "Vous acceptez d’indemniser et de dégager de toute responsabilité BitCall LTD, ses dirigeants, employés et affiliés de toute réclamation découlant de votre mauvaise utilisation des Services, de la violation de ces Conditions ou de toute infraction à une loi.",
+        "termination": {
+            "byUser": "Vous pouvez fermer votre compte à tout moment en contactant le support.",
+            "byUs": "Nous pouvons suspendre ou résilier votre compte si nous déterminons une violation de ces Conditions ou toute activité suspecte.",
+            "effects": "Aucun remboursement pour les crédits non utilisés, sauf exigence légale contraire."
+        },
+        "governingLaw": {
+            "content": "Ces Conditions sont régies par les lois d’Angleterre et du Pays de Galles.",
+            "disputeResolution": "Tout litige sera résolu devant les tribunaux d’Angleterre et du Pays de Galles."
+        },
+        "changesToTerms": "Nous nous réservons le droit de mettre à jour ou modifier ces Conditions à tout moment. L’utilisation continue des Services après les modifications signifie que vous acceptez les Conditions révisées.",
+        "contact": {
+            "company": "Société",
+            "companyNumber": "Numéro d’entreprise",
+            "office": "Siège social",
+            "email": "E‑mail"
+        }
+    },
+    "privacy": {
+        "title": "Politique de confidentialité",
+        "effectiveDateLabel": "Date d'entrée en vigueur",
+        "lastUpdatedLabel": "Dernière mise à jour",
+        "toc": {
+            "scope": "Champ d'application",
+            "dataWeCollect": "Données que nous collectons",
+            "howWeUseData": "Comment nous utilisons vos données",
+            "retentionDeletion": "Conservation & Suppression",
+            "sharing": "Partage de vos données",
+            "cookies": "Cookies & Suivi",
+            "security": "Sécurité des données",
+            "rights": "Vos droits (R.-U./UE)",
+            "updates": "Mises à jour de cette politique",
+            "contact": "Informations de contact"
+        },
+        "scope": {
+            "details": [
+                "Couvre les données personnelles collectées via notre site Web, tableau de bord, API et services de télécommunications.",
+                "Ne couvre pas les sites Web ou services tiers liés depuis notre plateforme."
+            ]
+        },
+        "dataWeCollect": {
+            "accountInformation": "Nom, adresse e‑mail, informations de facturation et identifiants de connexion lors de l’inscription.",
+            "usageData": "Enregistrements détaillés des appels (CDR) incluant le numéro appelant, le numéro appelé, la durée, les horodatages et le coût.",
+            "technicalData": "Adresses IP, identifiants d’appareil et données analytiques pour la sécurité et le dépannage."
+        },
+        "howWeUseData": {
+            "serviceProvision": "Pour fournir les services VoIP et télécom (facturation, routage, support, etc.).",
+            "accountManagement": "Authentification, alertes de sécurité et préférences utilisateur.",
+            "legalCompliance": "Pour se conformer aux lois britanniques, réglementations ou demandes légales valides."
+        },
+        "retentionDeletion": {
+            "cdrRetention": "Les CDR sont conservés pendant [30 jours] (ou selon la loi) pour la facturation et la résolution des litiges. Après cela, ils sont supprimés.",
+            "noCallAudio": "Nous n’enregistrons ni ne stockons le contenu audio des appels.",
+            "accountDeletion": "Si vous fermez votre compte, nous supprimerons ou anonymiserons vos données personnelles de manière sécurisée, sauf si la conservation légale est requise."
+        },
+        "sharingData": {
+            "serviceProviders": "Nous pouvons partager des données avec des partenaires de confiance pour la facturation ou le support technique, liés par des obligations de confidentialité.",
+            "legalRequirements": "Nous pouvons divulguer des données si la loi l’exige, sur ordonnance d’un tribunal ou pour protéger nos droits ou notre sécurité."
+        },
+        "cookiesTracking": "Nous utilisons des cookies ou des technologies similaires pour améliorer l’expérience utilisateur et analyser le trafic. Vous pouvez contrôler les cookies via les paramètres de votre navigateur.",
+        "dataSecurity": "Nous mettons en œuvre des mesures de sécurité raisonnables (par exemple, chiffrement, contrôles d’accès) mais ne pouvons garantir une sécurité absolue contre les violations.",
+        "yourRights": "Sous réserve du RGPD britannique, vous avez le droit d’accéder, de corriger ou de demander la suppression de vos données personnelles. Contactez‑nous pour exercer ces droits.",
+        "updates": "Nous pouvons mettre à jour cette Politique de confidentialité. Un avis de modifications importantes sera fourni. La poursuite de l’utilisation de nos Services après les mises à jour signifie que vous acceptez la politique révisée.",
+        "contact": {
+            "company": "Société",
+            "companyNumber": "Numéro d’entreprise",
+            "office": "Siège social",
+            "email": "E‑mail"
+        },
+        "labels": {
+            "accountInfo": "Informations de compte",
+            "usageData": "Données d’utilisation",
+            "technicalData": "Données techniques",
+            "service": "Fourniture de service",
+            "account": "Gestion de compte",
+            "legal": "Conformité légale",
+            "cdr": "Conservation des CDR",
+            "audio": "Pas de stockage audio",
+            "deletion": "Suppression de compte",
+            "providers": "Fournisseurs de services",
+            "requirements": "Exigences légales"
+        }
+    },
+    "vendor": {
+        "title": "Accord fournisseur",
+        "scope.details": [
+            "Couvre les données personnelles collectées via notre site Web, tableau de bord, API et services de télécommunications.",
+            "Ne couvre pas les sites Web ou services tiers liés depuis notre plateforme."
+        ],
+        "effectiveDateLabel": "Date d'entrée en vigueur",
+        "lastUpdatedLabel": "Dernière mise à jour",
+        "toc": {
+            "relationship": "Relation entre les parties",
+            "provision": "Fourniture des services",
+            "warranties": "Garanties & Déclarations",
+            "indemnification": "Indemnisation",
+            "confidentiality": "Données & Confidentialité",
+            "fees": "Frais & Paiement",
+            "termination": "Durée & Résiliation",
+            "liability": "Limitation de responsabilité",
+            "law": "Loi applicable & Juridiction",
+            "contact": "Informations de contact"
+        },
+        "relationship": {
+            "independentContractors": "Rien dans cet Accord ne crée une agence, un partenariat ou une coentreprise.",
+            "legalCompliance": "Les fournisseurs doivent respecter toutes les lois et réglementations applicables aux services de télécommunications fournis à BitCall."
+        },
+        "provisionOfServices": {
+            "routeCompliance": "Toutes les routes que vous fournissez doivent être conformes aux réglementations télécom pertinentes, y compris les lois locales et internationales.",
+            "greyRoutes": "Si vous proposez des routes alternatives/grises, il vous incombe de vous assurer qu'elles ne facilitent pas d'activités illégales et qu'elles respectent les lois locales applicables."
+        },
+        "warrantiesRepresentations": {
+            "authority": "Vous déclarez avoir le droit de fournir les routes et que leur utilisation par BitCall ne porte pas atteinte aux droits de tiers.",
+            "quality": "Vous garantissez de maintenir la stabilité des routes, la qualité des appels et le temps de disponibilité selon les exigences raisonnables."
+        },
+        "indemnification": "Vous acceptez de défendre, indemniser et dégager de toute responsabilité BitCall de toutes réclamations, dommages ou responsabilités découlant de l'utilisation abusive de vos routes, de la non‑conformité aux lois ou des violations de cet Accord.",
+        "dataConfidentiality": {
+            "businessData": "Vous devez garder confidentielles toutes les données ou informations fournies par BitCall concernant l’utilisation, les tarifs ou les volumes.",
+            "userData": "Vous devez traiter toutes les données personnelles conformément aux lois sur la confidentialité applicables, y compris le RGPD britannique le cas échéant."
+        },
+        "feesPayment": {
+            "pricing": "Convenu par écrit ou via un contrat séparé.",
+            "paymentTerms": "BitCall paiera dans le délai convenu dès réception de factures valides.",
+            "disputeResolution": "Les divergences d’utilisation ou de facturation doivent être signalées rapidement par écrit."
+        },
+        "termTermination": {
+            "term": "Cet Accord reste en vigueur jusqu’à résiliation par l’une ou l’autre partie.",
+            "termination": "Chaque partie peut résilier pour convenance avec préavis ou immédiatement en cas de violation.",
+            "effect": "Le fournisseur doit cesser de fournir les routes, et BitCall réglera les factures en cours en temps voulu."
+        },
+        "limitationOfLiability": {
+            "content": "Aucune des parties ne sera responsable des dommages indirects ou consécutifs.",
+            "cap": "La responsabilité totale, le cas échéant, ne doit pas dépasser le montant payé par BitCall au fournisseur au cours des trois mois précédant."
+        },
+        "governingLaw": {
+            "content": "Le présent Accord est régi par les lois d’Angleterre et du Pays de Galles.",
+            "disputes": "Les litiges seront réglés devant les tribunaux d’Angleterre et du Pays de Galles."
+        },
+        "contact": {
+            "company": "Société",
+            "companyNumber": "Numéro d’entreprise",
+            "office": "Siège social",
+            "email": "E‑mail"
+        },
+        "labels": {
+            "independent": "Entrepreneurs indépendants",
+            "compliance": "Conformité légale",
+            "route": "Conformité des routes",
+            "grey": "Routes grises",
+            "authority": "Autorité",
+            "quality": "Qualité",
+            "business": "Données commerciales",
+            "user": "Données utilisateur",
+            "pricing": "Tarification",
+            "payment": "Conditions de paiement",
+            "disputes": "Résolution des litiges",
+            "term": "Durée",
+            "terminate": "Résiliation",
+            "effect": "Effet de la résiliation",
+            "cap": "Plafond",
+            "company": "Société",
+            "number": "Numéro d’entreprise",
+            "office": "Siège social",
+            "email": "E‑mail"
+        }
+    }
+}
