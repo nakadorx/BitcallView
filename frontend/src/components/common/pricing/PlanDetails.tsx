@@ -21,6 +21,7 @@ export const PlanDetails = ({ data, pricingPlan }: Props) => {
     <article
       className={`
         relative rounded border flex flex-col gap-10 pt-8 p-6 shadow-xl
+        hover:scale-105 transition-all duration-300 cursor-pointer
         ${data?.popularPlan ? 'border-primary shadow-lg' : 'border-gray-300 dark:border-gray-600'}
       `}
       itemScope

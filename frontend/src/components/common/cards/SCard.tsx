@@ -34,12 +34,14 @@ export const SCard = ({
         cursor-pointer px-4 py-4 min-w-fit w-auto rounded-4xl
         transition-all duration-300 ease-in-out
         hover:bg-gray-50 dark:hover:bg-backgroundPaper 
+        shadow-xs
         hover:-translate-y-1 hover:shadow-md
         ${enableFloatingAnimation ? 'hover:card-float hover:shadow-2xl hover:-translate-y-2 hover:scale-105' : ''}
         ${cardIsActive ? 'bg-primary/10 dark:bg-gray-800' : 'bg-transparent'}
         ${enableFloatingAnimation && isHovered ? 'card-glow' : ''}
         ${cardContainerClassName || ''}
-        dark:hover:border-primary dark:hover:border-2 dark:hover:border-solid
+        hover:border-primary hover:border-2 hover:border-solid
+        
       `}
     >
       {!children && (

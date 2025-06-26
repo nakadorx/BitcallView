@@ -13,6 +13,11 @@ interface TextProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'style'> 
     | 'textPrimary'
     | 'textSecondary'
     | 'textDisabled'
+    | 'white'
+    | 'textPrimary'
+    | 'textSecondary'
+    | 'textDisabled'
+    | 'white'
   boldColor?: 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success' | 'textPrimary' | 'textSecondary'
   children?: React.ReactNode
   as?: 'div' | 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
@@ -27,7 +32,8 @@ const textColorClasses = {
   success: 'text-success',
   textPrimary: 'text-textPrimary',
   textSecondary: 'text-textSecondary',
-  textDisabled: 'text-textDisabled'
+  textDisabled: 'text-textDisabled',
+  white: 'text-white'
 }
 
 const boldColorClasses = {
@@ -52,7 +58,7 @@ export const Text = ({
 }: TextProps) => {
   // Check if content contains <strong> tags
   const hasStrongTags =
-    value?.includes('<strong>') ||
+    (value && typeof value === 'string' && value.includes('<strong>')) ||
     (children &&
       React.Children.toArray(children).some(child => typeof child === 'string' && child.includes('<strong>')))
 

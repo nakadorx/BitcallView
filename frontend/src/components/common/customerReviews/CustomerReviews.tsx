@@ -170,7 +170,7 @@ const CustomerReviews = () => {
                 aria-label={`Testimonial ${index + 1} of ${testimonials.length}`}
               >
                 <article
-                  className={`flex items-center bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-white/20 transition-all duration-200 ease-in-out ${getSlideClasses(index)}`}
+                  className={`flex items-center  bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-white/20 transition-all duration-200 ease-in-out ${getSlideClasses(index)}`}
                   itemScope
                   itemType='https://schema.org/Review'
                 >

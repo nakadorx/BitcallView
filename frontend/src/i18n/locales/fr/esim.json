@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "title": "Stay Connected Worldwide, Global Data at Local Prices",
+    "subtitle": "Travel smarter with Bitcall’s ultra-affordable eSIM plans. Say goodbye to roaming charges and SIM card hassles. Whether you’re exploring new cities or working remotely, Bitcall offers instant eSIM activation with coverage in over 200 countries at local rates. No contracts, no hidden fees — just fast, reliable data wherever you go.",
+    "cta": "Get My Bitcall eSIM Now",
+    "secondaryCta": "Stay connected in seconds"
+  },
+  "features": {
+    "title": "Why Choose Bitcall eSIM Data?",
+    "points": {
+      "affordable": {
+        "title": "The Most Affordable eSIM on the Planet",
+        "description": "Save up to 90% compared to traditional roaming fees. Bitcall’s prepaid eSIM plans let you know exactly what you pay upfront—no hidden charges. You’ll save money on every trip, leaving more for the things you love."
+      },
+      "trusted": {
+        "title": "Trusted Connectivity, Anytime, Anywhere",
+        "description": "Thousands of savvy travelers trust Bitcall to stay online abroad. We partner with top carriers worldwide to ensure fast, reliable 4G/5G speeds in over 200 countries."
+      },
+      "flexible": {
+        "title": "Flexible Plans for Every Traveler",
+        "description": "Whether you need just 1GB for a short trip or unlimited data for a month-long remote work stint, we’ve got you covered. Choose from local, regional, or global eSIM options, and only pay for what you need."
+      },
+      "peaceOfMind": {
+        "title": "Travel with Peace of Mind",
+        "description": "No contracts. No SIM card hunting. No worries. If your plans change, we’ve got you covered with a 6-month refund guarantee. Plus, our 24/7 customer support is always here to assist you, no matter where you are."
+      }
+    }
+  },
+  "plans": {
+    "title": "Flexible Plans for Every Trip",
+    "description": "Choose a plan that suits your needs, from a weekend getaway to long-term remote work. Top up or change plans as needed.",
+    "list": {
+      "local": {
+        "name": "Plan A - Local",
+        "use": "Short trips, single-country travel",
+        "coverage": "1 country",
+        "price": "$2.99"
+      },
+      "regional": {
+        "name": "Plan B - Regional",
+        "use": "Backpackers, business tours",
+        "coverage": "Europe, Asia, etc.",
+        "price": "$8.99"
+      },
+      "global": {
+        "name": "Plan C - Global",
+        "use": "Frequent travelers, multi-continent",
+        "coverage": "200+ countries",
+        "price": "$14.90"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works? Get Online in 3 Easy Steps",
+    "steps": {
+      "step1": {
+        "title": "Choose Your Plan",
+        "description": "Select a plan that fits your trip. Choose from Local, Regional, or Global options. Pick how much data you need and the duration of your plan."
+      },
+      "step2": {
+        "title": "Get Your eSIM Instantly",
+        "description": "After checkout, you’ll immediately receive a QR code and simple installation instructions via email. Just scan the code on your eSIM-compatible phone to install your Bitcall eSIM. No physical SIM card required."
+      },
+      "step3": {
+        "title": "Activate & Go",
+        "description": "Once you land at your destination, your eSIM activates automatically. You’ll be online within seconds. Use your data for navigating, streaming, emailing, or staying connected with friends. Your physical SIM stays active for calls and SMS."
+      }
+    },
+    "examples": ["1GB for a weekend getaway", "10GB for a week-long city tour", "Unlimited for a month of remote work"]
+  },
+  "useCases": {
+    "title": "Fast, Reliable 4G/5G Data Anywhere",
+    "cases": {
+      "business": "Video conferences, emails, and large file transfers without delay.",
+      "vacation": "Stream videos, share photos, and navigate unfamiliar cities with ease.",
+      "hotspot": "Share your data with your laptop or companions at no extra cost, whether you’re working remotely or traveling with friends."
+    },
+    "guarantee": "Bitcall eSIM guarantees you’ll stay connected with high-speed data on the same 4G/5G networks that locals use."
+  },
+  "forWhom": {
+    "title": "Built for Digital Nomads, Travelers & Teams",
+    "users": {
+      "nomads": "Avoid local SIM hassles in each country. One eSIM covers your entire multi-country trip. Enjoy data as soon as you land, without searching for SIM vendors or Wi-Fi hotspots.",
+      "remoteWorkers": "Work from anywhere with confidence. Bitcall offers affordable unlimited data plans, so you’ll always have a stable connection for video calls and file sharing.",
+      "teams": "Bitcall is the perfect solution for employee travel. Managers can instantly purchase eSIM data for employees, saving on roaming fees and simplifying travel logistics."
+    }
+  },
+  "included": {
+    "title": "All Plans Include",
+    "list": ["Instant Activation", "Free Hotspot Tethering", "No Roaming Charges", "4G/5G High-Speed Data"]
+  },
+  "testimonials": {
+    "title": "What Our Customers Are Saying",
+    "quotes": [
+      {
+        "text": "As a freelance designer, having a global eSIM that just works is priceless. Bitcall’s speeds were excellent even in remote areas. It’s now an essential tool for my digital nomad lifestyle.",
+        "author": "Nina K., Thailand"
+      }
+    ]
+  },
+  "ctaFinal": {
+    "title": "Ready to Connect?",
+    "text": "Staying connected while traveling should be easy and affordable. With Bitcall eSIM, it finally is. Stop overpaying for roaming and the hassle of SIM cards. Instead, enjoy instant, cheap data wherever you go. Join thousands of savvy travelers who travel smarter with Bitcall. Choose your plan, get your QR code, and you’re ready to explore the world.",
+    "button": "Get My Bitcall eSIM Now"
+  },
+  "support": {
+    "text": "For any questions or assistance, our 24/7 support team is here to help. We’re ready to assist you via live chat or email whenever you need it."
+  }
+}

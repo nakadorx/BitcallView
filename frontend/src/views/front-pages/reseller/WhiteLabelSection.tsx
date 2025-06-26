@@ -7,7 +7,6 @@ import { Text } from '@/components/common/text'
 import Image from 'next/image'
 import { getT } from '@/i18n/server'
 import { getLocale } from '@/utils/commons'
-import './fastSetupSection.styles.css'
 
 export const WhiteLabelSection = async () => {
   const locale = getLocale()
@@ -61,21 +60,14 @@ export const WhiteLabelSection = async () => {
           >
             {firstRowFeatures.map((feature, index) => (
               <li role='listitem' key={index} className='flex justify-center cursor-pointer'>
-                <div
-                  className='dark:hover:border-primary float-animation  
-                  dark:hover:border-2 bg-backgroundDefault 
-                  flex flex-col items-center text-center 
-                  w-[20rem] h-[15rem] p-8 shadow-lg rounded-4xl mx-5
-                  hover:scale-125 transition-all duration-300 ease-in-out'
-                >
-                  <div className='mb-1 relative w-20 h-20 transition-transform duration-300 ease-in-out cursor-pointer '>
+                <div className='hover:border-primary hover:border-2 bg-backgroundDefault flex flex-col items-center text-center w-[20rem] p-8 shadow-lg rounded-4xl'>
+                  <div className='mb-2 relative w-20 h-20 transition-transform duration-300 ease-in-out cursor-pointer '>
                     <Image
                       src={feature.imageSrc}
                       alt={feature.title}
-                      className='object-contain '
+                      fill
+                      className='object-contain'
                       aria-hidden='true'
-                      width={70}
-                      height={70}
                     />
                   </div>
                   <Text as='h3' className='text-lg font-semibold mb-2' value={feature.title} />

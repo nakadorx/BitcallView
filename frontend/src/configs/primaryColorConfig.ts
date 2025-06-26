@@ -29,9 +29,9 @@ const primaryColorConfig: PrimaryColorConfig[] = [
   },
   {
     name: PrimaryColorNames.orange,
-    light: '#FFA95A',
-    main: '#FF891D',
-    dark: '#BA6415'
+    light: '#f3a693	',
+    main: '#ed7861',
+    dark: '#bf5945'
   },
   {
     name: PrimaryColorNames.red,

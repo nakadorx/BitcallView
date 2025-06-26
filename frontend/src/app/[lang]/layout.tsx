@@ -34,8 +34,6 @@ import '@assets/iconify-icons/generated-icons.css'
 import { customLog } from '@/utils/commons'
 import { I18nLang } from '@/i18n/conts'
 import { ScrollUp } from '@/components/common/ScrollUp'
-import { HandlePrimaryColorWrapper, HandlePrimaryColorWrapperTest } from '@/components/common/handlePrimaryColorWrapper'
-import { PrimaryColorNames } from '@/configs/primaryColorConfig'
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'demo-bc.site'
 

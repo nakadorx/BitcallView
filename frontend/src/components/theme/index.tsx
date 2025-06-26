@@ -80,6 +80,25 @@ const ThemeProvider = (props: Props) => {
       primaryColor = primaryColorConfig[0].main
     }
 
+    switch (path) {
+      case '/':
+        primaryColor = primaryColorConfig[0].main
+        break
+      case '':
+        primaryColor = primaryColorConfig[0].main
+        break
+      case '/reseller':
+        primaryColor = primaryColorConfig[1].main
+        break
+      case '/esim2':
+        primaryColor = primaryColorConfig[2].main
+        break
+
+      default:
+        primaryColor = primaryColorConfig[0].main
+        break
+    }
+
     const newColorScheme = {
       colorSchemes: {
         light: {

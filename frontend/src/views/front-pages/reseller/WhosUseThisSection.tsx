@@ -32,7 +32,12 @@ const WhosUseThisSection = async () => {
   ]
 
   return (
-    <WaveCard>
+    <WaveCard
+      waveColor={{
+        Container: 'bg-gradient-to-br from-blue-50 to-blue-100 dark:bg-none  lg:h-[27rem]',
+        Svg: 'fill-blue-200/40 dark:fill-primary/20'
+      }}
+    >
       <Text
         as='h2'
         value={t('whoIsItFor.title')}
