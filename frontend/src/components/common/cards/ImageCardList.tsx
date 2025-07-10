@@ -1,13 +1,14 @@
 'use client'
 import React, { useRef, useState, useEffect } from 'react'
+import Image from 'next/image'
 import { Text } from '../text'
 import { RenderCardListCore } from './CardList'
-import { VideoCardListProps } from '.'
+import { ImageCardListProps } from './types'
 
-export const VideoCardList = ({ data, title, withContent = false }: VideoCardListProps) => {
+export const ImageCardList = ({ data, title, withContent = false }: ImageCardListProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const [activeIndex, setActiveIndex] = useState(0)
-  const [isVideoVisible, setIsVideoVisible] = useState(true)
+  const [isImageVisible, setIsImageVisible] = useState(true)
   const [indicatorStyle, setIndicatorStyle] = useState({ top: 0, height: 0 })
   const itemRefs = useRef<HTMLDivElement[]>([])
 
@@ -35,14 +36,13 @@ export const VideoCardList = ({ data, title, withContent = false }: VideoCardLis
   }
 
   useEffect(() => {
-    setIsVideoVisible(true)
+    setIsImageVisible(true)
     updateIndicatorPosition()
   }, [activeIndex])
 
   const handleClick = (index: number) => {
     setActiveIndex(index)
   }
-
   return (
     <div ref={containerRef} className='container mx-auto h-auto lg:px-[11rem] mt-2'>
       {title && <Text value={title} as='h2' className='text-2xl font-bold mb-4' />}
@@ -59,57 +59,49 @@ export const VideoCardList = ({ data, title, withContent = false }: VideoCardLis
           activeIndexCard={activeIndex}
           itemRefs={itemRefs}
           hideSelector={userIsMobile}
-          containerClassName='order-2 lg:order-1 col-span-5 '
+          containerClassName='order-2 lg:order-1 col-span-6'
           isForVideoCardList
         />
 
-        {withContent && (
-          <RenderVideoCardListCore
-            activeIndex={activeIndex}
-            data={data}
-            isVideoVisible={isVideoVisible}
-            setIsVideoVisible={setIsVideoVisible}
-          />
-        )}
+        <RenderImageCardListCore
+          activeIndex={activeIndex}
+          data={data}
+          isImageVisible={isImageVisible}
+          setIsImageVisible={setIsImageVisible}
+        />
       </div>
     </div>
   )
 }
 
-const RenderVideoCardListCore = ({
+const RenderImageCardListCore = ({
   activeIndex,
   data,
-  isVideoVisible,
-  setIsVideoVisible
+  isImageVisible,
+  setIsImageVisible
 }: {
   activeIndex: number
   data: any
-  isVideoVisible: boolean
-  setIsVideoVisible: (visible: boolean) => void
+  isImageVisible: boolean
+  setIsImageVisible: (visible: boolean) => void
 }) => (
-  <div className='flex items-center justify-center h-full order-1 lg:order-2 col-span-7 '>
-    <video
+  <div className='flex items-center justify-center h-full order-1 lg:order-2 col-span-6 '>
+    <Image
       role='presentation'
       aria-hidden='true'
       key={activeIndex}
-      autoPlay
-      aria-label='Bitcall OS feature walkthrough'
-      loop
-      muted
-      playsInline
-      preload='auto'
-      title='Bitcall OS feature walkthrough'
-      poster={data[activeIndex]?.poster}
-      onCanPlay={() => setIsVideoVisible(true)}
+      aria-label='Bitcall OS feature showcase'
+      title='Bitcall OS feature showcase'
+      src={data[activeIndex]?.imgSrc}
+      alt={data[activeIndex]?.title || 'Bitcall OS feature'}
+      width={800}
+      height={800}
+      onLoad={() => setIsImageVisible(true)}
       className={`w-full h-full object-cover rounded-lg
         relative overflow-hidden  aspect-square
-        transition-opacity duration-500 ease-in-out ${isVideoVisible ? 'opacity-100' : 'opacity-0'}`}
-    >
-      {/* TODO: optimize this maybe to youtube video */}
-      {/* nice to have: add poster attribute to the video */}
-      <source src={data[activeIndex]?.video} type='video/mp4' />
-    </video>
+        transition-opacity duration-500 ease-in-out ${isImageVisible ? 'opacity-100' : 'opacity-0'}`}
+    />
   </div>
 )
 
-export default RenderVideoCardListCore
+export default RenderImageCardListCore

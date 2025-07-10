@@ -70,7 +70,7 @@ const PricingSection = async () => {
     }
   ]
   return (
-    <SectionContainer title={[t('pricingSection.choose_plan')]}>
+    <SectionContainer title={[t('pricingSection.choose_plan')]} containerClassName='lg:mb-[10rem]'>
       <Pricing data={pricingData} />
     </SectionContainer>
   )

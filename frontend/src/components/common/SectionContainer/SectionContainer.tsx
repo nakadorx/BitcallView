@@ -23,7 +23,7 @@ export const SectionContainer = ({
   return (
     <section
       aria-label={ariaLabel || title?.join(' ')}
-      className={`p-2 relative flex flex-col items-center pt-5 sm:pt-8 mb-16 gap-5 bg-no-repeat bg-scroll hero-float transition-transform duration-100 ease-out ${
+      className={`float p-2 relative flex flex-col items-center pt-5 sm:pt-8 lg:mb-16 gap-5 bg-no-repeat bg-scroll  transition-transform duration-100 ease-out ${
         bgClass || ''
       } ${containerClassName || ''}`}
     >
@@ -40,7 +40,7 @@ export const SectionContainer = ({
       {description && (
         <Text
           value={description}
-          className='text-lg sm:text-xl leading-7 text-center mb-8 max-w-2xl mx-auto whitespace-pre-line'
+          className='text-lg sm:text-xl leading-7  px-4 text-center mb-8 max-w-2xl mx-auto whitespace-pre-line'
         />
       )}
 

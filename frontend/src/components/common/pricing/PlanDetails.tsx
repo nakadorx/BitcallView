@@ -20,9 +20,11 @@ export const PlanDetails = ({ data, pricingPlan }: Props) => {
   return (
     <article
       className={`
-        relative rounded border flex flex-col gap-10 pt-8 p-6 shadow-xl
-        hover:scale-105 transition-all duration-300 cursor-pointer
-        ${data?.popularPlan ? 'border-primary shadow-lg' : 'border-gray-300 dark:border-gray-600'}
+        relative rounded border flex flex-col gap-10 pt-8 p-6 shadow-lg
+        bg-backgroundPaper
+        cursor-pointer
+        hover:z-50
+        ${data?.popularPlan ? 'border-primary  lg:scale-110' : 'border-gray-300 dark:border-gray-600'}
       `}
       itemScope
       itemType='https://schema.org/Product'

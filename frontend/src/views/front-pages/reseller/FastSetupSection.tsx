@@ -56,7 +56,7 @@ export const FastSetup = async () => {
       title={[t('fastSetupSection.title')]}
       description={t('fastSetupSection.subtitle')}
       bgClass='bg-bleu-2'
-      containerClassName='lg:mb-[7rem] lg:mt-[3rem]'
+      containerClassName='lg:mb-[2rem] lg:mt-[3rem]'
     >
       <div className='w-full grid grid-cols-1 lg:grid-cols-5 items-center md:px-10 relative left-31  lg:ml-[15rem] '>
         <div className='w-full h-full flex justify-center lg:justify-end md:justify-center items-center md:col-span-2'>

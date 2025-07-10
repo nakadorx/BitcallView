@@ -87,7 +87,7 @@ const ContactUs = () => {
       <section
         id='contact'
         ref={ref}
-        className='flex flex-col gap-14 mb-32 px-6 sm:px-10 md:px-12 lg:px-16 py-8 md:py-12 max-w-7xl mx-auto'
+        className='flex flex-col gap-14  px-6 sm:px-10 md:px-12 lg:px-16 py-8 md:py-12 max-w-7xl mx-auto'
         aria-label='Contact Us'
         itemScope
         itemType='https://schema.org/ContactPage'

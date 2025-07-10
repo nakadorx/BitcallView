@@ -75,7 +75,7 @@ const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
           sx={{
             position: 'relative',
             display: 'inline-block',
-            width: '85%',
+            width: { xs: '85%', lg: '85%' },
             zIndex: 0,
             marginInline: 'auto'
           }}
@@ -86,11 +86,7 @@ const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
             width={1200}
             height={800}
             priority
-            style={{
-              width: '100%',
-              height: 'auto',
-              objectFit: 'contain'
-            }}
+            className='w-full h-auto object-contain'
           />
           <Box
             sx={{
@@ -106,10 +102,8 @@ const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
               alt='dashboard-elements'
               width={800}
               height={600}
+              className='w-full h-auto object-contain'
               style={{
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
                 transform: isAboveLgScreen ? `translate(${elementsPosition.x}px, ${elementsPosition.y}px)` : 'none'
               }}
             />

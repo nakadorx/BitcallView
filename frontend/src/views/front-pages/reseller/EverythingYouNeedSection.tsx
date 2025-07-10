@@ -20,8 +20,8 @@ export const EverythingYouNeedSection = async () => {
     <SectionContainer
       title={[tReseller('everythingYouNeedSection.title1'), tReseller('everythingYouNeedSection.title2')]}
       description={tReseller('everythingYouNeedSection.description')}
-      containerClassName='min-h-[54rem] xs:min-h-[100rem] px-10'
-      bgClass='bg-bleu-2'
+      containerClassName='min-h-[54rem] xs:min-h-[100rem] lg:px-10'
+      bgClass='bg-bleu-1'
     >
       <VideoCardList data={data} withContent />
     </SectionContainer>

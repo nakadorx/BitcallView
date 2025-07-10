@@ -6,7 +6,9 @@
     "secondaryCta": "Stay connected in seconds"
   },
   "features": {
-    "title": "Why Choose Bitcall eSIM Data?",
+    "title1": "Why Choose Bitcall ",
+    "title2": "eSIM",
+    "title3": " Data?",
     "points": {
       "affordable": {
         "title": "The Most Affordable eSIM on the Planet",
@@ -15,11 +17,21 @@
       },
       "trusted": {
         "title": "Trusted Connectivity, Anytime, Anywhere",
-        "description": "Thousands of savvy travelers trust Bitcall to stay online abroad. We partner with top carriers worldwide to ensure fast, reliable 4G/5G speeds in over 200 countries."
+        "description": "Thousands of savvy travelers trust Bitcall to stay online abroad. We partner with top carriers worldwide to ensure fast, reliable 4G/5G speeds in over 200 countries.",
+        "featList": [
+          "5-star customer ratings and rave reviews from travelers and business professionals",
+          "Crystal-clear video calls, fast downloads, and reliable connections"
+        ]
       },
       "flexible": {
         "title": "Flexible Plans for Every Traveler",
-        "description": "Whether you need just 1GB for a short trip or unlimited data for a month-long remote work stint, we’ve got you covered. Choose from local, regional, or global eSIM options, and only pay for what you need."
+        "description": "Whether you need just 1GB for a short trip or unlimited data for a month-long remote work stint, we’ve got you covered. Choose from local, regional, or global eSIM options, and only pay for what you need.",
+        "featList": [
+          "Local Plans for 1 country",
+          "Regional Plans for Europe, Asia, etc.",
+          "Global Plans for full- world coverage",
+          "Switch or top-up easily anytime during your trip."
+        ]
       },
       "peaceOfMind": {
         "title": "Travel with Peace of Mind",
@@ -28,23 +40,28 @@
     }
   },
   "plans": {
-    "title": "Flexible Plans for Every Trip",
-    "description": "Choose a plan that suits your needs, from a weekend getaway to long-term remote work. Top up or change plans as needed.",
+    "title1": "Flexible ",
+    "title2": "Plans",
+    "title3": " for Every Traveler",
+    "description": "<strong>Choose a plan</strong> that suits your needs, from a<strong> weekend getaway</strong> to <strong>long-term remote work</strong>. <strong>Top up</strong> or <strong>change plans</strong> as needed.",
     "list": {
       "local": {
-        "name": "Plan A - Local",
+        "name": "Plan A",
+        "region": "Local",
         "use": "Short trips, single-country travel",
         "coverage": "1 country",
         "price": "$2.99"
       },
       "regional": {
-        "name": "Plan B - Regional",
+        "name": "Plan B",
+        "region": "Regional",
         "use": "Backpackers, business tours",
         "coverage": "Europe, Asia, etc.",
         "price": "$8.99"
       },
       "global": {
-        "name": "Plan C - Global",
+        "name": "Plan C",
+        "region": "Global",
         "use": "Frequent travelers, multi-continent",
         "coverage": "200+ countries",
         "price": "$14.90"
@@ -52,7 +69,8 @@
     }
   },
   "howItWorks": {
-    "title": "How It Works? Get Online in 3 Easy Steps",
+    "title1": "How It Works? ",
+    "title2": "Get Online in 3 Easy Steps",
     "steps": {
       "step1": {
         "title": "Choose Your Plan",
@@ -74,7 +92,8 @@
     }
   },
   "useCases": {
-    "title": "Fast, Reliable 4G/5G Data Anywhere",
+    "title": "Fast, Reliable 4G/5G Data ",
+    "title2": "Anywhere",
     "cases": {
       "business": {
         "title": "Business Trips",
@@ -89,11 +108,12 @@
         "description": "Share your data with your laptop or companions at no extra cost, whether you’re working remotely or traveling with friends."
       }
     },
-    "description": "Bitcall eSIM guarantees you’ll stay connected with high-speed data on the same 4G/5G networks that locals use.",
+    "description": "Bitcall eSIM guarantees you’ll stay connected with high-speed data on the same 4G/5G networks that locals use. Whether you’re in bustling city centers or remote areas, Bitcall delivers fast, stable internet.",
     "footerText": "Built for <strong>Digital Nomads, Travelers & Teams</strong>"
   },
   "forWhom": {
-    "title": "Bitcall eSIM is designed for modern travelers :",
+    "title1": "Bitcall eSIM is designed for ",
+    "title2": "modern travelers :",
     "users": {
       "nomads": {
         "title": "Globetrotters & Backpackers",
@@ -101,17 +121,22 @@
       },
       "remoteWorkers": {
         "title": "Digital Nomads & Remote Workers",
-        "description": "Work from anywhere with confidence. Bitcall offers affordable unlimited data plans, so you’ll always have a stable connection for video calls and file sharing."
+        "description": "Work from anywhere with confidence. Bitcall offers affordable unlimited data plans, so you’ll always have a stable connection for video calls and file sharing. Whether you’re in a café, a co-working space, or a remote mountain lodge."
       },
       "teams": {
         "title": "Business Travelers & Teams",
-        "description": "Bitcall is the perfect solution for employee travel. Managers can instantly purchase eSIM data for employees, saving on roaming fees and simplifying travel logistics."
+        "description": "Bitcall is the perfect solution for employee travel. Managers can instantly purchase eSIM data for employees, saving on roaming fees and simplifying travel logistics. With 24/7 support, your team is never alone if issues arise."
       }
     }
   },
   "included": {
     "title": "All Plans Include",
-    "list": ["Instant Activation", "Free Hotspot Tethering", "No Roaming Charges", "4G/5G High-Speed Data"]
+    "list": [
+      "Instant Activation",
+      "Free Hotspot Tethering",
+      "No Roaming Charges",
+      "4G/5G High-Speed Data"
+    ]
   },
   "testimonials": {
     "title": "What Our Customers Are Saying",
@@ -119,15 +144,18 @@
       {
         "text": "As a freelance designer, having a global eSIM that just works is priceless. Bitcall’s speeds were excellent even in remote areas. It’s now an essential tool for my digital nomad lifestyle.",
         "author": "Nina K., Thailand"
+      },
+      {
+        "text": "As a freelance designer 22, having a global eSIM that just works is priceless. Bitcall’s speeds were excellent even in remote areas. It’s now an essential tool for my digital nomad lifestyle.",
+        "author": "Nina K., Thailand"
       }
     ]
   },
   "ctaFinal": {
     "title": "Ready to Connect?",
     "text": "Staying connected while traveling should be easy and affordable. With Bitcall eSIM, it finally is. Stop overpaying for roaming and the hassle of SIM cards. Instead, enjoy instant, cheap data wherever you go. Join thousands of savvy travelers who travel smarter with Bitcall. Choose your plan, get your QR code, and you’re ready to explore the world.",
-    "button": "Get My Bitcall eSIM Now"
-  },
-  "support": {
-    "text": "For any questions or assistance, our 24/7 support team is here to help. We’re ready to assist you via live chat or email whenever you need it."
+    "button": "Get My Bitcall eSIM Now",
+    "active": "Activate in minutes, travel with confidence.",
+    "footer": "For any questions or assistance, our 24/7 support team is here to help. We’re ready to assist you via live chat or email whenever you need it."
   }
 }

@@ -35,10 +35,14 @@ const RealTimeInsightsSection = () => {
   // 🟡 ARIA usage	Okay	You use aria-label on the section, which is good. Emojis could use some more clarification or be hidden from screen readers.
   // 🟡 Section width (SEO crawlability)	Okay	The layout is wrapped well, but a bit of div nesting could be simplified.
   return (
-    <SectionContainer bgClass='bg-bleu-3' ariaLabel={t('realTimeInsightsSection.title')}>
+    <SectionContainer
+      bgClass='bg-bleu-3'
+      ariaLabel={t('realTimeInsightsSection.title')}
+      containerClassName='lg:px-[21rem] '
+    >
       <div className='grid grid-cols-1 lg:grid-cols-2 h-[1100px] md:h-[1000px] lg:h-auto'>
         {!userIsMobile && (
-          <div className='w-full h-full flex md:justify-center lg:justify-end mg:items-end px-4'>
+          <div className='w-full h-full flex md:justify-center lg:justify-end mg:items-end px-4 items-center'>
             <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={470} height={500} />
           </div>
         )}
@@ -48,11 +52,10 @@ const RealTimeInsightsSection = () => {
             subtitle={t('realTimeInsightsSection.subtitle')}
             data={data}
             cardContainerClassName='bg-white dark:bg-gray-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:transform hover:scale-105'
-            containerClassName='p-4'
             headerExtraContent={
               userIsMobile && (
-                <div className='flex justify-center items-center p-2'>
-                  <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={470} height={500} />
+                <div className='flex justify-center items-center p-5'>
+                  <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={370} height={400} />
                 </div>
               )
             }

@@ -124,7 +124,7 @@ const CustomerReviews = () => {
 
   return (
     <section
-      className='flex flex-col gap-2'
+      className='flex flex-col gap-2 mb-[5rem]'
       aria-labelledby='testimonials-heading'
       itemScope
       itemType='https://schema.org/Review'
@@ -147,7 +147,7 @@ const CustomerReviews = () => {
           </Text>
         </div>
 
-        <Text as='p' className='text-base md:text-xl text-textSecondary' role='doc-subtitle'>
+        <Text as='p' className='text-base md:text-xl text-textSecondary mb-5' role='doc-subtitle'>
           {t('customerReviews.subtitle')}
         </Text>
       </div>

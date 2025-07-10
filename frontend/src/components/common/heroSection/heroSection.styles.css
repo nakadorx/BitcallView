@@ -21,3 +21,10 @@
 .hero-float {
   animation: heroBackgroundFloat 20s ease-in-out infinite;
 }
+
+.bg-section-1 {
+  /* background-image: url('/images/finalsAssets/resseler/bgHeroSection.png'); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}

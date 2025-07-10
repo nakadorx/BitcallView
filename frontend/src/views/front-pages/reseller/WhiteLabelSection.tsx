@@ -50,18 +50,27 @@ export const WhiteLabelSection = async () => {
       title={[t('whiteLabelSection.title')]}
       description={t('whiteLabelSection.subtitle')}
       bgClass='bg-bleu-2'
-      containerClassName='lg:mb-[7rem] lg:mt-[3rem]'
+      containerClassName='lg:mb-[7rem] lg:mt-[3rem] '
     >
-      <div className='w-full mt-4 flex justify-center lg:px-[15rem]'>
+      <div className='w-full mt-4 flex justify-center lg:px-[17rem]'>
         <div className=' w-full text-center'>
           <ul
             role='list'
-            className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3 justify-items-center lg:max-h-[50rem]'
+            className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:gap-3 mb-3 justify-items-center lg:max-h-[50rem]'
           >
             {firstRowFeatures.map((feature, index) => (
-              <li role='listitem' key={index} className='flex justify-center cursor-pointer'>
-                <div className='hover:border-primary hover:border-2 bg-backgroundDefault flex flex-col items-center text-center w-[20rem] p-8 shadow-lg rounded-4xl'>
-                  <div className='mb-2 relative w-20 h-20 transition-transform duration-300 ease-in-out cursor-pointer '>
+              <li role='listitem' key={index} className='flex justify-center cursor-pointer col-span-1'>
+                <div
+                  className='hover:border-primary
+                lg:hover:border-2 bg-backgroundDefault flex
+                 flex-col items-center text-center lg:w-[20rem]
+                lg:h-[15rem] p-8 lg:shadow-lg rounded-4xl'
+                >
+                  <div
+                    className='mb-2 relative
+                  w-10 lg:w-20 h-10 lg:h-20
+                  transition-transform duration-300 ease-in-out cursor-pointer '
+                  >
                     <Image
                       src={feature.imageSrc}
                       alt={feature.title}

@@ -38,6 +38,7 @@ export default function EsimPage() {
           name='description'
           content='Explore local, regional, and global eSIM plans designed for travellers to stay connected instantly.'
         />
+
         <link rel='canonical' href={esimUrl} />
 
         {/* Open Graph Meta Tags */}

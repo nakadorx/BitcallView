@@ -31,6 +31,7 @@ export type RenderCardListProps = {
   listIsInclined?: boolean
   cardContainerClassName?: string
   containerClassName?: string
+  isForVideoCardList?: boolean
 }
 
 export type VideoCardListProps = {
@@ -51,4 +52,20 @@ export type SCardProps = {
   activeOnHover?: boolean
   cardContainerClassName?: string
   enableFloatingAnimation?: boolean
+}
+
+export type ImageCardListProps = {
+  data: CardImageListData[]
+  title?: string
+  withContent?: boolean
+}
+
+export type CardImageListData = {
+  title?: string
+  description?: string
+  imgSrc?: string
+  poster?: string
+  withContent?: boolean
+  iconContent?: React.ReactNode
+  CardCustomContent?: React.ReactNode
 }

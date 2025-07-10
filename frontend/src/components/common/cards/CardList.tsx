@@ -62,7 +62,7 @@ export const CardList = ({
         <Text
           value={title}
           as='h2'
-          className='text-2xl font-bold mb-4 text-center md:text-left  md:mx-auto sm:mx-auto lg:mx-0 sm:text-center '
+          className='text-3xl font-bold mb-4 text-center md:text-left  md:mx-auto sm:mx-auto lg:mx-0 sm:text-center '
         />
       )}
       {subtitle && (
@@ -97,13 +97,14 @@ export const RenderCardListCore = ({
   hideSelector,
   cardContainerClassName,
   containerClassName,
-  listIsInclined
+  listIsInclined,
+  isForVideoCardList = false
 }: RenderCardListProps) => {
   return (
-    <div className={`relative ${containerClassName || ''}`}>
+    <div className={`relative ${containerClassName || ''} my-auto`}>
       {!hideSelector && (
         <Box
-          // this should be done as SX or inline styles Dont Change
+          // this should be done as SX or inline styles Don't Change
           component='div'
           sx={{
             position: 'absolute',
@@ -117,7 +118,12 @@ export const RenderCardListCore = ({
           }}
         />
       )}
-      <ul className='flex flex-col gap-3' role='list'>
+      <ul
+        className={`flex flex-col gap-3 ${
+          isForVideoCardList ? 'lg:left-[0] left-[1rem] items-center  justify-center relative ' : ''
+        }`}
+        role='list'
+      >
         {data.map((item: CardListData, index: number) => {
           return (
             <Box

@@ -208,12 +208,19 @@ code {
   font-family: 'Open Sans SemiBold';
   font-size: 1.1rem;
   border-radius: var(--btn-border-radius);
-  padding: 10px 15px;
+  padding-block: 10px;
+  padding-inline: 15px;
 }
 
 @media (min-width: 600px) {
   .custom-cta-button {
     font-size: 1.5rem;
-    padding: 12px 24px;
+    padding-block: 12px;
+    padding-inline: 24px;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
