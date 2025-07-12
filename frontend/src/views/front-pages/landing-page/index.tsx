@@ -11,13 +11,14 @@ import CallToAction from './CallToAction'
 import Rates from './rates/Rates'
 import ContactUs from './ContactUs'
 import dynamic from 'next/dynamic'
+import Spinner from '@/components/common/spinner'
+import { Suspense } from 'react'
 
 // Dynamically import non-critical components
 const CustomerReviews = dynamic(() => import('./CustomerReviews'), {
   loading: () => <p>Loading customer reviews...</p>,
   ssr: false
 })
-// TODO: check here
 
 const FAQSection = dynamic(() => import('./faq/FAQSection'), {
   loading: () => <p>Loading FAQ...</p>,
@@ -26,19 +27,21 @@ const FAQSection = dynamic(() => import('./faq/FAQSection'), {
 
 const LandingPageWrapper = () => {
   return (
-    <>
-      <HeroSection />
-      <TrustSection />
-      <Advantages />
-      <Benefits />
-      <WhyChoose />
-      <AllInOne />
-      <CallToAction />
-      <Rates />
-      <CustomerReviews />
-      <FAQSection />
-      <ContactUs />
-    </>
+    <main>
+      <Suspense fallback={<Spinner />}>
+        <HeroSection />
+        <TrustSection />
+        <Advantages />
+        <Benefits />
+        <WhyChoose />
+        <AllInOne />
+        <CallToAction />
+        <Rates />
+        <CustomerReviews />
+        <FAQSection />
+        <ContactUs />
+      </Suspense>
+    </main>
   )
 }
 

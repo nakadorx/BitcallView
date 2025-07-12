@@ -14,29 +14,97 @@
   }
 }
 
+@keyframes float {
+  0% {
+    background-position: 100% 100%;
+  }
+
+  50% {
+    background-position: 50% 80%;
+  }
+
+  100% {
+    background-position: 70% 100%;
+  }
+}
+
 .hero-float {
   animation: heroBackgroundFloat 20s ease-in-out infinite;
 }
 
 .float {
+  animation: float 20s ease-in-out infinite;
+}
+
+.fast-setup-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/BGs/resseller/Fast Setup -BG.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.everything-you-need-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/BGs/resseller/everything-BG.png');
+  background-position: center bottom 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+  animation: float 20s ease-in-out infinite;
+  opacity: 0.4;
+}
+
+.control-label-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/BGs/resseller/LabelControl-BG.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.4;
+  animation: float 20s ease-in-out infinite;
+}
+
+.plans-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/BGs/resseller/reseller-BG-Hero.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  z-index: 0;
+  opacity: 0.4;
   animation: heroBackgroundFloat 20s ease-in-out infinite;
 }
 
-/* Predefined background classes */
-
-.bg-bleu-1 {
-  /* background-image: url('/images/finalsAssets/resseler/BG1.png'); */
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+.FAQ-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/BGs/resseller/FAQ-BG.png');
+  background-size: cover;
   background-position: center;
+  opacity: 1;
+  z-index: 0;
+  animation: float 20s ease-in-out infinite;
 }
 
-.bg-bleu-2 {
-  /* background-image: url('/images/finalsAssets/resseler/BG2.png'); */
-  background-size: 100%;
+.real-time-insights-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/BGs/resseller/everything-BG.png');
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
 }
-
-/* Add more predefined backgrounds as needed */

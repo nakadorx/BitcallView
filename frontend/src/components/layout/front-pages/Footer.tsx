@@ -37,7 +37,7 @@ const Footer = ({ mode }: { mode: Mode }) => {
     borderTopRightRadius: '64.5px'
   }
   return (
-    <footer className={frontLayoutClasses.footer}>
+    <footer className={`${frontLayoutClasses.footer}   `}>
       <div className='relative mt-40' style={backgroundStyle}>
         <div className={classnames('pb-12 text-white', frontCommonStyles.layoutSpacing)}>
           <Grid container rowSpacing={10} columnSpacing={12} sx={{ pl: 0 }}>

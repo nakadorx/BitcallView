@@ -1,11 +1,35 @@
-import Button from '@mui/material/Button'
 import ScrollToTop from '@core/components/scroll-to-top'
 
-// TODO: Update this comp
 export const ScrollUp = () => (
-  <ScrollToTop className='mui-fixed'>
-    <Button variant='contained' className='is-10 bs-10 rounded-full p-0 min-is-0 flex items-center justify-center'>
-      <i className='ri-arrow-up-line' />
-    </Button>
+  <ScrollToTop className='fixed'>
+    <button
+      className='
+        w-14 h-14
+        bg-primary hover:bg-primary-dark
+        text-white
+        rounded-full
+        shadow-lg hover:shadow-xl
+        flex items-center justify-center
+        transition-all duration-300 ease-in-out
+        hover:scale-110 hover:-translate-y-1
+        float-animation
+        z-50
+        border-2 border-transparent hover:border-white/30
+        backdrop-blur-sm
+        active:scale-95
+        pulse-glow
+        group
+        relative
+        overflow-hidden
+      '
+      aria-label='Scroll to top'
+      title='Scroll to top'
+    >
+      {/* Background gradient effect */}
+      <div className='absolute inset-0 bg-gradient-to-r from-primary to-primary-dark rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+
+      {/* Icon with hover effect */}
+      <i className='ri-arrow-up-line text-xl relative z-10 group-hover:scale-110 transition-transform duration-200' />
+    </button>
   </ScrollToTop>
 )

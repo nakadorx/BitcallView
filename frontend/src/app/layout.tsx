@@ -98,19 +98,40 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                function getTheme() {
-                  if (typeof localStorage !== 'undefined') {
-                    const theme = localStorage.getItem('bitcall-mui-template-mode');
-                    if (theme) return theme;
+                // ✅ Unified theme system - no more conflicts!
+                function getUnifiedThemeFromCookie() {
+                  try {
+                    const cookies = document.cookie.split('; ');
+                    const themeCookie = cookies.find(row => row.startsWith('bitcall-theme-unified='));
+                    if (themeCookie) {
+                      const themeData = JSON.parse(decodeURIComponent(themeCookie.split('=')[1]));
+                      return themeData.mode === 'system' ? themeData.systemPreference : themeData.mode;
+                    }
+                  } catch (e) {
+                    console.warn('Failed to parse unified theme cookie:', e);
                   }
-               
-                  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark';
+
+                  // Fallback: check old localStorage for migration
+                  if (typeof localStorage !== 'undefined') {
+                    const oldTheme = localStorage.getItem('bitcall-mui-template-mode');
+                    if (oldTheme && ['light', 'dark'].includes(oldTheme)) return oldTheme;
+                  }
+
+                  // Final fallback: system preference
+                  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
                 }
-                const theme = getTheme();
-                if (theme === 'dark') {
+
+                const resolvedTheme = getUnifiedThemeFromCookie();
+
+                // Apply theme immediately to prevent flash
+                if (resolvedTheme === 'dark') {
                   document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
                 }
-            
+
+                // Set data attribute for custom CSS
+                document.documentElement.setAttribute('data-theme', resolvedTheme);
               })();
             `
           }}

@@ -30,20 +30,22 @@ const RealTimeInsightsSection = () => {
 
   const theme = useTheme()
   const userIsMobile = useMediaQuery(theme.breakpoints.down('lg'))
-  // TODO:
-  //  🟡 Emoji use	Medium	Emojis are visually helpful but should have aria-hidden="true" or replaced with icons for better accessibility.
-  // 🟡 ARIA usage	Okay	You use aria-label on the section, which is good. Emojis could use some more clarification or be hidden from screen readers.
-  // 🟡 Section width (SEO crawlability)	Okay	The layout is wrapped well, but a bit of div nesting could be simplified.
+
   return (
     <SectionContainer
-      bgClass='bg-bleu-3'
+      bgClass='real-time-insights-bg'
       ariaLabel={t('realTimeInsightsSection.title')}
       containerClassName='lg:px-[21rem] '
     >
       <div className='grid grid-cols-1 lg:grid-cols-2 h-[1100px] md:h-[1000px] lg:h-auto'>
         {!userIsMobile && (
           <div className='w-full h-full flex md:justify-center lg:justify-end mg:items-end px-4 items-center'>
-            <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={470} height={500} />
+            <Image
+              src={'/images/assets/23.png'}
+              alt={'Real-time telecom insights dashboard showing call analytics and monitoring'}
+              width={470}
+              height={500}
+            />
           </div>
         )}
         <div className='w-full'>
@@ -55,7 +57,12 @@ const RealTimeInsightsSection = () => {
             headerExtraContent={
               userIsMobile && (
                 <div className='flex justify-center items-center p-5'>
-                  <Image src={'/images/assets/23.png'} alt={'real-time-insights'} width={370} height={400} />
+                  <Image
+                    src={'/images/assets/23.png'}
+                    alt={'Real-time telecom insights dashboard - mobile view'}
+                    width={370}
+                    height={400}
+                  />
                 </div>
               )
             }
@@ -66,7 +73,7 @@ const RealTimeInsightsSection = () => {
       <div aria-hidden='true'>
         <Image
           src={'/images/assets/Arrows/4.png'}
-          alt='arrow button'
+          alt=''
           className=' float-animation absolute lg:top-4 lg:left-[16rem] md:top-[9rem] md:left-[12rem] top-[12rem] left-[0rem]'
           width={70}
           aria-hidden='true'
@@ -74,7 +81,7 @@ const RealTimeInsightsSection = () => {
         />
         <Image
           src={'/images/assets/Arrows/2.png'}
-          alt='arrow right'
+          alt=''
           className=' float-animation absolute lg:top-[4rem] lg:right-[15rem] md:top-[10rem] md:right-[12rem] top-[12rem] right-[0rem]'
           width={70}
           aria-hidden='true'
@@ -82,7 +89,7 @@ const RealTimeInsightsSection = () => {
         />
         <Image
           src={'/images/assets/Arrows/3.png'}
-          alt='arrow right'
+          alt=''
           className=' float-animation absolute lg:top-[30rem] lg:right-[14rem] md:top-[37rem] md:right-[10rem] top-[30rem] right-[0rem]'
           width={70}
           aria-hidden='true'

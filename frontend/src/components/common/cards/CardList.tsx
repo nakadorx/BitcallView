@@ -15,7 +15,8 @@ export const CardList = ({
   listIsInclined = false,
   cardContainerClassName,
   containerClassName,
-  headerExtraContent
+  headerExtraContent,
+  isForVideoCardList
 }: CardListProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const [indicatorStyle, setIndicatorStyle] = useState({ top: 0, height: 0 })
@@ -83,6 +84,7 @@ export const CardList = ({
         listIsInclined={currentListIsInclined}
         cardContainerClassName={cardContainerClassName}
         containerClassName={containerClassName}
+        isForVideoCardList={isForVideoCardList}
       />
     </div>
   )
@@ -137,6 +139,7 @@ export const RenderCardListCore = ({
               }}
             >
               <SCard
+                isForVideoCardList={isForVideoCardList}
                 index={index}
                 handleClick={handleClick}
                 activeIndex={activeIndexCard}

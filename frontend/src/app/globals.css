@@ -33,12 +33,41 @@
   font-weight: bold;
   font-style: normal;
 }
+/* Coolvetica Font Family - Multiple Weights */
 @font-face {
   font-family: 'Coolvetica';
   src: url('/fonts/coolvetica-rg.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
+
+/* Add these when you get the font files */
+/*
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/coolvetica-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/coolvetica-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/coolvetica-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+*/
 @font-face {
   font-family: 'Open Sans Condensed Bold';
   src: url('/fonts/OpenSans_Condensed-Bold.ttf') format('truetype');
@@ -223,4 +252,90 @@ code {
 html,
 body {
   overflow-x: hidden;
+}
+
+/* Hide scrollbar while maintaining scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Float Animation - Global utility */
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+/* Pulse Animation for scroll button */
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--primary-rgb, 59, 130, 246), 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(var(--primary-rgb, 59, 130, 246), 0);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounceFloat {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.bounce-float {
+  animation: bounceFloat 2s infinite;
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(2px);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
 }

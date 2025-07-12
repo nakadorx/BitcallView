@@ -79,143 +79,144 @@ const Header = ({ mode }: { mode: Mode }) => {
 
   return (
     <>
-      {/* Topbar */}
-      <Box
-        sx={{
-          backgroundColor: 'primary.main',
-          py: 2.7,
-          height: 'auto'
-        }}
-      >
-        <Container
+      {/* Header */}
+      <header>
+        {/* Topbar */}
+        <Box
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between'
+            backgroundColor: 'primary.main',
+            py: 2.7,
+            height: 'auto'
           }}
         >
-          <>
-            {/* For small screens and up: full text */}
-            <Typography
-              variant='body2'
-              align='left'
-              sx={{
-                display: { xs: 'none', sm: 'block' },
-                color: 'white',
-                fontWeight: 600,
-                fontSize: '1.1rem',
-                textDecoration: 'underline'
-              }}
-            >
-              <Link href={mounted ? `/${locale}#rates` : `#rates`} style={{ color: 'white' }}>
-                {t('topbar.announcementParagraph')}
-              </Link>
-            </Typography>
-
-            {/* For xs: show only the "Cheapest" link */}
-            <Typography
-              variant='body2'
-              align='left'
-              sx={{
-                display: { xs: 'block', sm: 'none' },
-                color: 'white',
-                fontWeight: 300,
-                fontSize: '0.81rem'
-              }}
-            >
-              <Link
-                href='#rates'
-                suppressHydrationWarning
-                style={{
-                  fontWeight: 'bold',
-                  textDecoration: 'underline',
-                  color: 'white'
-                }}
-              >
-                {t('topbar.announcementParagraphMobile')}
-              </Link>
-            </Typography>
-          </>
-
-          <Button
-            component={Link}
-            variant='outlined'
-            href={mounted ? `/${locale}/login` : `/login`}
+          <Container
             sx={{
-              backgroundColor: 'transparent',
-              color: 'white',
-              border: '1px solid white',
-              '&:hover': {
-                color: '#FF6F59',
-                borderColor: '#FF6F59'
-              },
-              borderRadius: 'var(--btn-border-radius)'
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between'
             }}
           >
-            {t('navigation.login')}
-          </Button>
-        </Container>
-      </Box>
-
-      {/* Header */}
-      <header
-        className={classnames(frontLayoutClasses.header, styles.header, {
-          [styles.stickyHeader]: !isBlogPage
-        })}
-      >
-        <div
-          className={classnames(frontLayoutClasses.navbar, styles.navbar, {
-            [styles.headerScrolled]: trigger
-          })}
-          style={{
-            boxShadow: !isBelowLgScreen ? '0px 4px 10px rgba(0, 0, 0, 0.15)' : 'none'
-          }}
-        >
-          <div className={classnames(frontLayoutClasses.navbarContent, styles.navbarContent)}>
-            {isBelowLgScreen ? (
-              <div className='flex items-center gap-2 sm:gap-4'>
-                <IconButton onClick={() => setIsDrawerOpen(true)} className='-mis-2'>
-                  <i className='ri-menu-line' />
-                </IconButton>
-                <Link href='/'>
-                  <Logo mode={mode} />
+            <>
+              {/* For small screens and up: full text */}
+              <Typography
+                variant='body2'
+                align='left'
+                sx={{
+                  display: { xs: 'none', sm: 'block' },
+                  color: 'white',
+                  fontWeight: 600,
+                  fontSize: '1.1rem',
+                  textDecoration: 'underline'
+                }}
+              >
+                <Link href={mounted ? `/${locale}#rates` : `#rates`} style={{ color: 'white' }}>
+                  {t('topbar.announcementParagraph')}
                 </Link>
-                <FrontMenu mode={mode} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
-              </div>
-            ) : (
-              <div className='flex items-center gap-14'>
-                <Link href='/'>
-                  <Logo mode={mode} />
-                </Link>
-                <FrontMenu mode={mode} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
-              </div>
-            )}
-            <div className='flex items-center gap-2 sm:gap-4'>
-              {mounted && (
-                <IconButton onClick={() => setIsCartOpen(true)} color='inherit'>
-                  <Badge badgeContent={cartItemCount} color='error'>
-                    <ShoppingCartIcon />
-                  </Badge>
-                </IconButton>
-              )}
-              <ModeDropdown />
-              <LanguageDropdown />
+              </Typography>
 
-              {/* CartSidebar is now rendered on all screen sizes */}
-              <CartSidebar open={isCartOpen} onClose={() => setIsCartOpen(false)} />
-
-              {isBelowLgScreen ? null : (
-                <div
-                  onMouseEnter={handleMenuOpen}
-                  onMouseLeave={handleMenuClose}
-                  style={{ position: 'relative', display: 'inline-block' }}
+              {/* For xs: show only the "Cheapest" link */}
+              <Typography
+                variant='body2'
+                align='left'
+                sx={{
+                  display: { xs: 'block', sm: 'none' },
+                  color: 'white',
+                  fontWeight: 300,
+                  fontSize: '0.81rem'
+                }}
+              >
+                <Link
+                  href='#rates'
+                  suppressHydrationWarning
+                  style={{
+                    fontWeight: 'bold',
+                    textDecoration: 'underline',
+                    color: 'white'
+                  }}
                 >
-                  {/* Future language dropdown */}
+                  {t('topbar.announcementParagraphMobile')}
+                </Link>
+              </Typography>
+            </>
+
+            <Button
+              component={Link}
+              variant='outlined'
+              href={mounted ? `/${locale}/login` : `/login`}
+              sx={{
+                backgroundColor: 'transparent',
+                color: 'white',
+                border: '1px solid white',
+                '&:hover': {
+                  color: '#FF6F59',
+                  borderColor: '#FF6F59'
+                },
+                borderRadius: 'var(--btn-border-radius)'
+              }}
+            >
+              {t('navigation.login')}
+            </Button>
+          </Container>
+        </Box>
+        <nav
+          className={classnames(frontLayoutClasses.header, styles.header, {
+            [styles.stickyHeader]: !isBlogPage
+          })}
+        >
+          <div
+            className={classnames(frontLayoutClasses.navbar, styles.navbar, {
+              [styles.headerScrolled]: trigger
+            })}
+            style={{
+              boxShadow: !isBelowLgScreen ? '0px 4px 10px rgba(0, 0, 0, 0.15)' : 'none'
+            }}
+          >
+            <div className={classnames(frontLayoutClasses.navbarContent, styles.navbarContent)}>
+              {isBelowLgScreen ? (
+                <div className='flex items-center gap-2 sm:gap-4'>
+                  <IconButton onClick={() => setIsDrawerOpen(true)} className='-mis-2'>
+                    <i className='ri-menu-line' />
+                  </IconButton>
+                  <Link href='/'>
+                    <Logo mode={mode} />
+                  </Link>
+                  <FrontMenu mode={mode} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
+                </div>
+              ) : (
+                <div className='flex items-center gap-14'>
+                  <Link href='/'>
+                    <Logo mode={mode} />
+                  </Link>
+                  <FrontMenu mode={mode} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
                 </div>
               )}
+              <div className='flex items-center gap-2 sm:gap-4'>
+                {mounted && (
+                  <IconButton onClick={() => setIsCartOpen(true)} color='inherit'>
+                    <Badge badgeContent={cartItemCount} color='error'>
+                      <ShoppingCartIcon />
+                    </Badge>
+                  </IconButton>
+                )}
+                <ModeDropdown />
+                <LanguageDropdown />
+
+                {/* CartSidebar is now rendered on all screen sizes */}
+                <CartSidebar open={isCartOpen} onClose={() => setIsCartOpen(false)} />
+
+                {isBelowLgScreen ? null : (
+                  <div
+                    onMouseEnter={handleMenuOpen}
+                    onMouseLeave={handleMenuClose}
+                    style={{ position: 'relative', display: 'inline-block' }}
+                  >
+                    {/* Future language dropdown */}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-        </div>
+        </nav>
       </header>
     </>
   )

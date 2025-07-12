@@ -9,21 +9,67 @@ import Box from '@mui/material/Box'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import type { Theme } from '@mui/material/styles'
 
-import { getCurrentTheme } from '@/utils/theme'
-import type { Mode } from '@core/types'
 import React from 'react'
 
-const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
+const HeroSectionParallaxComponent = () => {
   const [dashboardPosition, setDashboardPosition] = useState({ x: 0, y: 0 })
   const [elementsPosition, setElementsPosition] = useState({ x: 0, y: 0 })
+  const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light')
 
   const dashboardImageLight = '/images/front-pages/landing-pageTest/hero-dashboard-light.png'
   const dashboardImageDark = '/images/front-pages/landing-pageTest/hero-dashboard-dark.png'
   const elementsImageLight = '/images/front-pages/landing-pageTest/hero-elements-light.png'
   const elementsImageDark = '/images/front-pages/landing-pageTest/hero-elements-dark.png'
 
-  const dashboardImage = mode === 'dark' ? dashboardImageDark : dashboardImageLight
-  const elementsImage = mode === 'dark' ? elementsImageDark : elementsImageLight
+  const dashboardImage = currentTheme === 'dark' ? dashboardImageDark : dashboardImageLight
+  const elementsImage = currentTheme === 'dark' ? elementsImageDark : elementsImageLight
+
+  // Direct theme detection using DOM
+  useEffect(() => {
+    console.log('🎨 HeroSectionParallaxContent mounted!')
+
+    const detectTheme = () => {
+      const htmlElement = document.documentElement
+      const isDark =
+        htmlElement.classList.contains('dark') ||
+        htmlElement.style.colorScheme === 'dark' ||
+        htmlElement.getAttribute('data-theme') === 'dark'
+
+      const detectedTheme = isDark ? 'dark' : 'light'
+      console.log('🎨 Theme detected:', detectedTheme)
+      setCurrentTheme(detectedTheme)
+    }
+
+    // Initial detection
+    detectTheme()
+
+    // Watch for theme changes
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        if (
+          mutation.type === 'attributes' &&
+          (mutation.attributeName === 'class' ||
+            mutation.attributeName === 'style' ||
+            mutation.attributeName === 'data-theme')
+        ) {
+          console.log('🎨 DOM theme change detected')
+          detectTheme()
+        }
+      })
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class', 'style', 'data-theme']
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    console.log('🎨 Theme state changed:', currentTheme)
+    console.log('Images selected:', { dashboardImage, elementsImage })
+  }, [currentTheme])
   const isAboveLgScreen = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'))
 
   useEffect(() => {
@@ -81,12 +127,13 @@ const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
           }}
         >
           <Image
+            key={`dashboard-${currentTheme}`}
             src={dashboardImage}
             alt='Bitcall OS dashboard interface for telecom resellers'
             width={1200}
             height={800}
             priority
-            className='w-full h-auto object-contain'
+            className='object-contain relative lg:right-[5rem] lg:w-[1000px] w-full h-auto'
           />
           <Box
             sx={{
@@ -98,6 +145,7 @@ const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
             }}
           >
             <Image
+              key={`elements-${currentTheme}`}
               src={elementsImage}
               alt='dashboard-elements'
               width={800}
@@ -114,4 +162,4 @@ const HeroSectionParallaxComponent = ({ mode }: { mode: Mode }) => {
   )
 }
 
-export const HeroSectionParallaxContent = React.memo(HeroSectionParallaxComponent)
+export const HeroSectionParallaxContent = HeroSectionParallaxComponent

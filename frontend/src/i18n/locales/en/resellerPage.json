@@ -18,7 +18,8 @@
     "description": "Our reseller platform gives you everything needed to start, scale, and profit from your own branded communication service."
   },
   "fastSetupSection": {
-    "title": "Fast Setup & Flexible Payments",
+    "title1": "Fast Setup & ",
+    "title2": "Flexible Payments",
     "subtitle": "Start selling telecom services in 15 minutes.",
     "features": {
       "oneClickProvisioning": {
@@ -44,7 +45,8 @@
     }
   },
   "whiteLabelSection": {
-    "title": "Complete White-Label Control",
+    "title1": "Complete ",
+    "title2": "White-Label Control",
     "subtitle": "Your brand. Your clients. Our technology.",
     "features": {
       "portalAccess": {
@@ -82,7 +84,8 @@
     }
   },
   "pricingSection": {
-    "choose_plan": "Choose Your Reseller Plan Now",
+    "title1": "Choose Your ",
+    "title2": "Reseller Plan Now",
     "common": {
       "popularLabel": "Popular",
       "currencySymbol": "$",

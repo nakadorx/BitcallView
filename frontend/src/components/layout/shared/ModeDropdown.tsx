@@ -1,7 +1,7 @@
 'use client'
 
 // React Imports
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 // MUI Imports
 import Tooltip from '@mui/material/Tooltip'
@@ -18,18 +18,47 @@ import type { Mode } from '@core/types'
 
 // Hook Imports
 import { useSettings } from '@core/hooks/useSettings'
-import { setThemeCookie } from '@/utils/theme'
+
+// Unified Theme Imports
+import {
+  getUnifiedTheme,
+  setUnifiedTheme,
+  applyThemeToDOM,
+  migrateFromOldSystem,
+  listenForSystemThemeChanges
+} from '@/utils/unifiedTheme'
 
 const ModeDropdown = () => {
   // States
   const [open, setOpen] = useState(false)
   const [tooltipOpen, setTooltipOpen] = useState(false)
+  const [currentMode, setCurrentMode] = useState<Mode>('system')
 
   // Refs
   const anchorRef = useRef<HTMLButtonElement>(null)
 
   // Hooks
   const { settings, updateSettings } = useSettings()
+
+  // Initialize unified theme system
+  useEffect(() => {
+    // Migrate from old system on first load
+    migrateFromOldSystem()
+
+    // Get current theme
+    const themeData = getUnifiedTheme()
+    setCurrentMode(themeData.mode)
+
+    // Apply theme to DOM
+    applyThemeToDOM()
+
+    // Listen for system theme changes
+    const cleanup = listenForSystemThemeChanges(systemTheme => {
+      console.log('System theme changed to:', systemTheme)
+    })
+
+    return cleanup
+  }, [])
 
   const handleClose = () => {
     setOpen(false)
@@ -41,20 +70,24 @@ const ModeDropdown = () => {
   }
 
   const handleModeSwitch = (mode: Mode) => {
-    setThemeCookie(mode)
+    // ✅ Use unified theme system - no more conflicts!
+    setUnifiedTheme(mode)
+    applyThemeToDOM()
 
-    if (settings.mode !== mode) {
-      updateSettings({ mode: mode })
-    }
+    // Update local state
+    setCurrentMode(mode)
 
-    location.reload()
+    // Update settings context (for compatibility)
+    updateSettings({ mode: mode })
+
+    // ✅ No more location.reload() needed!
     handleClose()
   }
 
   const getModeIcon = () => {
-    if (settings.mode === 'system') {
+    if (currentMode === 'system') {
       return 'ri-macbook-line'
-    } else if (settings.mode === 'dark') {
+    } else if (currentMode === 'dark') {
       return 'ri-moon-clear-line'
     } else {
       return 'ri-sun-line'
@@ -64,7 +97,7 @@ const ModeDropdown = () => {
   return (
     <>
       <Tooltip
-        title={settings.mode + ' Mode'}
+        title={currentMode + ' Mode'}
         onOpen={() => setTooltipOpen(true)}
         onClose={() => setTooltipOpen(false)}
         open={open ? false : tooltipOpen ? true : false}
@@ -93,7 +126,7 @@ const ModeDropdown = () => {
                   <MenuItem
                     className='gap-3 pli-4'
                     onClick={() => handleModeSwitch('light')}
-                    selected={settings.mode === 'light'}
+                    selected={currentMode === 'light'}
                   >
                     <i className='ri-sun-line' />
                     Light
@@ -101,7 +134,7 @@ const ModeDropdown = () => {
                   <MenuItem
                     className='gap-3 pli-4'
                     onClick={() => handleModeSwitch('dark')}
-                    selected={settings.mode === 'dark'}
+                    selected={currentMode === 'dark'}
                   >
                     <i className='ri-moon-clear-line' />
                     Dark
@@ -109,7 +142,7 @@ const ModeDropdown = () => {
                   <MenuItem
                     className='gap-3 pli-4'
                     onClick={() => handleModeSwitch('system')}
-                    selected={settings.mode === 'system'}
+                    selected={currentMode === 'system'}
                   >
                     <i className='ri-computer-line' />
                     System

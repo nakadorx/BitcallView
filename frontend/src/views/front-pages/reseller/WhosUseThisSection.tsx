@@ -66,8 +66,9 @@ const WhosUseThisSection = async () => {
             />
             <Text
               id={`feature-heading-${index}`}
+              as='h3'
               value={feature.text}
-              className='text-[0.9rem] sm:text-[1.1rem] md:text-start lg:text-start text-center leading-relaxed max-w-[300px]'
+              className='text-[0.9rem] sm:text-[1.1rem] md:text-start lg:text-start text-center leading-relaxed max-w-[300px] font-semibold'
             />
           </article>
         ))}

@@ -23,6 +23,7 @@ export const PlanDetails = ({ data, pricingPlan }: Props) => {
         relative rounded border flex flex-col gap-10 pt-8 p-6 shadow-lg
         bg-backgroundPaper
         cursor-pointer
+        lg:mb-[3rem]
         hover:z-50
         ${data?.popularPlan ? 'border-primary  lg:scale-110' : 'border-gray-300 dark:border-gray-600'}
       `}

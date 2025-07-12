@@ -19,6 +19,7 @@ export type CardListProps = {
   cardContainerClassName?: string
   containerClassName?: string
   headerExtraContent?: React.ReactNode
+  isForVideoCardList?: boolean
 }
 
 export type RenderCardListProps = {
@@ -52,6 +53,7 @@ export type SCardProps = {
   activeOnHover?: boolean
   cardContainerClassName?: string
   enableFloatingAnimation?: boolean
+  isForVideoCardList?: boolean
 }
 
 export type ImageCardListProps = {

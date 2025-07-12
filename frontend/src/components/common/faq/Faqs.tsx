@@ -41,13 +41,14 @@ const Faqs = () => {
       answer: t('faq.answers.a5')
     }
   ]
-  const bgLight = '/images/front-pages/landing-page/faq-bg.png'
-  const bgDark = '/images/front-pages/landing-page/faq-bg-dark.png'
+  const bgLight = '/images/BGs/resseller/FAQ.png'
+  const bgDark = '/images/BGs/resseller/FAQ-BG.png'
   const bgImage = useImageVariant(theme.palette.mode, bgLight, bgDark)
   const ref = useRef(null)
 
   return (
     <Box
+      className='lg:relative lg:top-[-2rem]'
       component='section'
       id='faq'
       ref={ref}
@@ -56,14 +57,13 @@ const Faqs = () => {
         flexDirection: 'column',
         gap: 8,
         paddingBlock: '80px',
-        marginY: 9,
+        marginBottom: 9,
         paddingX: 12,
         width: '100%',
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        marginBottom: 'var(--section-margin-bottom)'
+        backgroundRepeat: 'no-repeat'
       }}
     >
       <Grid container spacing={6}>

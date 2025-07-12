@@ -47,9 +47,9 @@ export const WhiteLabelSection = async () => {
 
   return (
     <SectionContainer
-      title={[t('whiteLabelSection.title')]}
+      title={[t('whiteLabelSection.title1'), t('whiteLabelSection.title2')]}
       description={t('whiteLabelSection.subtitle')}
-      bgClass='bg-bleu-2'
+      bgClass='control-label-bg'
       containerClassName='lg:mb-[7rem] lg:mt-[3rem] '
     >
       <div className='w-full mt-4 flex justify-center lg:px-[17rem]'>
@@ -64,7 +64,9 @@ export const WhiteLabelSection = async () => {
                   className='hover:border-primary
                 lg:hover:border-2 bg-backgroundDefault flex
                  flex-col items-center text-center lg:w-[20rem]
-                lg:h-[15rem] p-8 lg:shadow-lg rounded-4xl'
+                lg:h-[15rem] p-8 lg:shadow-lg rounded-4xl
+                dark:lg:bg-backgroundDefault
+                dark:bg-transparent'
                 >
                   <div
                     className='mb-2 relative
