@@ -214,8 +214,7 @@ const FrontMenu = memo(function FrontMenu({ isDrawerOpen, setIsDrawerOpen, mode 
     )
   }
 
-  // Desktop: Inline bar
-  return <div className='flex items-center flex-wrap gap-x-1 gap-y-3'>{renderLinks()}</div>
+  return <div className='flex items-center flex-nowrap gap-x-1'>{renderLinks()}</div>
 })
 
 export default FrontMenu

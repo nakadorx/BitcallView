@@ -44,7 +44,7 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .everything-you-need-bg::before {
@@ -57,7 +57,7 @@
   background-size: cover;
   transform: rotate(180deg);
   animation: float 20s ease-in-out infinite;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .control-label-bg::before {
@@ -68,7 +68,7 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.6;
   animation: float 20s ease-in-out infinite;
 }
 
@@ -81,7 +81,7 @@
   background-position: center;
   opacity: 1;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.6;
   animation: heroBackgroundFloat 20s ease-in-out infinite;
 }
 

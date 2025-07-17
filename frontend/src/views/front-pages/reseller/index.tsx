@@ -13,9 +13,6 @@ import { getLocale } from '@/utils/commons'
 import Faqs from '@/components/common/faq/Faqs'
 import { Suspense } from 'react'
 import Loader from '@/components/common/loader'
-import dynamic from 'next/dynamic'
-import Spinner from '@/components/common/spinner'
-import { Skeleton } from '@mui/material'
 
 import { HeroSectionParallaxContent } from './HeroSectionParallaxContent'
 import WhosUseThisSection from './WhosUseThisSection'
@@ -45,8 +42,8 @@ const ResellerWrapper = async () => {
         <FastSetup />
         <WhiteLabelSection />
         <RealTimeInsightsSection />
-        <CustomerReviews />
         <PricingSection />
+        <CustomerReviews />
         <Faqs />
         <ContactUs />
       </Suspense>

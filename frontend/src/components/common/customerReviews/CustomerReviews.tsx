@@ -124,12 +124,11 @@ const CustomerReviews = () => {
 
   return (
     <section
-      className='flex flex-col gap-2 mb-[5rem]'
+      className='flex flex-col gap-2 mb-[5rem] lg:mb-[10rem]'
       aria-labelledby='testimonials-heading'
       itemScope
       itemType='https://schema.org/Review'
     >
-      {/* Screen reader announcements */}
       <div aria-live='polite' aria-atomic='true' className='sr-only' role='status'>
         {announceSlide}
       </div>
@@ -137,7 +136,7 @@ const CustomerReviews = () => {
       <div
         className={`${frontCommonStyles.layoutSpacing} flex flex-col items-center justify-center text-center p-2 md:p-4`}
       >
-        <div className='flex justify-center items-center flex-wrap mb-2 md:mb-3'>
+        <div className='flex justify-center items-center flex-wrap mb-2 md:mb-3 mt-[2rem]'>
           <Text
             as='h3'
             id='testimonials-heading'

@@ -1,7 +1,5 @@
 'use server'
 
-// TODO: check if possible refactor for SSR
-
 import { SectionContainer } from '@/components/common/SectionContainer/SectionContainer'
 import { Text } from '@/components/common/text'
 import Image from 'next/image'
@@ -54,19 +52,18 @@ export const WhiteLabelSection = async () => {
     >
       <div className='w-full mt-4 flex justify-center lg:px-[17rem]'>
         <div className=' w-full text-center'>
-          <ul
-            role='list'
-            className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:gap-3 mb-3 justify-items-center lg:max-h-[50rem]'
-          >
+          <ul role='list' className='flex flex-wrap justify-center lg:gap-[4rem] mb-3'>
             {firstRowFeatures.map((feature, index) => (
-              <li role='listitem' key={index} className='flex justify-center cursor-pointer col-span-1'>
+              <li
+                role='listitem'
+                key={index}
+                className='flex justify-center cursor-pointer w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] max-w-[20rem]'
+              >
                 <div
-                  className='hover:border-primary
-                lg:hover:border-2 bg-backgroundDefault flex
-                 flex-col items-center text-center lg:w-[20rem]
-                lg:h-[15rem] p-8 lg:shadow-lg rounded-4xl
-                dark:lg:bg-backgroundDefault
-                dark:bg-transparent'
+                  className='hover:border-primary hover:border-2
+                  lg:bg-backgroundDefault flex flex-col items-center text-center
+                  w-full h-[15rem] p-8 lg:shadow-lg rounded-4xl
+                   transition-all duration-300'
                 >
                   <div
                     className='mb-2 relative

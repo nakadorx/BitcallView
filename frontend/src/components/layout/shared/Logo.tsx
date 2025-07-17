@@ -1,18 +1,15 @@
 'use client'
 
-// React Imports
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-// Next Imports
+
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
-// Hook Imports
 import useVerticalNav from '@menu/hooks/useVerticalNav'
 import { useSettings } from '@core/hooks/useSettings'
-import { useImageVariant } from '@/@core/hooks/useImageVariant'
 import type { Mode } from '@core/types'
 
-// TODO  : check if its possible to import mode here idrectly
 interface LogoProps {
   mode?: Mode
   customMode?: Mode
@@ -20,24 +17,72 @@ interface LogoProps {
 
 const Logo = ({ mode, customMode }: LogoProps) => {
   const logoTextRef = useRef<HTMLSpanElement>(null)
+  const pathname = usePathname()
+  const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light')
 
-  // Hooks
   const { isHovered, isBreakpointReached } = useVerticalNav()
   const { settings } = useSettings()
 
   // Vars
   const { layout } = settings
 
-  const logolight = '/images/logos/logo-v1.svg'
-  const logodark = '/images/logos/logo-dark.svg'
-  const effectiveMode = customMode || mode || 'light'
+  // Direct theme detection using DOM - inspired by HeroSectionParallaxContent
+  useEffect(() => {
+    const detectTheme = () => {
+      const htmlElement = document.documentElement
+      const isDark =
+        htmlElement.classList.contains('dark') ||
+        htmlElement.style.colorScheme === 'dark' ||
+        htmlElement.getAttribute('data-theme') === 'dark'
 
-  // If customMode is provided, bypass the hook and use the appropriate image directly.
+      const detectedTheme = isDark ? 'dark' : 'light'
+      setCurrentTheme(detectedTheme)
+    }
+
+    // Initial detection
+    detectTheme()
+
+    // Watch for theme changes
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        if (
+          mutation.type === 'attributes' &&
+          (mutation.attributeName === 'class' ||
+            mutation.attributeName === 'style' ||
+            mutation.attributeName === 'data-theme')
+        ) {
+          detectTheme()
+        }
+      })
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class', 'style', 'data-theme']
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
+  // Function to determine logo based on route
+  const getLogoByRoute = (path: string, isDark: boolean) => {
+    // Remove language prefix if exists (e.g., /en/, /fr/)
+    const cleanPath = path.replace(/^\/[a-z]{2}\//, '/')
+
+    if (cleanPath.includes('/esim')) {
+      return isDark ? '/images/finalLogo/eSim-Dark.svg' : '/images/finalLogo/eSim.svg'
+    } else if (cleanPath.includes('/reseller')) {
+      return isDark ? '/images/finalLogo/Reseller-Dark.svg' : '/images/finalLogo/Reseller.svg'
+    } else {
+      // Default logo for other pages
+      return isDark ? '/images/finalLogo/Logo-dark-mode.svg' : '/images/finalLogo/Logo-V1.svg'
+    }
+  }
+
+  // Determine logo based on route and theme
   const logoImage = customMode
-    ? customMode === 'dark'
-      ? logodark
-      : logolight
-    : useImageVariant(effectiveMode, logolight, logodark)
+    ? getLogoByRoute(pathname, customMode === 'dark')
+    : getLogoByRoute(pathname, currentTheme === 'dark')
 
   useEffect(() => {
     if (layout !== 'collapsed') return
@@ -54,7 +99,14 @@ const Logo = ({ mode, customMode }: LogoProps) => {
 
   return (
     <div className='flex items-center min-bs-[24px]'>
-      <Image src={logoImage} alt='Logo' width={80} height={40} className='logo-image' />
+      <Image
+        key={`logo-${currentTheme}-${pathname}`}
+        src={logoImage}
+        alt='Logo'
+        width={80}
+        height={40}
+        className='logo-image'
+      />
     </div>
   )
 }

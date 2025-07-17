@@ -26,8 +26,6 @@ const HeroSectionParallaxComponent = () => {
 
   // Direct theme detection using DOM
   useEffect(() => {
-    console.log('🎨 HeroSectionParallaxContent mounted!')
-
     const detectTheme = () => {
       const htmlElement = document.documentElement
       const isDark =
@@ -36,7 +34,6 @@ const HeroSectionParallaxComponent = () => {
         htmlElement.getAttribute('data-theme') === 'dark'
 
       const detectedTheme = isDark ? 'dark' : 'light'
-      console.log('🎨 Theme detected:', detectedTheme)
       setCurrentTheme(detectedTheme)
     }
 
@@ -52,7 +49,6 @@ const HeroSectionParallaxComponent = () => {
             mutation.attributeName === 'style' ||
             mutation.attributeName === 'data-theme')
         ) {
-          console.log('🎨 DOM theme change detected')
           detectTheme()
         }
       })
@@ -66,10 +62,6 @@ const HeroSectionParallaxComponent = () => {
     return () => observer.disconnect()
   }, [])
 
-  useEffect(() => {
-    console.log('🎨 Theme state changed:', currentTheme)
-    console.log('Images selected:', { dashboardImage, elementsImage })
-  }, [currentTheme])
   const isAboveLgScreen = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'))
 
   useEffect(() => {
@@ -148,9 +140,9 @@ const HeroSectionParallaxComponent = () => {
               key={`elements-${currentTheme}`}
               src={elementsImage}
               alt='dashboard-elements'
-              width={800}
-              height={600}
-              className='w-full h-auto object-contain'
+              width={1331}
+              height={548}
+              className='lg:relative  lg:left-[-10rem] lg:w-[83.19rem] lg:h-[34.25rem] w-full h-auto'
               style={{
                 transform: isAboveLgScreen ? `translate(${elementsPosition.x}px, ${elementsPosition.y}px)` : 'none'
               }}

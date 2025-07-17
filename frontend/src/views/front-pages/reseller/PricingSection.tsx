@@ -9,7 +9,6 @@ const PricingSection = async () => {
   const locale = getLocale()
   const t = await getT(locale, 'resellerPage')
 
-  // TODO: make the currency a global comp
   const pricingData = [
     {
       title: t('pricingSection.basic_plan.title'),
@@ -72,7 +71,7 @@ const PricingSection = async () => {
   return (
     <SectionContainer
       title={['', t('pricingSection.title1'), t('pricingSection.title2')]}
-      containerClassName='lg:mb-[2rem] bg-gradient-to-br from-blue-50 to-blue-100 dark:bg-none'
+      containerClassName='lg:mb-[2rem]  bg-gradient-to-br from-blue-50 to-blue-100 dark:bg-none'
       bgClass='plans-bg'
     >
       <Pricing data={pricingData} />
