@@ -24,6 +24,7 @@ export const PlanDetails = ({ data, pricingPlan }: Props) => {
         bg-backgroundPaper
         cursor-pointer
         lg:mb-[3rem]
+        lg:max-w-[25rem]
         hover:z-50
         ${data?.popularPlan ? 'border-primary  lg:scale-110' : 'border-gray-300 dark:border-gray-600'}
       `}

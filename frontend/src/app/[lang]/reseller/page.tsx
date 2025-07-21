@@ -41,27 +41,14 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: 'Resell & Grow With Bitcall OS | Launch Your Telecom Business',
+    title: 'Bitcall - Resell & Grow With Bitcall OS | Launch Your Telecom Business',
     description:
       'Launch your own branded telecom business in minutes. White-label VOIP solutions with the cheapest calling rates. One-click provisioning, complete control, recurring revenue.',
     url: resellerUrl,
     siteName: 'Bitcall',
     images: [
       {
-        url: '/images/front-pages/landing-pageTest/hero-dashboard-light.png',
-        width: 1200,
-        height: 630,
-        alt: 'Bitcall OS Reseller Dashboard - White Label Telecom Solution',
-        type: 'image/png'
-      },
-      {
-        url: '/images/assets/21.png',
-        width: 1200,
-        height: 630,
-        alt: 'Fast Setup Telecom Reseller Features',
-        type: 'image/png'
-      },
-      {
+        // TODO: add image
         url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png',
         width: 1200,
         height: 630,
@@ -105,7 +92,7 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1
     }
-  },
+  }, 
   verification: {
     google: 'your-google-verification-code',
     yandex: 'your-yandex-verification-code',

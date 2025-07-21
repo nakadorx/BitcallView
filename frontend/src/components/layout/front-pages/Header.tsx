@@ -109,11 +109,8 @@ const Header = ({ mode }: { mode: Mode }) => {
                   textDecoration: 'underline'
                 }}
               >
-                <Link href={mounted ? `/${locale}#rates` : `#rates`} style={{ color: 'white' }}>
-                  {t('topbar.announcementParagraph')}
-                </Link>
+                {t('topbar.announcementParagraph')}
               </Typography>
-
               {/* For xs: show only the "Cheapest" link */}
               <Typography
                 variant='body2'
@@ -142,7 +139,8 @@ const Header = ({ mode }: { mode: Mode }) => {
             <Button
               component={Link}
               variant='outlined'
-              href={mounted ? `/${locale}/login` : `/login`}
+              href={'https://panel.bitcall.io'}
+              target='_blank'
               sx={{
                 backgroundColor: 'transparent',
                 color: 'white',

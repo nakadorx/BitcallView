@@ -13,34 +13,34 @@
     "feature3": "<strong>Launch</strong> a scalable, recurring revenue stream under your own name"
   },
   "everythingYouNeedSection": {
-    "title1": "Everything You Need ",
-    "title2": "to Get Started Today",
-    "description": "Our reseller platform gives you everything needed to start, scale, and profit from your own branded communication service."
+    "title1": "Everything You Need",
+    "title2": "To Build and Grow",
+    "description": "From your first client to your own switch, our platform provides everything: a white-labeled dashboard, live usage insights, vendor routing, eSIM reselling, custom pricing controls, and more."
   },
   "fastSetupSection": {
-    "title1": "Fast Setup & ",
+    "title1": "Fast Setup &",
     "title2": "Flexible Payments",
-    "subtitle": "Start selling telecom services in 15 minutes.",
+    "subtitle": "Start reselling in under 15 minutes — scale with add-ons anytime.",
     "features": {
       "oneClickProvisioning": {
         "title": "One-click provisioning",
-        "description": "for numbers, trunks, and accounts"
+        "description": "for numbers, trunks, vendors, and accounts"
       },
       "noHardware": {
         "title": "No hardware required",
-        "description": "works with softphones or existing desk phones"
+        "description": "Softphones, SIP apps, or desk phones"
       },
       "acceptPayments": {
         "title": "Accept payments",
-        "description": "via Credit Card, Stripe, PayPal, or Crypto"
+        "description": "Stripe, PayPal, Crypto & more"
       },
       "monthToMonth": {
         "title": "Month-to-month plans",
-        "description": "no contracts, no commitments"
+        "description": "no contracts, upgrade anytime"
       },
-      "box": {
-        "title": "One-click provisioning",
-        "description": "for numbers, trunks, and accounts"
+      "scalablePlatform": {
+        "title": "Scalable platform",
+        "description": "Easily upgrade vendors, routes, or server capacity as you grow"
       }
     }
   },
@@ -63,11 +63,15 @@
       },
       "brandedReports": {
         "title": "Branded Invoices, Emails & Reports",
-        "description": ""
+        "description": "Fully custom documents to match your business"
       },
       "customTemplates": {
         "title": "Custom Website Templates",
-        "description": "included on higher plans"
+        "description": "Included in Professional and Elite plans"
+      },
+      "loginExperience": {
+        "title": "Custom Client Login Experience",
+        "description": "Control the welcome screen, language, and layout your users see"
       }
     },
     "footerNote": "You focus on client relationships and growth. We provide the tech backbone."
@@ -77,67 +81,76 @@
     "subtitle": "Stay on top of operations and show clients the real value of your service:",
     "features": {
       "dashboards": "Live call dashboards",
-      "reports": "  Detailed call and user reports",
+      "reports": "Detailed call and user reports",
       "monitoring": "Quality monitoring and uptime stats",
       "export": "Easy export for billing, tracking, or integrations",
-      "analytics": "Help clients optimize \n communication  with usage analytics"
+      "analytics": "Help clients optimize communication with usage analytics"
     }
   },
   "pricingSection": {
     "title1": "Choose Your ",
     "title2": "Reseller Plan Now",
     "common": {
-      "popularLabel": "Popular",
+      "popularLabel": "Most Popular",
       "currencySymbol": "$",
       "periodText": "Per month",
-      "discountText": "10% off for yearly subscription",
+      "discountText": "Save 15% with yearly billing",
       "currentPlanText": "Your Current Plan",
       "upgradeText": "Upgrade"
     },
     "basic_plan": {
-      "title": "Basic Plan",
-      "price": "$20",
+      "title": "Essential Reseller",
+      "price": "99",
       "per_month": "Per month",
-      "discount": "10% off for yearly subscription",
+      "discount": "Save 15% with yearly billing",
       "features": [
-        "Timeline",
-        "Basic search",
-        "Live chat widget",
-        "Email marketing",
-        "Custom Forms",
-        "Traffic analytics"
+        "Resell Bitcall Voice & SMS routes only",
+        "Set your own pricing",
+        "Shared SIP IP (Bitcall backend)",
+        "Basic white-label portal (logo, colors, domain)",
+        "Client notifications via Email only",
+        "Accept payments: Stripe, PayPal, Crypto",
+        "Basic analytics & usage reports",
+        "No external vendors or routing control"
       ],
-      "button": "Get started"
+      "button": "Get Started"
     },
     "favourite_plan": {
-      "title": "Favourite Plan",
-      "price": "$51",
+      "title": "Professional Reseller",
+      "price": "249",
       "per_month": "Per month",
-      "discount": "10% off for yearly subscription",
+      "discount": "Save 15% with yearly billing",
       "features": [
-        "Everything in basic",
-        "Timeline with database",
-        "Advanced search",
-        "Marketing automation",
-        "Advanced chatbot",
-        "Campaign management"
+        "Everything in Essential",
+        "Resell all Bitcall services (Voice, SMS, eSIM, HLR, OTPs, DIDs)",
+        "Dedicated SIP IP",
+        "Add up to 3 external VoIP vendors",
+        "1 custom routing group (in addition to Bitcall defaults)",
+        "Optional paid add-ons: more vendors & routing groups",
+        "Advanced white-labeling (invoices, portal, branding)",
+        "Client notifications via Email + WhatsApp",
+        "Usage-based billing (per-minute or per-package)",
+        "Advanced analytics & export tools"
       ],
-      "button": "Get started"
+      "button": "Get Started"
     },
     "standard_plan": {
-      "title": "Standard Plan",
-      "price": "$99",
+      "title": "Elite Reseller",
+      "price": "Custom",
       "per_month": "Per month",
-      "discount": "10% off for yearly subscription",
+      "discount": "Starting at $499/month based on capacity",
       "features": [
-        "Everything in premium",
-        "Timeline with database",
-        "Fuzzy search",
-        "A/B testing sanbox",
-        "Custom permissions",
-        "Social media automation"
+        "Everything in Professional",
+        "Hosted Sippy Softswitch server with Bitcall panel",
+        "Unlimited external VoIP vendors",
+        "Unlimited routing groups",
+        "Full API access (accounts, billing, routes, services)",
+        "Real-time Telegram bot notifications & alerts",
+        "Optional sub-reseller support",
+        "Custom SLAs & automation-ready",
+        "Phone & VIP support channels"
       ],
-      "button": "Get started"
+      "button": "Contact Us"
     }
   }
 }

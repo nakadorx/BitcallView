@@ -99,7 +99,7 @@ const FrontMenu = memo(function FrontMenu({ isDrawerOpen, setIsDrawerOpen, mode 
     },
     {
       key: 'contact',
-      href: `/${locale}/#contact`,
+      href: `#contact`,
       Icon: ContactSupportIcon,
       label: t('navigation.frontMenu4'),
       isActive: false, // you could use intersections.contact here if you like

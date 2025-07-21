@@ -69,13 +69,20 @@ export const Text = ({
     classes.push(boldColorClasses[boldColor])
   }
 
+  // Render with children OR dangerouslySetInnerHTML, never both
+  if (children) {
+    return (
+      <Component {...props} className={`${classnames(classes)} ${className}`}>
+        {children}
+      </Component>
+    )
+  }
+
   return (
     <Component
       {...props}
       className={`${classnames(classes)} ${className}`}
-      dangerouslySetInnerHTML={children ? undefined : { __html: value || '' }}
-    >
-      {children && children}
-    </Component>
+      dangerouslySetInnerHTML={{ __html: value || '' }}
+    />
   )
 }
