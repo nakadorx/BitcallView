@@ -48,21 +48,21 @@ export const metadata: Metadata = {
     siteName: 'Bitcall',
     images: [
       {
-        url: `${siteBaseUrl}/images/front-pages/landing-pageTest/hero-dashboard-light.png`,
+        url: '/images/front-pages/landing-pageTest/hero-dashboard-light.png',
         width: 1200,
         height: 630,
         alt: 'Bitcall OS Reseller Dashboard - White Label Telecom Solution',
         type: 'image/png'
       },
       {
-        url: `${siteBaseUrl}/images/assets/21.png`,
+        url: '/images/assets/21.png',
         width: 1200,
         height: 630,
         alt: 'Fast Setup Telecom Reseller Features',
         type: 'image/png'
       },
       {
-        url: `${siteBaseUrl}/images/BGs/resseller/reseller-BG-Hero.png`,
+        url: '/images/BGs/resseller/reseller-BG-Hero.png',
         width: 1200,
         height: 630,
         alt: 'Telecom Reseller Business Growth Opportunities',
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     description:
       'Launch your own branded telecom business in minutes. White-label VOIP solutions with cheapest calling rates. Start earning recurring revenue today.',
     images: {
-      url: `${siteBaseUrl}/images/front-pages/landing-pageTest/hero-dashboard-light.png`,
+      url: '/images/front-pages/landing-pageTest/hero-dashboard-light.png',
       alt: 'Bitcall OS Reseller Dashboard - White Label Telecom Solution',
       width: 1200,
       height: 630
@@ -148,7 +148,7 @@ export const metadata: Metadata = {
     // WhatsApp specific tags
     'whatsapp:title': 'Bitcall OS Reseller Program',
     'whatsapp:description': 'Start your telecom business in 15 minutes',
-    'whatsapp:image': `${siteBaseUrl}/images/front-pages/landing-pageTest/hero-dashboard-light.png`,
+    'whatsapp:image': '/images/front-pages/landing-pageTest/hero-dashboard-light.png',
 
     // Telegram specific tags
     'telegram:channel': '@bitcall',
