@@ -62,7 +62,7 @@ export const metadata: Metadata = {
         type: 'image/png'
       },
       {
-        url: '/images/BGs/resseller/reseller-BG-Hero.png',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png',
         width: 1200,
         height: 630,
         alt: 'Telecom Reseller Business Growth Opportunities',
@@ -72,7 +72,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
     countryName: 'United States',
-    emails: ['support@bitcall.io'],
+    emails: ['info@bitcall.io'],
+    // TODO: add phone numbers
     phoneNumbers: ['+1-800-BITCALL'],
     faxNumbers: ['+1-800-BITCALL'],
     determiner: 'the',
@@ -110,7 +111,7 @@ export const metadata: Metadata = {
     yandex: 'your-yandex-verification-code',
     yahoo: 'your-yahoo-verification-code',
     other: {
-      me: ['your-email@domain.com', 'https://bitcall.io'],
+      me: ['info@bitcall.io', 'https://bitcall.io'],
       'facebook-domain-verification': 'your-facebook-domain-verification',
       'pinterest-site-verification': 'your-pinterest-verification',
       'msvalidate.01': 'your-bing-verification'
@@ -167,7 +168,7 @@ export const metadata: Metadata = {
     'business:contact_data:region': 'Your State',
     'business:contact_data:postal_code': 'Your ZIP',
     'business:contact_data:country_name': 'United States',
-    'business:contact_data:email': 'support@bitcall.io',
+    'business:contact_data:email': 'info@bitcall.io',
     'business:contact_data:phone_number': '+1-800-BITCALL',
     'business:contact_data:website': 'https://bitcall.io',
 
