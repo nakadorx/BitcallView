@@ -642,17 +642,17 @@ const Rates = () => {
           </Box>
 
           {/* Coming Soon Overlay */}
-          <Box className='absolute inset-0 flex flex-col justify-center items-center bg-black/30 z-10 rounded-lg cursor-wait '>
+          <Box className='absolute inset-0 flex flex-col justify-center items-center z-10 rounded-lg cursor-wait '>
             <Text
               as='h2'
-              textColor='white'
+              textColor='secondary'
               className='font-coolvetica font-bold text-center text-4xl sm:text-5xl  text-shadow-lg lg:text-8xl md:text-6xl mb-4 float-animation'
             >
               {t('comingSoon.title').toUpperCase()}
             </Text>
             <Text
               as='h6'
-              textColor='white'
+              textColor='secondary'
               className='font-coolvetica text-center text-base sm:text-xl px-4  float-animation'
             >
               {t('comingSoon.description')}
