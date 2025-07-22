@@ -56,8 +56,8 @@ export const FastSetup = async () => {
       )
     },
     {
-      title: t('fastSetupSection.features.acceptPayments.title'),
-      description: t('fastSetupSection.features.acceptPayments.description'),
+      title: t('fastSetupSection.features.scalablePlatform.title'),
+      description: t('fastSetupSection.features.scalablePlatform.description'),
       iconContent: (
         <Image
           src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184308/3_2_mre1s7.png'

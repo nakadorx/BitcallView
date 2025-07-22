@@ -37,8 +37,8 @@ export const WhiteLabelSection = async () => {
       imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/9_rvv5ka.png'
     },
     {
-      title: t('whiteLabelSection.features.customTemplates.title'),
-      description: t('whiteLabelSection.features.customTemplates.description'),
+      title: t('whiteLabelSection.features.loginExperience.title'),
+      description: t('whiteLabelSection.features.loginExperience.description'),
       imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/9_rvv5ka.png'
     }
   ]

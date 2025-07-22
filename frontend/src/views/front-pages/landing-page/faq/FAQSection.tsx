@@ -64,14 +64,11 @@ const faqSchema = {
   ]
 }
 
-export default function FAQSection(props) {
+export default function FAQSection() {
   return (
     <>
-      <Head>
-        <title>FAQ Page</title>
-        <meta name='description' content='Frequently Asked Questions' />
-        <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      </Head>
+      <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <Faqs />
     </>
   )

@@ -189,19 +189,18 @@ const Header = ({ mode }: { mode: Mode }) => {
                 </div>
               )}
               <div className='flex items-center gap-2 sm:gap-4'>
-                {mounted && (
+                {/* // cart section */}
+                {/* {mounted && (
                   <IconButton onClick={() => setIsCartOpen(true)} color='inherit'>
                     <Badge badgeContent={cartItemCount} color='error'>
                       <ShoppingCartIcon />
                     </Badge>
                   </IconButton>
-                )}
+                )} */}
                 <ModeDropdown />
                 <LanguageDropdown />
-
                 {/* CartSidebar is now rendered on all screen sizes */}
                 <CartSidebar open={isCartOpen} onClose={() => setIsCartOpen(false)} />
-
                 {isBelowLgScreen ? null : (
                   <div
                     onMouseEnter={handleMenuOpen}

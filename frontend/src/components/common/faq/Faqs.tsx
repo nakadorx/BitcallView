@@ -39,6 +39,11 @@ const Faqs = () => {
       id: 'panel5',
       question: t('faq.questions.q5'),
       answer: t('faq.answers.a5')
+    },
+    {
+      id: 'panel6',
+      question: t('faq.questions.q6'),
+      answer: t('faq.answers.a6')
     }
   ]
   const bgLight = 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/FAQ_jxamzi.png'
@@ -67,7 +72,7 @@ const Faqs = () => {
       }}
     >
       <Grid container spacing={6}>
-        <Grid item xs={12} lg={5} sx={{ textAlign: 'center' }}>
+        <Grid item xs={12} lg={5} className='flex justify-center items-center'>
           <Image
             src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184312/sitting-girl-with-laptop_bi1sbr.png'
             alt='girl with laptop'

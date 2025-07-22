@@ -272,46 +272,46 @@
     "subtitle": "See what our customers have to say about their experience.",
     "items": [
       {
-        "desc": "“We’ve cut our telecom costs by 70%!”\n\nSwitching to Bitcall was one of the best decisions we’ve made. We were spending a fortune on international calls—now we pay a fraction of that and still get crystal-clear voice quality. The dashboard is super intuitive, and our team was set up in minutes.",
+        "desc": "“I launched my telecom brand in 20 minutes!”\n\nBitcall's Essential plan gave me a fully branded panel. I set my prices, added my logo, and started onboarding clients—all before lunch. This is the future of VoIP reselling.",
         "rating": 5,
-        "name": "Sophie Martinez",
-        "position": "Operations Lead at Callbox CRM (Spain)"
+        "name": "Leila Ben Hammouda",
+        "position": "Freelancer & Reseller (Tunisia)"
       },
       {
-        "desc": "“Bitcall helped me start my own telecom business”\n\nI launched my reseller panel in under a day and already have 15 recurring clients. Bitcall handles all the backend work, I just focus on selling. It feels like I’m running my own VoIP company—without the huge overhead.",
+        "desc": "“The routing control changed everything for me”\n\nWith the Professional plan, I was able to plug in 3 of my favorite VoIP vendors and set up my own routing rules. I went from generic to premium service delivery instantly.",
         "rating": 5,
-        "name": "Ahmed Elmasry",
-        "position": "Reseller from Egypt"
+        "name": "David Peterson",
+        "position": "Founder, TalkFlex (UK)"
       },
       {
-        "desc": "“The analytics changed everything for us”\n\nHaving real-time data on call durations, answer rates, and agent performance has helped us restructure our entire sales process. We used to guess—now we know exactly what’s happening and why.",
+        "desc": "“Elite is what a real telco startup needs”\n\nWe’ve tried other providers, but only Bitcall gave us our own Sippy server with full routing, APIs, and automation. We run everything ourselves, but without any of the infrastructure headaches.",
         "rating": 5,
-        "name": "Julie Reynolds",
-        "position": "Sales Manager at Orbit Communications (UK)"
+        "name": "Rania Osman",
+        "position": "CTO at EchoTel (UAE)"
       },
       {
-        "desc": "“Perfect for remote teams”\n\nWe have agents across 4 countries, and Bitcall makes it feel like they’re all in the same room. Call quality is amazing, setup took less than 5 minutes, and we’ve had zero downtime in 9 months.",
+        "desc": "“eSIM made my offering unique”\n\nI started reselling Bitcall’s eSIM plans as part of my package and my signups tripled. My clients love being able to activate data plans instantly when they travel.",
         "rating": 5,
-        "name": "Daniel Kowalski",
-        "position": "Head of Support at Skynote (Poland)"
+        "name": "Marco Silva",
+        "position": "TravelTech Reseller (Portugal)"
       },
       {
-        "desc": "“Unbeatable support & reliability”\n\nWhenever we’ve had a question—even during odd hours—the Bitcall team responds fast and professionally. Their 24/7 support is a real game-changer. You don’t see that level of dedication anymore.",
+        "desc": "“Bitcall is the only one that truly supports resellers”\n\nThe support is unreal. Whether I had a setup question or client issue, someone was there 24/7. And they actually listen to resellers. I’ve seen two of my requests implemented.",
         "rating": 5,
-        "name": "Natalie Carter",
-        "position": "Founder of VoxBridge Media (Canada)"
+        "name": "Aisha K.",
+        "position": "Startup Founder (Nigeria)"
       },
       {
-        "desc": "“Rates so good, I thought it was a mistake”\n\nI double-checked the rate list because I couldn’t believe how low the prices were. We now call France, the US, and Nigeria every day without worrying about costs. Bitcall is the real deal.",
+        "desc": "“I’m making more reselling than at my full-time job”\n\nStarted with the Essential plan as a side hustle, upgraded to Pro within 2 weeks. I now manage over 40 clients across Europe. It's easy to scale with Bitcall.",
         "rating": 5,
-        "name": "Seyi Oluwa",
-        "position": "Marketing Agency Owner (Nigeria)"
+        "name": "Nicolas Vermeer",
+        "position": "Independent Reseller (Netherlands)"
       },
       {
-        "desc": "“From zero to profitable in 2 weeks”\n\nI started with Bitcall as a side hustle. Just two weeks later, I had 20 paying users and a steady income stream. No tech background, no fancy setup. Just a laptop, some hustle, and Bitcall.",
+        "desc": "“The analytics sold it for me”\n\nI can track every minute, every call, and every client with total visibility. It makes reporting and client satisfaction way easier. Everything just works.",
         "rating": 5,
-        "name": "Nina Patel",
-        "position": "Independent Reseller (India)"
+        "name": "Huda Al-Saadi",
+        "position": "Operations Lead at GlobalLink (KSA)"
       }
     ]
   },
@@ -321,14 +321,28 @@
       "q2": "How does your reseller panel work?",
       "q3": "Can I get data-only eSIM plans?",
       "q4": "What payment methods do you accept?",
-      "q5": "How do I get started?"
+      "q5": "How do I get started?",
+      "q6": "How white-labeled is the panel really?",
+      "q7": "Can I upgrade my plan or add features later?",
+      "q8": "Does Bitcall provide a Sippy Softswitch server?",
+      "q9": "Is there an API or bot integration available?",
+      "q10": "How fast can I go live and start selling?",
+      "q11": "How are payments handled for my clients?",
+      "q12": "What kind of support do I get with each plan?"
     },
     "answers": {
       "a1": "We cover A-Z termination, outbound call center routes, CLI/NCLI routes, and inbound virtual numbers.",
       "a2": "Our reseller panel is a turnkey solution. You buy at wholesale rates and sell at your own price—no infrastructure investment needed.",
       "a3": "Yes! Our eSIM plans are available in daily, weekly, or monthly packages with broad global coverage.",
       "a4": "We accept ALL payment methods. Visa and Mastercard, and we also accept BTC, USDT, ETH, SOL, and BNB. It’s never been easier or more flexible to start calling worldwide.",
-      "a5": "Simply sign up, add your IPs, and make a test payment starting from just $1 to start exploring our services."
+      "a5": "Simply sign up, add your IPs, and make a test payment starting from just $1 to start exploring our services.",
+      "a6": "Completely. Even on Essential, your clients see your domain, logo, and colors. Professional & Elite unlock full white-label control: branded invoices, emails, templates, and login experience.",
+      "a7": "Yes. You can upgrade plans at any time or purchase add-ons like more vendors, routing groups, or support options. It’s fully modular.",
+      "a8": "Yes — with the Elite plan. You get your own hosted Sippy Softswitch server integrated with Bitcall’s management panel, letting you operate like a true telecom provider.",
+      "a9": "The Elite plan includes full API access to automate accounts, billing, notifications, and more. Telegram bot alerts are also included, and WhatsApp alerts are available in the Professional plan.",
+      "a10": "Setup is nearly instant. You can go live in under 15 minutes with one-click provisioning for numbers, trunks, and accounts — no hardware required.",
+      "a11": "Your clients can pay via Stripe, PayPal, Crypto, and more. The panel supports multi-currency pricing and usage-based billing (per minute or per plan).",
+      "a12": "Essential includes email support. Professional adds WhatsApp support and priority response. Elite includes dedicated VIP support via phone or private channels."
     }
   },
   "contact": {

@@ -12,7 +12,7 @@ import { useTheme } from '@mui/material'
 import { useImageVariant } from '@/@core/hooks/useImageVariant'
 import { useT } from '@/i18n/client'
 
-const Faqs = props => {
+const Faqs = () => {
   const theme = useTheme()
   const { t } = useT('common')
   const FaqsData = [
@@ -41,6 +41,11 @@ const Faqs = props => {
       id: 'panel5',
       question: t('faq.questions.q5'),
       answer: t('faq.answers.a5')
+    },
+    {
+      id: 'panel6',
+      question: t('faq.questions.q6'),
+      answer: t('faq.answers.a6')
     }
   ]
   const bgLight = '/images/front-pages/landing-page/faq-bg.png'
@@ -80,7 +85,7 @@ const Faqs = props => {
       }}
     >
       <Grid container spacing={6}>
-        <Grid item xs={12} lg={5} className='text-center'>
+        <Grid item xs={12} lg={5} className='text-center items-center flex justify-center'>
           <img
             src='/images/front-pages/landing-page/sitting-girl-with-laptop.png'
             alt='girl with laptop'

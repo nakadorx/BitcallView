@@ -81,10 +81,10 @@
     "subtitle": "Stay on top of operations and show clients the real value of your service:",
     "features": {
       "dashboards": "Live call dashboards",
-      "reports": "Detailed call and user reports",
+      "reports": "  Detailed call and user reports",
       "monitoring": "Quality monitoring and uptime stats",
       "export": "Easy export for billing, tracking, or integrations",
-      "analytics": "Help clients optimize communication with usage analytics"
+      "analytics": "Help clients optimize \n communication  with usage analytics"
     }
   },
   "pricingSection": {
@@ -136,7 +136,7 @@
     },
     "standard_plan": {
       "title": "Elite Reseller",
-      "price": "499",
+      "price": "Custom",
       "per_month": "Per month",
       "discount": "Starting at $499/month based on capacity",
       "features": [
