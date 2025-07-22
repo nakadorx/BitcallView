@@ -14,32 +14,32 @@ export const WhiteLabelSection = async () => {
     {
       title: t('whiteLabelSection.features.portalAccess.title'),
       description: t('whiteLabelSection.features.portalAccess.description'),
-      imageSrc: '/images/assets/ICons/13.png'
+      imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/13_rf3d1o.png'
     },
     {
       title: t('whiteLabelSection.features.sipAddress.title'),
       description: t('whiteLabelSection.features.sipAddress.description'),
-      imageSrc: '/images/assets/ICons/12.png'
+      imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/12_a2txs2.png'
     },
     {
       title: t('whiteLabelSection.features.whiteLabeledExperience.title'),
       description: t('whiteLabelSection.features.whiteLabeledExperience.description'),
-      imageSrc: '/images/assets/ICons/10.png'
+      imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/10_n2dzhz.png'
     },
     {
       title: t('whiteLabelSection.features.brandedReports.title'),
       description: t('whiteLabelSection.features.brandedReports.description'),
-      imageSrc: '/images/assets/ICons/10.png'
+      imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/10_n2dzhz.png'
     },
     {
       title: t('whiteLabelSection.features.customTemplates.title'),
       description: t('whiteLabelSection.features.customTemplates.description'),
-      imageSrc: '/images/assets/ICons/9.png'
+      imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/9_rvv5ka.png'
     },
     {
       title: t('whiteLabelSection.features.customTemplates.title'),
       description: t('whiteLabelSection.features.customTemplates.description'),
-      imageSrc: '/images/assets/ICons/9.png'
+      imageSrc: 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184309/9_rvv5ka.png'
     }
   ]
 

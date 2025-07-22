@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import IconButton from '@mui/material/IconButton'
+import Tooltip from '@mui/material/Tooltip'
 import { Box } from '@mui/material'
 
 // Third-party Imports
@@ -80,7 +81,7 @@ const Footer = ({ mode }: { mode: Mode }) => {
               <Typography
                 color='white'
                 className='mbe-6 opacity-[0.92]'
-                sx={{ fontSize: '1.3rem', color: 'customColors.fifth' }}
+                sx={{ fontSize: '1.3rem', color: 'primary.main' }}
               >
                 {t('footer.sections.explore')}{' '}
               </Typography>
@@ -97,18 +98,36 @@ const Footer = ({ mode }: { mode: Mode }) => {
                 >
                   {t('footer.exploreLinks.home')}{' '}
                 </Typography>
-                <Typography
-                  component={Link}
-                  href={`/${locale}/esim`}
-                  color='white'
-                  sx={{
-                    transition: 'color 0.3s ease',
-                    '&:hover': { color: 'primary.main' }
-                  }}
-                  className='opacity-[0.78]'
-                >
-                  {t('footer.exploreLinks.esims')}{' '}
-                </Typography>
+                <Tooltip title='Coming soon' arrow>
+                  <span>
+                    <Typography
+                      color='white'
+                      sx={{
+                        opacity: 0.4,
+                        cursor: 'not-allowed',
+                        pointerEvents: 'none',
+                        position: 'relative',
+                        display: 'inline-block',
+                        '&::after': {
+                          content: '""',
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          backdropFilter: 'blur(1px)',
+                          borderRadius: '4px',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          pointerEvents: 'none'
+                        }
+                      }}
+                      className='opacity-[0.4]'
+                    >
+                      {t('footer.exploreLinks.esims')}{' '}
+                    </Typography>
+                  </span>
+                </Tooltip>
                 <Typography
                   component={Link}
                   href={`/${locale}/reseller`}
@@ -121,33 +140,69 @@ const Footer = ({ mode }: { mode: Mode }) => {
                 >
                   {t('footer.exploreLinks.reseller')}{' '}
                 </Typography>
+                <Tooltip title='Coming soon' arrow>
+                  <span>
+                    <Typography
+                      color='white'
+                      sx={{
+                        opacity: 0.4,
+                        cursor: 'not-allowed',
+                        pointerEvents: 'none',
+                        position: 'relative',
+                        display: 'inline-block',
+                        '&::after': {
+                          content: '""',
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          backdropFilter: 'blur(1px)',
+                          borderRadius: '4px',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          pointerEvents: 'none'
+                        }
+                      }}
+                      className='opacity-[0.4]'
+                    >
+                      {t('footer.exploreLinks.blog')}{' '}
+                    </Typography>
+                  </span>
+                </Tooltip>
+                <Tooltip title='Coming soon' arrow>
+                  <span>
+                    <Typography
+                      color='white'
+                      sx={{
+                        opacity: 0.4,
+                        cursor: 'not-allowed',
+                        pointerEvents: 'none',
+                        position: 'relative',
+                        display: 'inline-block',
+                        '&::after': {
+                          content: '""',
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          backdropFilter: 'blur(1px)',
+                          borderRadius: '4px',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          pointerEvents: 'none'
+                        }
+                      }}
+                      className='opacity-[0.4]'
+                    >
+                      {t('footer.exploreLinks.helpCenter')}{' '}
+                    </Typography>
+                  </span>
+                </Tooltip>
                 <Typography
                   component={Link}
-                  href={`/${locale}/blog`}
-                  color='white'
-                  sx={{
-                    transition: 'color 0.3s ease',
-                    '&:hover': { color: 'primary.main' }
-                  }}
-                  className='opacity-[0.78]'
-                >
-                  {t('footer.exploreLinks.blog')}{' '}
-                </Typography>
-                <Typography
-                  component={Link}
-                  href={`/${locale}/help-center`}
-                  color='white'
-                  sx={{
-                    transition: 'color 0.3s ease',
-                    '&:hover': { color: 'primary.main' }
-                  }}
-                  className='opacity-[0.78]'
-                >
-                  {t('footer.exploreLinks.helpCenter')}{' '}
-                </Typography>
-                <Typography
-                  component={Link}
-                  href={`/${locale}/landing-page#contact`}
+                  href='#contact'
                   color='white'
                   sx={{
                     transition: 'color 0.3s ease',
@@ -162,13 +217,13 @@ const Footer = ({ mode }: { mode: Mode }) => {
 
             {/* Get Started Column */}
             <Grid item xs={6} sm={6} md={3.5} lg={3} sx={{ textAlign: 'center' }}>
-              <Typography className='mbe-6 opacity-[0.92]' sx={{ fontSize: '1.3rem', color: 'customColors.fifth' }}>
+              <Typography className='mbe-6 opacity-[0.92]' sx={{ fontSize: '1.3rem', color: 'primary.main' }}>
                 {t('footer.sections.getStarted')}{' '}
               </Typography>
               <div className='flex flex-col gap-4'>
                 <Typography
                   component={Link}
-                  href='#'
+                  href={`/${locale}/`}
                   color='white'
                   sx={{
                     transition: 'color 0.3s ease',
@@ -192,7 +247,7 @@ const Footer = ({ mode }: { mode: Mode }) => {
                 </Typography>
                 <Typography
                   component={Link}
-                  href='#'
+                  href={`/${locale}/reseller#pricing`}
                   color='white'
                   sx={{
                     transition: 'color 0.3s ease',
@@ -202,18 +257,36 @@ const Footer = ({ mode }: { mode: Mode }) => {
                 >
                   {t('footer.getStartedLinks.pricing')}{' '}
                 </Typography>
-                <Typography
-                  component={Link}
-                  href='#'
-                  color='white'
-                  sx={{
-                    transition: 'color 0.3s ease',
-                    '&:hover': { color: 'primary.main' }
-                  }}
-                  className='opacity-[0.78]'
-                >
-                  {t('footer.getStartedLinks.activateEsim')}{' '}
-                </Typography>
+                <Tooltip title='Coming soon' arrow>
+                  <span>
+                    <Typography
+                      color='white'
+                      sx={{
+                        opacity: 0.4,
+                        cursor: 'not-allowed',
+                        pointerEvents: 'none',
+                        position: 'relative',
+                        display: 'inline-block',
+                        '&::after': {
+                          content: '""',
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          backdropFilter: 'blur(1px)',
+                          borderRadius: '4px',
+                          border: '1px solid rgba(255, 255, 255, 0.1)',
+                          pointerEvents: 'none'
+                        }
+                      }}
+                      className='opacity-[0.4]'
+                    >
+                      {t('footer.getStartedLinks.activateEsim')}{' '}
+                    </Typography>
+                  </span>
+                </Tooltip>
                 <Typography
                   component={Link}
                   href='#'
@@ -265,9 +338,8 @@ const Footer = ({ mode }: { mode: Mode }) => {
               target='_blank'
               rel='noopener noreferrer'
               className='font-medium text-white'
-              sx={{
-                transition: 'color 0.3s ease',
-                '&:hover': { color: 'primary.main' }
+              style={{
+                transition: 'color 0.3s ease'
               }}
             >
               Bitcall
@@ -278,9 +350,8 @@ const Footer = ({ mode }: { mode: Mode }) => {
             <Link
               href={`/${locale}/legal`}
               className='font-medium text-white'
-              sx={{
-                transition: 'color 0.3s ease',
-                '&:hover': { color: 'primary.main' }
+              style={{
+                transition: 'color 0.3s ease'
               }}
             >
               {t('footer.legal')}{' '}

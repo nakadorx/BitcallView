@@ -16,6 +16,7 @@ export type SectionContainerProps = {
     | 'real-time-insights-bg'
   containerClassName?: string
   ariaLabel?: string
+  id?: string
 }
 
 export const SectionContainer = ({
@@ -24,10 +25,12 @@ export const SectionContainer = ({
   ariaLabel,
   children,
   bgClass,
+  id,
   containerClassName
 }: SectionContainerProps) => {
   return (
     <section
+      id={id}
       aria-label={ariaLabel || title?.join(' ')}
       className={`float p-2 relative flex flex-col
          items-center pt-5 sm:pt-8 lg:mb-16 gap-5 bg-no-repeat bg-scroll

@@ -41,7 +41,7 @@ const RealTimeInsightsSection = () => {
         {!userIsMobile && (
           <div className='w-full h-full flex md:justify-center lg:justify-end mg:items-end px-4 items-center'>
             <Image
-              src={'/images/assets/23.png'}
+              src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/23_cbgbzh.png'
               alt={'Real-time telecom insights dashboard showing call analytics and monitoring'}
               width={470}
               height={500}
@@ -72,7 +72,7 @@ const RealTimeInsightsSection = () => {
       </div>
       <div aria-hidden='true'>
         <Image
-          src={'/images/assets/Arrows/4.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/AR4_piigth.png'
           alt=''
           className=' float-animation absolute lg:top-4 lg:left-[16rem] md:top-[9rem] md:left-[12rem] top-[12rem] left-[0rem]'
           width={70}
@@ -80,7 +80,7 @@ const RealTimeInsightsSection = () => {
           height={70}
         />
         <Image
-          src={'/images/assets/Arrows/2.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/AR5_xqa8nc.png'
           alt=''
           className=' float-animation absolute lg:top-[4rem] lg:right-[15rem] md:top-[10rem] md:right-[12rem] top-[12rem] right-[0rem]'
           width={70}
@@ -88,7 +88,7 @@ const RealTimeInsightsSection = () => {
           height={70}
         />
         <Image
-          src={'/images/assets/Arrows/3.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/AR3_cakyv7.png'
           alt=''
           className=' float-animation absolute lg:top-[30rem] lg:right-[14rem] md:top-[37rem] md:right-[10rem] top-[30rem] right-[0rem]'
           width={70}

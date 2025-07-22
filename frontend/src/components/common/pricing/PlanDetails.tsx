@@ -51,7 +51,7 @@ export const PlanDetails = ({ data, pricingPlan }: Props) => {
 
       {/* Pricing Section with Offer */}
       <div className='relative mb-1 flex justify-center'>
-        <div className='flex items-start gap-8' itemProp='offers' itemScope itemType='https://schema.org/Offer'>
+        <div className='flex items-start gap-5' itemProp='offers' itemScope itemType='https://schema.org/Offer'>
           <div className='flex items-center flex-none'>
             <Text as='span' className='text-2xl font-medium' itemProp='priceCurrency'>
               {data?.currencySymbol}

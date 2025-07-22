@@ -113,7 +113,8 @@ const FrontMenu = memo(function FrontMenu({ isDrawerOpen, setIsDrawerOpen, mode 
       label: t('navigation.frontMenu5'),
       isActive: pathname?.startsWith(`/${locale}/blog`),
       activeColor: 'text-primary',
-      hoverColor: 'hover:text-primary'
+      hoverColor: 'hover:text-primary',
+      disabled: true
     },
     {
       key: 'help',
@@ -122,7 +123,8 @@ const FrontMenu = memo(function FrontMenu({ isDrawerOpen, setIsDrawerOpen, mode 
       label: t('navigation.frontMenu6'),
       isActive: pathname === `/${locale}/help-center`,
       activeColor: 'text-primary',
-      hoverColor: 'hover:text-primary'
+      hoverColor: 'hover:text-primary',
+      disabled: true
     }
   ]
 

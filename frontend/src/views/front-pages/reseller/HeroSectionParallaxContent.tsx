@@ -16,10 +16,14 @@ const HeroSectionParallaxComponent = () => {
   const [elementsPosition, setElementsPosition] = useState({ x: 0, y: 0 })
   const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light')
 
-  const dashboardImageLight = '/images/front-pages/landing-pageTest/hero-dashboard-light.png'
-  const dashboardImageDark = '/images/front-pages/landing-pageTest/hero-dashboard-dark.png'
-  const elementsImageLight = '/images/front-pages/landing-pageTest/hero-elements-light.png'
-  const elementsImageDark = '/images/front-pages/landing-pageTest/hero-elements-dark.png'
+  const dashboardImageLight =
+    'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184464/hero-dashboard-light_c8r314.png'
+  const dashboardImageDark =
+    'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184465/hero-dashboard-dark-2_ajtcew.png'
+  const elementsImageLight =
+    'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184464/hero-elements-light_vlj9gx.png'
+  const elementsImageDark =
+    'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184447/hero-elements-dark-2_wmzxlq.png'
 
   const dashboardImage = currentTheme === 'dark' ? dashboardImageDark : dashboardImageLight
   const elementsImage = currentTheme === 'dark' ? elementsImageDark : elementsImageLight

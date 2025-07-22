@@ -70,6 +70,7 @@ const PricingSection = async () => {
   ]
   return (
     <SectionContainer
+      id='pricing'
       title={['', t('pricingSection.title1'), t('pricingSection.title2')]}
       containerClassName='lg:mb-[2rem]  bg-gradient-to-br from-blue-50 to-blue-100 dark:bg-none'
       bgClass='plans-bg'

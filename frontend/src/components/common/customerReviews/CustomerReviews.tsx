@@ -124,6 +124,7 @@ const CustomerReviews = () => {
 
   return (
     <section
+      id='reviews'
       className='flex flex-col gap-2 mb-[5rem] lg:mb-[10rem]'
       aria-labelledby='testimonials-heading'
       itemScope

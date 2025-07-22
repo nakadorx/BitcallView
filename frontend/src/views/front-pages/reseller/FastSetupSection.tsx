@@ -22,10 +22,9 @@ export const FastSetup = async () => {
     {
       title: t('fastSetupSection.features.oneClickProvisioning.title'),
       description: t('fastSetupSection.features.oneClickProvisioning.description'),
-      imgSrc: `/images/front-pages/landing-page/fast-setup-0.png`,
       iconContent: (
         <Image
-          src={'/images/assets/ICons/1.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184307/1_2_wbzmnu.png'
           alt={'One-click provisioning icon for telecom reseller setup'}
           width={70}
           height={70}
@@ -35,10 +34,9 @@ export const FastSetup = async () => {
     {
       title: t('fastSetupSection.features.noHardware.title'),
       description: t('fastSetupSection.features.noHardware.description'),
-      imgSrc: `/images/front-pages/landing-page/fast-setup-1.png`,
       iconContent: (
         <Image
-          src={'/images/assets/ICons/2.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184307/2_2_atk6sq.png'
           alt={'No hardware required icon - cloud-based VOIP solution'}
           width={70}
           height={70}
@@ -48,10 +46,9 @@ export const FastSetup = async () => {
     {
       title: t('fastSetupSection.features.acceptPayments.title'),
       description: t('fastSetupSection.features.acceptPayments.description'),
-      imgSrc: `/images/front-pages/landing-page/fast-setup-2.png`,
       iconContent: (
         <Image
-          src={'/images/assets/ICons/3.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184308/5_awevmx.png'
           alt={'Payment processing icon - Credit Card, PayPal, Crypto accepted'}
           width={70}
           height={70}
@@ -61,16 +58,21 @@ export const FastSetup = async () => {
     {
       title: t('fastSetupSection.features.acceptPayments.title'),
       description: t('fastSetupSection.features.acceptPayments.description'),
-      imgSrc: `/images/front-pages/landing-page/fast-setup-2.png`,
-      iconContent: <Image src={'/images/assets/ICons/3.png'} alt={'fast-setup'} width={70} height={70} />
+      iconContent: (
+        <Image
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184308/3_2_mre1s7.png'
+          alt={'fast-setup'}
+          width={70}
+          height={70}
+        />
+      )
     },
     {
       title: t('fastSetupSection.features.monthToMonth.title'),
       description: t('fastSetupSection.features.monthToMonth.description'),
-      imgSrc: `/images/front-pages/landing-page/fast-setup-3.png`,
       iconContent: (
         <Image
-          src={'/images/assets/ICons/4.png'}
+          src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184308/4_2_qgnxap.png'
           alt={'Month-to-month plans icon - flexible telecom billing'}
           width={70}
           height={70}
@@ -90,7 +92,7 @@ export const FastSetup = async () => {
         <div className='w-full h-full flex justify-center lg:justify-end md:justify-center items-center md:col-span-2'>
           <div className='float-animation'>
             <Image
-              src={'/images/assets/21.png'}
+              src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/21_tvjtlh.png'
               alt={'Bitcall OS fast setup dashboard - telecom reseller platform interface'}
               width={550}
               height={500}

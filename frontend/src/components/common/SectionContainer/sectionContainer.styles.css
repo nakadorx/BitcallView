@@ -40,7 +40,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/BGs/resseller/Fast Setup -BG.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/Fast_Setup_-BG_udwuni.png');
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -51,7 +51,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/BGs/resseller/everything-BG.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/everything-BG_rhzugd.png');
   background-position: center bottom 50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +64,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/BGs/resseller/LabelControl-BG.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/LabelControl-BG_loxv7l.png');
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -76,7 +76,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/BGs/resseller/reseller-BG-Hero.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184312/reseller-BG-Hero_d4a7de.png');
   background-size: cover;
   background-position: center;
   opacity: 1;
@@ -89,7 +89,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/BGs/resseller/FAQ-BG.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/FAQ-BG_qosbyj.png');
   background-size: cover;
   background-position: center;
   opacity: 1;
@@ -101,7 +101,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/BGs/resseller/everything-BG.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/everything-BG_rhzugd.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

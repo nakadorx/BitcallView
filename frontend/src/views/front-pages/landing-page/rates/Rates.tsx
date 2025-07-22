@@ -51,6 +51,8 @@ import { useImageVariant } from '@/@core/hooks/useImageVariant'
 import { customLog } from '@/utils/commons'
 import { iso3toIso2 } from './utils'
 import AnimatedHeadline from '@/components/layout/shared/AnimatedHeadline'
+// Text Component
+import { Text } from '@/components/common/text'
 // Type Imports
 import type { Mode } from '@core/types'
 import { locale } from 'dayjs'
@@ -416,218 +418,249 @@ const Rates = () => {
             </Typography>
           </Link>
         </Box>
-        {/* Tab Buttons */}
-        <Box className='flex justify-center mb-4 w-full max-w-3xl'>
-          {(['CC', 'Retail', 'Low Cost'] as TabKey[]).map(tab => (
-            <Button
-              key={tab}
-              variant={activeTab === tab ? 'contained' : 'outlined'}
+        {/* Interactive Elements with blur effect and overlay */}
+        <Box className='relative w-full max-w-3xl'>
+          {/* Blurred Content */}
+          <Box className='blur-md pointer-events-none select-none'>
+            {/* Tab Buttons */}
+            <Box className='flex justify-center mb-4 w-full'>
+              {(['CC', 'Retail', 'Low Cost'] as TabKey[]).map(tab => (
+                <Button
+                  key={tab}
+                  variant={activeTab === tab ? 'contained' : 'outlined'}
+                  sx={{
+                    borderRadius: tab === 'CC' ? '0.5rem 0 0 0.5rem' : tab === 'Low Cost' ? '0 0.5rem 0.5rem 0' : 0,
+                    flex: 1,
+                    backgroundColor: activeTab === tab ? 'primary.main' : 'transparent',
+                    color: activeTab === tab ? 'white' : 'text.primary'
+                  }}
+                  onClick={() => handleTabChange(tab)}
+                >
+                  {tab === 'CC' ? (
+                    <CallIcon fontSize='small' sx={{ mr: 0.5 }} />
+                  ) : tab === 'Retail' ? (
+                    <StoreIcon fontSize='small' sx={{ mr: 0.5 }} />
+                  ) : (
+                    <MoneyOffIcon fontSize='small' sx={{ mr: 0.5 }} />
+                  )}
+                  {t(`ratesSection.tabs.${tab}`)}
+                </Button>
+              ))}
+            </Box>
+            {/* Search Bar */}
+            <Box className='w-full mb-2'>
+              <TextField
+                fullWidth
+                placeholder={t('ratesSection.searchPlaceholder')}
+                size='small'
+                value={searchTerm}
+                onChange={handleSearchChange}
+                onFocus={e => {
+                  const input = e.target as HTMLInputElement
+                  if (typeof input.select === 'function') {
+                    input.select()
+                  }
+                }}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position='start'>
+                      <SearchIcon sx={{ color: theme.palette.text.primary }} />
+                    </InputAdornment>
+                  ),
+                  endAdornment: searchTerm && (
+                    <InputAdornment position='end'>
+                      <IconButton onClick={() => setSearchTerm('')}>
+                        <ClearIcon sx={{ color: theme.palette.text.primary }} />
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                  sx: {
+                    color: theme.palette.text.primary,
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: `${theme.palette.text.primary} !important`
+                    },
+                    '&:hover .MuiOutlinedInput-notchedOutline': {
+                      borderColor: `${theme.palette.text.primary} !important`
+                    },
+                    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                      borderColor: `${theme.palette.text.primary} !important`
+                    }
+                  }
+                }}
+                sx={{
+                  input: { color: theme.palette.text.primary },
+                  '& .MuiInputAdornment-root': {
+                    borderColor: `${theme.palette.text.primary} !important`
+                  }
+                }}
+              />
+            </Box>
+            {/* Card Container */}
+            <Card
+              className='w-full'
               sx={{
-                borderRadius: tab === 'CC' ? '0.5rem 0 0 0.5rem' : tab === 'Low Cost' ? '0 0.5rem 0.5rem 0' : 0,
-                flex: 1,
-                backgroundColor: activeTab === tab ? 'primary.main' : 'transparent',
-                color: activeTab === tab ? 'white' : 'text.primary'
+                border: '1px solid',
+                borderColor: 'text.primary.main',
+                borderRadius: '12px',
+                padding: '35px 25px 14px 19px'
               }}
-              onClick={() => handleTabChange(tab)}
             >
-              {tab === 'CC' ? (
-                <CallIcon fontSize='small' sx={{ mr: 0.5 }} />
-              ) : tab === 'Retail' ? (
-                <StoreIcon fontSize='small' sx={{ mr: 0.5 }} />
-              ) : (
-                <MoneyOffIcon fontSize='small' sx={{ mr: 0.5 }} />
-              )}
-              {t(`ratesSection.tabs.${tab}`)}
-            </Button>
-          ))}
-        </Box>
-        {/* Search Bar */}
-        <Box className='w-full max-w-3xl mb-2'>
-          <TextField
-            fullWidth
-            placeholder={t('ratesSection.searchPlaceholder')}
-            size='small'
-            value={searchTerm}
-            onChange={handleSearchChange}
-            onFocus={e => {
-              const input = e.target as HTMLInputElement
-              if (typeof input.select === 'function') {
-                input.select()
-              }
-            }}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position='start'>
-                  <SearchIcon sx={{ color: theme.palette.text.primary }} />
-                </InputAdornment>
-              ),
-              endAdornment: searchTerm && (
-                <InputAdornment position='end'>
-                  <IconButton onClick={() => setSearchTerm('')}>
-                    <ClearIcon sx={{ color: theme.palette.text.primary }} />
-                  </IconButton>
-                </InputAdornment>
-              ),
-              sx: {
-                color: theme.palette.text.primary,
-                '& .MuiOutlinedInput-notchedOutline': {
-                  borderColor: `${theme.palette.text.primary} !important`
-                },
-                '&:hover .MuiOutlinedInput-notchedOutline': {
-                  borderColor: `${theme.palette.text.primary} !important`
-                },
-                '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                  borderColor: `${theme.palette.text.primary} !important`
-                }
-              }
-            }}
-            sx={{
-              input: { color: theme.palette.text.primary },
-              '& .MuiInputAdornment-root': {
-                borderColor: `${theme.palette.text.primary} !important`
-              }
-            }}
-          />
-        </Box>
-        {/* Card Container with a fixed minHeight */}
-        <Card
-          className='w-full max-w-3xl'
-          sx={{
-            border: '1px solid',
-            borderColor: 'text.primary.main',
-            borderRadius: '12px',
-            padding: '35px 25px 14px 19px'
-          }}
-        >
-          {/* Top element for scrolling reference */}
-          <div id='ratesTop' ref={headerRef} />
-          {loading ? (
-            isMobile ? (
-              // Mobile loading skeleton in a scrollable container.
-              <Box className='custom-scrollbar' sx={{ maxHeight: '70vh', overflowY: 'auto' }}>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Box key={index} sx={{ border: '1px solid #ddd', borderRadius: 1, p: 2, mb: 2, width: '90%' }}>
-                    <Skeleton variant='text' width='85%' height={20} />
-                    <Skeleton variant='text' width='96%' height={20} sx={{ mt: 1 }} />
-                    <Skeleton variant='text' width='96%' height={20} sx={{ mt: 1 }} />
-                    <Skeleton variant='text' width='90%' height={20} sx={{ mt: 1 }} />
+              {/* Top element for scrolling reference */}
+              <div id='ratesTop' ref={headerRef} />
+              {loading ? (
+                isMobile ? (
+                  // Mobile loading skeleton in a scrollable container.
+                  <Box className='custom-scrollbar' sx={{ maxHeight: '70vh', overflowY: 'auto' }}>
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <Box key={index} sx={{ border: '1px solid #ddd', borderRadius: 1, p: 2, mb: 2, width: '90%' }}>
+                        <Skeleton variant='text' width='85%' height={20} />
+                        <Skeleton variant='text' width='96%' height={20} sx={{ mt: 1 }} />
+                        <Skeleton variant='text' width='96%' height={20} sx={{ mt: 1 }} />
+                        <Skeleton variant='text' width='90%' height={20} sx={{ mt: 1 }} />
+                      </Box>
+                    ))}
                   </Box>
-                ))}
-              </Box>
-            ) : (
-              // Desktop loading skeleton with header separated from scrollable rows.
-              <Paper className='custom-scrollbar' sx={{ boxShadow: 'none' }}>
-                <Table>
-                  <TableHead>
-                    <TableRow>
-                      {columns.map(column => (
-                        <TableCell key={column.id}>
-                          <Skeleton variant='text' width='80%' height={30} />
-                        </TableCell>
-                      ))}
-                    </TableRow>
-                  </TableHead>
-                </Table>
-                <TableContainer className='custom-scrollbar' sx={{ maxHeight: 'calc(70vh - 60px)', overflowY: 'auto' }}>
-                  <Table>
-                    <TableBody>
-                      {Array.from({ length: 5 }).map((_, index) => (
-                        <TableRow key={index}>
+                ) : (
+                  // Desktop loading skeleton with header separated from scrollable rows.
+                  <Paper className='custom-scrollbar' sx={{ boxShadow: 'none' }}>
+                    <Table>
+                      <TableHead>
+                        <TableRow>
                           {columns.map(column => (
                             <TableCell key={column.id}>
-                              <Skeleton variant='text' width='90%' height={25} />
+                              <Skeleton variant='text' width='80%' height={30} />
                             </TableCell>
                           ))}
                         </TableRow>
-                      ))}
+                      </TableHead>
+                    </Table>
+                    <TableContainer
+                      className='custom-scrollbar'
+                      sx={{ maxHeight: 'calc(70vh - 60px)', overflowY: 'auto' }}
+                    >
+                      <Table>
+                        <TableBody>
+                          {Array.from({ length: 5 }).map((_, index) => (
+                            <TableRow key={index}>
+                              {columns.map(column => (
+                                <TableCell key={column.id}>
+                                  <Skeleton variant='text' width='90%' height={25} />
+                                </TableCell>
+                              ))}
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
+                  </Paper>
+                )
+              ) : isMobile ? (
+                // Mobile view: render cards inside a scrollable container.
+                <Box className='custom-scrollbar' sx={{ maxHeight: '70vh', overflowY: 'auto' }}>
+                  {paginatedData.length > 0 ? (
+                    paginatedData.map(row => <MobileCardRow key={row.id} row={row} theme={theme} />)
+                  ) : (
+                    <Box sx={{ textAlign: 'center', p: 2 }}>
+                      <Typography>{t('ratesSection.noData')}</Typography>
+                    </Box>
+                  )}
+                </Box>
+              ) : (
+                // Desktop view: render using MUI Table with header outside the scrollable rows.
+                <TableContainer
+                  className='custom-scrollbar'
+                  component={Paper}
+                  sx={{ maxHeight: 'calc(70vh - 60px)', minHeight: '30rem', overflowY: 'auto' }}
+                >
+                  <Table stickyHeader>
+                    <TableHead>
+                      <TableRow>
+                        {columns.map(column => (
+                          <TableCell
+                            key={column.id}
+                            sx={{ fontSize: '1rem', cursor: 'pointer' }}
+                            onClick={() => handleSort(column.id as keyof RowData)}
+                          >
+                            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                              {column.icon}
+                              <TableSortLabel
+                                active={sortConfig?.key === column.id}
+                                direction={sortConfig?.key === column.id ? sortConfig.direction : 'asc'}
+                                sx={{
+                                  '& .MuiTableSortLabel-icon': { color: `${theme.palette.primary.main} !important` }
+                                }}
+                              >
+                                {column.label}
+                              </TableSortLabel>
+                            </Box>
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {paginatedData.length > 0 ? (
+                        paginatedData.map(row => <DesktopTableRow key={row.id} row={row} theme={theme} />)
+                      ) : (
+                        <TableRow>
+                          <TableCell colSpan={columns.length} align='center'>
+                            No matching data available.
+                          </TableCell>
+                        </TableRow>
+                      )}
                     </TableBody>
                   </Table>
                 </TableContainer>
-              </Paper>
-            )
-          ) : isMobile ? (
-            // Mobile view: render cards inside a scrollable container.
-            <Box className='custom-scrollbar' sx={{ maxHeight: '70vh', overflowY: 'auto' }}>
-              {paginatedData.length > 0 ? (
-                paginatedData.map(row => <MobileCardRow key={row.id} row={row} theme={theme} />)
-              ) : (
-                <Box sx={{ textAlign: 'center', p: 2 }}>
-                  <Typography>{t('ratesSection.noData')}</Typography>
+              )}
+
+              {/* Pagination Component – shown on mobile always and on desktop if more than one page */}
+              {!loading && (isMobile || totalPages > 1) && (
+                <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
+                  <Pagination
+                    count={totalPages}
+                    page={currentPage}
+                    onChange={handlePageChange}
+                    color='primary'
+                    variant='outlined'
+                    shape='rounded'
+                    sx={{ '& .MuiPaginationItem-root.Mui-disabled': { cursor: 'not-allowed' } }}
+                  />
                 </Box>
               )}
-            </Box>
-          ) : (
-            // Desktop view: render using MUI Table with header outside the scrollable rows.
-            <TableContainer
-              className='custom-scrollbar'
-              component={Paper}
-              sx={{ maxHeight: 'calc(70vh - 60px)', overflowY: 'auto' }}
-            >
-              <Table stickyHeader>
-                <TableHead>
-                  <TableRow>
-                    {columns.map(column => (
-                      <TableCell
-                        key={column.id}
-                        sx={{ fontSize: '1rem', cursor: 'pointer' }}
-                        onClick={() => handleSort(column.id as keyof RowData)}
-                      >
-                        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                          {column.icon}
-                          <TableSortLabel
-                            active={sortConfig?.key === column.id}
-                            direction={sortConfig?.key === column.id ? sortConfig.direction : 'asc'}
-                            sx={{ '& .MuiTableSortLabel-icon': { color: `${theme.palette.primary.main} !important` } }}
-                          >
-                            {column.label}
-                          </TableSortLabel>
-                        </Box>
-                      </TableCell>
-                    ))}
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {paginatedData.length > 0 ? (
-                    paginatedData.map(row => <DesktopTableRow key={row.id} row={row} theme={theme} />)
-                  ) : (
-                    <TableRow>
-                      <TableCell colSpan={columns.length} align='center'>
-                        No matching data available.
-                      </TableCell>
-                    </TableRow>
-                  )}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          )}
+            </Card>
 
-          {/* Pagination Component – shown on mobile always and on desktop if more than one page */}
-          {!loading && (isMobile || totalPages > 1) && (
-            <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
-              <Pagination
-                count={totalPages}
-                page={currentPage}
-                onChange={handlePageChange}
-                color='primary'
-                variant='outlined'
-                shape='rounded'
-                sx={{ '& .MuiPaginationItem-root.Mui-disabled': { cursor: 'not-allowed' } }}
-              />
+            {/* "See All Countries" Link */}
+            <Box sx={{ mt: 3, textAlign: 'center' }}>
+              <Link href={mounted ? `/${local}/rates/countries` : `/rates/countries`}>
+                <Typography
+                  variant='subtitle1'
+                  sx={{ cursor: 'pointer', color: theme.palette.primary.main, textDecoration: 'underline' }}
+                >
+                  {t('ratesSection.seeAllCountries')}
+                </Typography>
+              </Link>
             </Box>
-          )}
-        </Card>
-        {/* "See All Countries" Link */}
-        <Box sx={{ mt: 3, textAlign: 'center' }}>
-          <Link href={mounted ? `/${local}/rates/countries` : `/rates/countries`}>
-            <Typography
-              variant='subtitle1'
-              sx={{ cursor: 'pointer', color: theme.palette.primary.main, textDecoration: 'underline' }}
+          </Box>
+
+          {/* Coming Soon Overlay */}
+          <Box className='absolute inset-0 flex flex-col justify-center items-center bg-black/30 z-10 rounded-lg cursor-wait '>
+            <Text
+              as='h2'
+              textColor='white'
+              className='font-coolvetica font-bold text-center text-4xl sm:text-5xl  text-shadow-lg lg:text-8xl md:text-6xl mb-4 float-animation'
             >
-              {t('ratesSection.seeAllCountries')}
-            </Typography>
-          </Link>
+              {t('comingSoon.title').toUpperCase()}
+            </Text>
+            <Text
+              as='h6'
+              textColor='white'
+              className='font-coolvetica text-center text-base sm:text-xl px-4  float-animation'
+            >
+              {t('comingSoon.description')}
+            </Text>
+          </Box>
         </Box>
       </Box>
+
       <style jsx global>{`
         /* Custom scrollbar styling: always thin and black */
         .custom-scrollbar {

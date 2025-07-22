@@ -18,7 +18,7 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    domains: ['bitcall.io', 'www.bitcall.io'], // Add your domains
+    domains: ['bitcall.io', 'www.bitcall.io', 'res.cloudinary.com'], // Add your domains
     unoptimized: false // Enable optimization
   },
 

@@ -136,7 +136,7 @@
     },
     "standard_plan": {
       "title": "Elite Reseller",
-      "price": "Custom",
+      "price": "499",
       "per_month": "Per month",
       "discount": "Starting at $499/month based on capacity",
       "features": [

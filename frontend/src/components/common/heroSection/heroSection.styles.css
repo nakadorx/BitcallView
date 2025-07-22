@@ -23,7 +23,7 @@
 }
 
 .bg-section-1 {
-  background-image: url('/images/BGs/resseller/reseller-BG-Hero.png');
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184312/reseller-BG-Hero_d4a7de.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;

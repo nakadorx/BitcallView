@@ -41,8 +41,8 @@ const Faqs = () => {
       answer: t('faq.answers.a5')
     }
   ]
-  const bgLight = '/images/BGs/resseller/FAQ.png'
-  const bgDark = '/images/BGs/resseller/FAQ-BG.png'
+  const bgLight = 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/FAQ_jxamzi.png'
+  const bgDark = 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/FAQ-BG_qosbyj.png'
   const bgImage = useImageVariant(theme.palette.mode, bgLight, bgDark)
   const ref = useRef(null)
 
@@ -69,7 +69,7 @@ const Faqs = () => {
       <Grid container spacing={6}>
         <Grid item xs={12} lg={5} sx={{ textAlign: 'center' }}>
           <Image
-            src='/images/front-pages/landing-page/sitting-girl-with-laptop.png'
+            src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184312/sitting-girl-with-laptop_bi1sbr.png'
             alt='girl with laptop'
             width={320}
             height={240}

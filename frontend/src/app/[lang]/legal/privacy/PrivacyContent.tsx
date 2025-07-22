@@ -6,56 +6,35 @@ import { useTheme } from '@mui/material/styles'
 import TOC, { TOCItem } from '../TOC'
 import { useT } from '@/i18n/client'
 
-interface Introduction {
-  company: string
-  companyNumber: string
-  registeredOffice: string
-  description: string
-}
-
-interface ScopeItem {
-  title: string
-  content: string
-}
-
-interface ResponsibilityItem {
-  title: string
-  content: string
-}
-
-interface PaymentItem {
-  title: string
-  content: string
-}
-
-interface TermsData {
+interface PrivacyData {
   effectiveDate: string
   lastUpdated: string
-  introduction: Introduction
-  scopeOfServices: ScopeItem[]
-  userResponsibilities: ResponsibilityItem[]
-  paymentAndBilling: PaymentItem[]
-  dataStorageRetention: {
-    cdrs: string
-    deletion: string
+  scope: {
+    details: string[]
   }
-  intellectualProperty: string
-  disclaimerOfWarranties: string
-  limitationOfLiability: {
-    content: string
-    cap: string
+  dataWeCollect: {
+    accountInformation: string
+    usageData: string
+    technicalData: string
   }
-  indemnification: string
-  termination: {
-    byUser: string
-    byUs: string
-    effects: string
+  howWeUseData: {
+    serviceProvision: string
+    accountManagement: string
+    legalCompliance: string
   }
-  governingLaw: {
-    content: string
-    disputeResolution: string
+  retentionDeletion: {
+    cdrRetention: string
+    noCallAudio: string
+    accountDeletion: string
   }
-  changesToTerms: string
+  sharingData: {
+    serviceProviders: string
+    legalRequirements: string
+  }
+  cookiesTracking: string
+  dataSecurity: string
+  yourRights: string
+  updates: string
   contactInformation: {
     company: string
     companyNumber: string
@@ -64,29 +43,26 @@ interface TermsData {
   }
 }
 
-interface TermsContentProps {
-  data: TermsData
+interface PrivacyContentProps {
+  data: PrivacyData
 }
 
-export default function TermsContent({ data }: TermsContentProps) {
+export default function PrivacyContent({ data }: PrivacyContentProps) {
   const { t } = useT('legal')
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   const tocItems: TOCItem[] = [
-    { id: 'introduction', label: t('terms.toc.introduction') },
-    { id: 'scope-of-services', label: t('terms.toc.scope') },
-    { id: 'user-responsibilities', label: t('terms.toc.responsibilities') },
-    { id: 'payment-and-billing', label: t('terms.toc.billing') },
-    { id: 'data-storage-retention', label: t('terms.toc.retention') },
-    { id: 'intellectual-property', label: t('terms.toc.ip') },
-    { id: 'disclaimer-of-warranties', label: t('terms.toc.disclaimer') },
-    { id: 'limitation-of-liability', label: t('terms.toc.liability') },
-    { id: 'indemnification', label: t('terms.toc.indemnification') },
-    { id: 'termination', label: t('terms.toc.termination') },
-    { id: 'governing-law', label: t('terms.toc.law') },
-    { id: 'changes-to-terms', label: t('terms.toc.changes') },
-    { id: 'contact-information', label: t('terms.toc.contact') }
+    { id: 'scope', label: t('privacy.toc.scope') },
+    { id: 'data-we-collect', label: t('privacy.toc.dataWeCollect') },
+    { id: 'how-we-use-data', label: t('privacy.toc.howWeUseData') },
+    { id: 'retention-deletion', label: t('privacy.toc.retentionDeletion') },
+    { id: 'sharing-data', label: t('privacy.toc.sharing') },
+    { id: 'cookies-tracking', label: t('privacy.toc.cookies') },
+    { id: 'data-security', label: t('privacy.toc.security') },
+    { id: 'your-rights', label: t('privacy.toc.rights') },
+    { id: 'updates', label: t('privacy.toc.updates') },
+    { id: 'contact-information', label: t('privacy.toc.contact') }
   ]
 
   return (
@@ -97,105 +73,78 @@ export default function TermsContent({ data }: TermsContentProps) {
         </Box>
 
         <Box sx={{ flex: 1 }}>
-          <Section id='introduction' title={t('terms.toc.introduction')}>
-            <Typography variant='body1'>
-              <strong>{t('privacy.contact.company')}:</strong> {data.introduction.company} <br />
-              <strong>{t('privacy.contact.companyNumber')}:</strong> {data.introduction.companyNumber} <br />
-              <strong>{t('privacy.contact.office')}:</strong> {data.introduction.registeredOffice}
-            </Typography>
-            <Typography variant='body1' sx={{ mt: 1 }}>
-              {data.introduction.description}
-            </Typography>
-          </Section>
-
-          <Section id='scope-of-services' title={t('terms.toc.scope')}>
+          <Section id='scope' title={t('privacy.toc.scope')}>
             <List>
-              {data.scopeOfServices.map((service, index) => (
+              {data.scope.details.map((detail, index) => (
                 <ListItem key={index} disablePadding>
-                  <Typography variant='body1'>
-                    <strong>{service.title}:</strong> {service.content}
-                  </Typography>
+                  <Typography variant='body1'>• {detail}</Typography>
                 </ListItem>
               ))}
             </List>
           </Section>
 
-          <Section id='user-responsibilities' title={t('terms.toc.responsibilities')}>
-            <List>
-              {data.userResponsibilities.map((resp, index) => (
-                <ListItem key={index} disablePadding>
-                  <Typography variant='body1'>
-                    <strong>{resp.title}:</strong> {resp.content}
-                  </Typography>
-                </ListItem>
-              ))}
-            </List>
-          </Section>
-
-          <Section id='payment-and-billing' title={t('terms.toc.billing')}>
-            <List>
-              {data.paymentAndBilling.map((item, index) => (
-                <ListItem key={index} disablePadding>
-                  <Typography variant='body1'>
-                    <strong>{item.title}:</strong> {item.content}
-                  </Typography>
-                </ListItem>
-              ))}
-            </List>
-          </Section>
-
-          <Section id='data-storage-retention' title={t('terms.toc.retention')}>
+          <Section id='data-we-collect' title={t('privacy.toc.dataWeCollect')}>
             <Typography variant='body1'>
-              <strong>CDRs:</strong> {data.dataStorageRetention.cdrs}
+              <strong>{t('privacy.labels.accountInfo')}:</strong> {data.dataWeCollect.accountInformation}
             </Typography>
-            <Typography variant='body1'>
-              <strong>Deletion:</strong> {data.dataStorageRetention.deletion}
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.usageData')}:</strong> {data.dataWeCollect.usageData}
+            </Typography>
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.technicalData')}:</strong> {data.dataWeCollect.technicalData}
             </Typography>
           </Section>
 
-          <Section id='intellectual-property' title={t('terms.toc.ip')}>
-            <Typography variant='body1'>{data.intellectualProperty}</Typography>
-          </Section>
-
-          <Section id='disclaimer-of-warranties' title={t('terms.toc.disclaimer')}>
-            <Typography variant='body1'>{data.disclaimerOfWarranties}</Typography>
-          </Section>
-
-          <Section id='limitation-of-liability' title={t('terms.toc.liability')}>
-            <Typography variant='body1'>{data.limitationOfLiability.content}</Typography>
+          <Section id='how-we-use-data' title={t('privacy.toc.howWeUseData')}>
             <Typography variant='body1'>
-              <strong>{t('vendor.labels.cap')}:</strong> {data.limitationOfLiability.cap}
+              <strong>{t('privacy.labels.service')}:</strong> {data.howWeUseData.serviceProvision}
+            </Typography>
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.account')}:</strong> {data.howWeUseData.accountManagement}
+            </Typography>
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.legal')}:</strong> {data.howWeUseData.legalCompliance}
             </Typography>
           </Section>
 
-          <Section id='indemnification' title={t('terms.toc.indemnification')}>
-            <Typography variant='body1'>{data.indemnification}</Typography>
-          </Section>
-
-          <Section id='termination' title={t('terms.toc.termination')}>
+          <Section id='retention-deletion' title={t('privacy.toc.retentionDeletion')}>
             <Typography variant='body1'>
-              <strong>{t('terms.labels.byUser')}:</strong> {data.termination.byUser}
+              <strong>{t('privacy.labels.cdr')}:</strong> {data.retentionDeletion.cdrRetention}
             </Typography>
-            <Typography variant='body1'>
-              <strong>{t('terms.labels.byUs')}:</strong> {data.termination.byUs}
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.audio')}:</strong> {data.retentionDeletion.noCallAudio}
             </Typography>
-            <Typography variant='body1'>
-              <strong>{t('terms.labels.effects')}:</strong> {data.termination.effects}
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.deletion')}:</strong> {data.retentionDeletion.accountDeletion}
             </Typography>
           </Section>
 
-          <Section id='governing-law' title={t('terms.toc.law')}>
-            <Typography variant='body1'>{data.governingLaw.content}</Typography>
+          <Section id='sharing-data' title={t('privacy.toc.sharing')}>
             <Typography variant='body1'>
-              <strong>{t('terms.labels.disputeResolution')}:</strong> {data.governingLaw.disputeResolution}
+              <strong>{t('privacy.labels.providers')}:</strong> {data.sharingData.serviceProviders}
+            </Typography>
+            <Typography variant='body1' sx={{ mt: 2 }}>
+              <strong>{t('privacy.labels.requirements')}:</strong> {data.sharingData.legalRequirements}
             </Typography>
           </Section>
 
-          <Section id='changes-to-terms' title={t('terms.toc.changes')}>
-            <Typography variant='body1'>{data.changesToTerms}</Typography>
+          <Section id='cookies-tracking' title={t('privacy.toc.cookies')}>
+            <Typography variant='body1'>{data.cookiesTracking}</Typography>
           </Section>
 
-          <Section id='contact-information' title={t('terms.toc.contact')}>
+          <Section id='data-security' title={t('privacy.toc.security')}>
+            <Typography variant='body1'>{data.dataSecurity}</Typography>
+          </Section>
+
+          <Section id='your-rights' title={t('privacy.toc.rights')}>
+            <Typography variant='body1'>{data.yourRights}</Typography>
+          </Section>
+
+          <Section id='updates' title={t('privacy.toc.updates')}>
+            <Typography variant='body1'>{data.updates}</Typography>
+          </Section>
+
+          <Section id='contact-information' title={t('privacy.toc.contact')}>
             <Typography variant='body1'>
               <strong>{t('privacy.contact.company')}:</strong> {data.contactInformation.company}
             </Typography>

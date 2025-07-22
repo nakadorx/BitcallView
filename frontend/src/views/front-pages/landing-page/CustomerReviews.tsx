@@ -83,7 +83,7 @@ const CustomerReviews = () => {
   }
 
   return (
-    <section className='flex flex-col gap-4'>
+    <section id='reviews' className='flex flex-col gap-4'>
       <Box sx={{ mb: 'var(--section-margin-bottom)' }}>
         <Box
           className={classnames('flex flex-col items-center justify-center', frontCommonStyles.layoutSpacing)}

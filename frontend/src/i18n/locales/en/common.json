@@ -407,5 +407,9 @@
     "data": "Data",
     "noPlans": "No plans available.",
     "loading": "Loading plans, please wait..."
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "description": "This feature is coming soon. Please check back later."
   }
 }
