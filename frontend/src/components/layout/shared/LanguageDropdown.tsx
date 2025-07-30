@@ -22,6 +22,9 @@ import type { Locale } from '@configs/i18n'
 // Hook Imports
 import { useSettings } from '@core/hooks/useSettings'
 
+// Utils Imports
+import { updateHtmlDirection } from '@/utils/commons'
+
 type LanguageDataType = {
   langCode: Locale
   langName: string
@@ -47,7 +50,7 @@ export const languageData: LanguageDataType[] = [
   },
   {
     langCode: 'ar',
-    langName: 'Arabic'
+    langName: 'العربية'
   }
 ]
 
@@ -69,6 +72,11 @@ const LanguageDropdown = () => {
 
   const handleToggle = () => {
     setOpen(prevOpen => !prevOpen)
+  }
+
+  const handleLanguageChange = (langCode: string) => {
+    updateHtmlDirection(langCode)
+    handleClose()
   }
 
   return (
@@ -97,7 +105,7 @@ const LanguageDropdown = () => {
                       key={locale.langCode}
                       component={Link}
                       href={getLocalePath(pathName, locale.langCode)}
-                      onClick={handleClose}
+                      onClick={() => handleLanguageChange(locale.langCode)}
                       selected={lang === locale.langCode}
                       className='pli-4'
                     >

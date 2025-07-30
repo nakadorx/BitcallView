@@ -4,11 +4,9 @@ import { Text } from '@/components/common/text'
 import { WaveCard } from '../../../components/common/waveCard/WaveCard'
 import { getT } from '@/i18n/server'
 import './fastSetupSection.styles.css'
-import { getLocale } from '@/utils/commons'
 
-const WhosUseThisSection = async () => {
-  const locale = getLocale()
-  const t = await getT(locale, 'resellerPage')
+const WhosUseThisSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'resellerPage')
 
   const featuresList = [
     {

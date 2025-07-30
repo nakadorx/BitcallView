@@ -2,13 +2,11 @@
 import { SectionContainer } from '@/components/common/SectionContainer/SectionContainer'
 
 import { VideoCardList } from '@/components/common/cards/VideoCardList'
-import { getLocale } from '@/utils/commons'
 import { getT } from '@/i18n/server'
 
-export const EverythingYouNeedSection = async () => {
-  const locale = getLocale()
-  const t = await getT(locale, 'common')
-  const tReseller = await getT(locale, 'resellerPage')
+export const EverythingYouNeedSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'common')
+  const tReseller = await getT(lang, 'resellerPage')
 
   const data = [0, 1, 2, 3].map(i => ({
     title: t(`advantages.items.${i}.title`),

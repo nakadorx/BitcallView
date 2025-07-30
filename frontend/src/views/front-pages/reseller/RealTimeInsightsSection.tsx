@@ -5,6 +5,7 @@ import { useT } from '@/i18n/client'
 import { useMediaQuery, useTheme } from '@mui/material'
 import { CardList } from '@/components/common/cards/CardList'
 import Image from 'next/image'
+import AnimatedIcon from '@/components/common/AnimatedIcons'
 import { Text } from '@/components/common/text'
 
 const RealTimeInsightsSection = () => {
@@ -40,11 +41,14 @@ const RealTimeInsightsSection = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2 h-[1100px] md:h-[1000px] lg:h-auto'>
         {!userIsMobile && (
           <div className='w-full h-full flex md:justify-center lg:justify-end mg:items-end px-4 items-center'>
-            <Image
-              src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/23_cbgbzh.png'
-              alt={'Real-time telecom insights dashboard showing call analytics and monitoring'}
-              width={470}
-              height={500}
+            <AnimatedIcon
+              src={
+                'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753880336/Analytics_Character_Animation_tqcezh.gif'
+              }
+              alt={'Real-time telecom insights dashboard - mobile view'}
+              width={800}
+              height={600}
+              useNativeImg={true}
             />
           </div>
         )}
@@ -57,11 +61,15 @@ const RealTimeInsightsSection = () => {
             headerExtraContent={
               userIsMobile && (
                 <div className='flex justify-center items-center p-5'>
-                  <Image
-                    src={'/images/assets/23.png'}
+                  <AnimatedIcon
+                    src={
+                      'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753880336/Analytics_Character_Animation_tqcezh.gif'
+                    }
                     alt={'Real-time telecom insights dashboard - mobile view'}
-                    width={370}
+                    width={420}
                     height={400}
+                    className=' relative  top-[0rem]'
+                    useNativeImg={true}
                   />
                 </div>
               )
@@ -74,7 +82,7 @@ const RealTimeInsightsSection = () => {
         <Image
           src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/AR4_piigth.png'
           alt=''
-          className=' float-animation absolute lg:top-4 lg:left-[16rem] md:top-[9rem] md:left-[12rem] top-[12rem] left-[0rem]'
+          className=' float-animation absolute lg:top-4 lg:left-[16rem] md:top-[9rem] md:left-[12rem] top-[17rem] left-[0rem]'
           width={70}
           aria-hidden='true'
           height={70}
@@ -82,7 +90,7 @@ const RealTimeInsightsSection = () => {
         <Image
           src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184311/AR5_xqa8nc.png'
           alt=''
-          className=' float-animation absolute lg:top-[4rem] lg:right-[15rem] md:top-[10rem] md:right-[12rem] top-[12rem] right-[0rem]'
+          className=' float-animation absolute lg:top-[4rem] lg:right-[15rem] md:top-[10rem] md:right-[12rem] top-[32rem] right-[0rem]'
           width={70}
           aria-hidden='true'
           height={70}
@@ -90,7 +98,7 @@ const RealTimeInsightsSection = () => {
         <Image
           src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/AR3_cakyv7.png'
           alt=''
-          className=' float-animation absolute lg:top-[30rem] lg:right-[14rem] md:top-[37rem] md:right-[10rem] top-[30rem] right-[0rem]'
+          className=' float-animation absolute lg:top-[30rem] lg:right-[14rem] md:top-[37rem] md:right-[10rem] top-[15rem] right-[0rem]'
           width={70}
           aria-hidden='true'
           height={70}

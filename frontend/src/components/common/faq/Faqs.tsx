@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid'
 import { Box, useTheme } from '@mui/material'
 import { useImageVariant } from '@/@core/hooks/useImageVariant'
 import { useT } from '@/i18n/client'
+import AnimatedIcon from '../AnimatedIcons'
 
 const Faqs = () => {
   const theme = useTheme()
@@ -73,16 +74,13 @@ const Faqs = () => {
     >
       <Grid container spacing={6}>
         <Grid item xs={12} lg={5} className='flex justify-center items-center'>
-          <Image
-            src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184312/sitting-girl-with-laptop_bi1sbr.png'
-            alt='girl with laptop'
-            width={320}
-            height={240}
-            style={{
-              width: '80%',
-              maxWidth: '320px',
-              height: 'auto'
-            }}
+          <AnimatedIcon
+            src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753880342/Customer_Support___Help___Support_Agent_1_mjiu8n.gif'
+            alt='Customer support agent helping with questions'
+            width={500}
+            height={500}
+            priority={false}
+            className='lg:absolute lg:w-[500px] lg:h-[500px] w-[30rem] h-[30rem]'
           />
         </Grid>
         <Grid item xs={12} lg={7}>

@@ -92,7 +92,7 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1
     }
-  }, 
+  },
   verification: {
     google: 'your-google-verification-code',
     yandex: 'your-yandex-verification-code',
@@ -336,13 +336,13 @@ const jsonLdSchemas = [
   }
 ]
 
-export default function ResellerPage() {
+export default function ResellerPage({ params }: { params: { lang: string } }) {
   return (
     <>
       {jsonLdSchemas.map((schema, index) => (
         <script key={index} type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-      <ResellerWrapper />
+      <ResellerWrapper lang={params.lang} />
     </>
   )
 }

@@ -7,6 +7,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { customCtaBtnWCSx2 } from '@/app/globalStyles'
 import AnimatedHeadline from '@/components/layout/shared/AnimatedHeadline'
 import { useT } from '@/i18n/client'
+import AnimatedIcon from '@/components/common/AnimatedIcons'
 
 const AllInOne = () => {
   const theme = useTheme()
@@ -50,15 +51,18 @@ const AllInOne = () => {
                     position: 'relative',
                     width: '100%',
                     height: { xs: 120, md: 180 },
-                    mb: 2
+                    mb: 2,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
                   }}
                 >
-                  <Image
-                    src={`/images/front-pages/landing-page/${index === 0 ? 'paul.png' : 'sophie.png'}`}
-                    alt={t(`allInOne.columns.${index}.alt`)}
-                    fill
-                    priority
-                    style={{ objectFit: 'contain', objectPosition: 'center' }}
+                  <AnimatedIcon
+                    src={`${index === 0 ? 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753879507/connecting_nexdgs.gif' : 'https://res.cloudinary.com/dat6ipt7d/image/upload/v1753879042/Voice_Chat_Ongoing_-_Retro_Light_1_adgryw.gif'}`}
+                    width={200}
+                    alt='animated icon'
+                    className='lg:w-[200px] lg:h-[200px] w-[8rem] h-[8rem]'
+                    height={200}
                   />
                 </Box>
 

@@ -180,7 +180,7 @@ const ContactUs = () => {
                                       : 'border-gray-300 dark:border-gray-600 focus:border-primary'
                                   }
                                 `}
-                                placeholder='Enter your full name'
+                                placeholder={t('contact.form.placeholders.fullName')}
                                 aria-invalid={!!errors.fullName}
                                 aria-describedby={errors.fullName ? 'fullName-error' : undefined}
                               />
@@ -219,7 +219,7 @@ const ContactUs = () => {
                                       : 'border-gray-300 dark:border-gray-600 focus:border-primary'
                                   }
                                 `}
-                                placeholder='Enter your email address'
+                                placeholder={t('contact.form.placeholders.email')}
                                 aria-invalid={!!errors.email}
                                 aria-describedby={errors.email ? 'email-error' : undefined}
                               />
@@ -261,7 +261,7 @@ const ContactUs = () => {
                                     : 'border-gray-300 dark:border-gray-600 focus:border-primary'
                                 }
                               `}
-                              placeholder='Tell us about your project or question...'
+                              placeholder={t('contact.form.placeholders.message')}
                               aria-invalid={!!errors.message}
                               aria-describedby={errors.message ? 'message-error' : undefined}
                             />

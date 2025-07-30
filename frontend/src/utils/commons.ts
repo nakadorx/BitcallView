@@ -30,6 +30,28 @@ export function getLocale(): string {
 }
 
 /**
+ * Updates the HTML element's dir and lang attributes based on the provided language code
+ * @param langCode - The language code (e.g., 'en', 'ar', 'fr')
+ */
+export function updateHtmlDirection(langCode: string): void {
+  if (typeof document !== 'undefined') {
+    const { i18n } = require('@configs/i18n')
+    const direction = i18n.langDirection[langCode as keyof typeof i18n.langDirection] || 'ltr'
+    const htmlElement = document.documentElement
+
+    htmlElement.setAttribute('dir', direction)
+    htmlElement.setAttribute('lang', langCode)
+
+    // Optional: Dispatch a custom event to notify other components
+    window.dispatchEvent(
+      new CustomEvent('languageDirectionChanged', {
+        detail: { langCode, direction }
+      })
+    )
+  }
+}
+
+/**
  * Returns a localized path by prefixing the given path with the current locale.
  */
 export function getLocalizedPath(path: string): string {

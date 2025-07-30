@@ -4,11 +4,9 @@ import { SectionContainer } from '@/components/common/SectionContainer/SectionCo
 import { Text } from '@/components/common/text'
 import Image from 'next/image'
 import { getT } from '@/i18n/server'
-import { getLocale } from '@/utils/commons'
 
-export const WhiteLabelSection = async () => {
-  const locale = getLocale()
-  const t = await getT(locale, 'resellerPage')
+export const WhiteLabelSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'resellerPage')
 
   const firstRowFeatures = [
     {

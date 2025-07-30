@@ -4,7 +4,7 @@ import React from 'react'
 import { SectionContainer } from '@/components/common/SectionContainer/SectionContainer'
 import { CardList } from '@/components/common/cards'
 import Image from 'next/image'
-import { getLocale } from '@/utils/commons'
+import AnimatedIcon from '@/components/common/AnimatedIcons'
 import { getT } from '@/i18n/server'
 import './fastSetupSection.styles.css'
 
@@ -14,9 +14,8 @@ export type cardItem = {
   imgSrc: string
 }
 
-export const FastSetup = async () => {
-  const locale = getLocale()
-  const t = await getT(locale, 'resellerPage')
+export const FastSetup = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'resellerPage')
 
   const data = [
     {
@@ -88,16 +87,17 @@ export const FastSetup = async () => {
       bgClass='fast-setup-bg'
       containerClassName='lg:mb-[2rem] lg:mt-[3rem]'
     >
-      <div className='w-full grid grid-cols-1 lg:grid-cols-5 items-center md:px-10 relative left-31  lg:ml-[15rem] '>
+      <div className='w-full grid grid-cols-1 lg:grid-cols-5 items-center md:px-10 relative left-31  lg:ml-[15rem] rtl:lg:left-[-17rem] '>
         <div className='w-full h-full flex justify-center lg:justify-end md:justify-center items-center md:col-span-2'>
           <div className='float-animation'>
-            <Image
-              src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/21_tvjtlh.png'
+            <AnimatedIcon
+              src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753881951/fasSSt_m1rchi.gif'
               alt={'Bitcall OS fast setup dashboard - telecom reseller platform interface'}
               width={550}
               height={500}
               className='max-w-full h-auto'
               priority
+              useNativeImg={true}
             />
           </div>
         </div>

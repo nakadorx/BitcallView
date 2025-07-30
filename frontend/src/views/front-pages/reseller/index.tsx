@@ -9,7 +9,6 @@ import CustomerReviews from '@/components/common/customerReviews/CustomerReviews
 import PricingSection from './PricingSection'
 import ContactUs from '@/components/common/contactUs'
 import { getT } from '@/i18n/server'
-import { getLocale } from '@/utils/commons'
 import Faqs from '@/components/common/faq/Faqs'
 import { Suspense } from 'react'
 import Loader from '@/components/common/loader'
@@ -17,9 +16,8 @@ import Loader from '@/components/common/loader'
 import { HeroSectionParallaxContent } from './HeroSectionParallaxContent'
 import WhosUseThisSection from './WhosUseThisSection'
 
-const ResellerWrapper = async () => {
-  const locale = getLocale()
-  const t = await getT(locale, 'resellerPage')
+const ResellerWrapper = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'resellerPage')
 
   return (
     <main>
@@ -37,12 +35,12 @@ const ResellerWrapper = async () => {
         >
           <HeroSectionParallaxContent />
         </HeroSection>
-        <WhosUseThisSection />
-        <EverythingYouNeedSection />
-        <FastSetup />
-        <WhiteLabelSection />
+        <WhosUseThisSection lang={lang} />
+        <EverythingYouNeedSection lang={lang} />
+        <FastSetup lang={lang} />
+        <WhiteLabelSection lang={lang} />
         <RealTimeInsightsSection />
-        <PricingSection />
+        <PricingSection lang={lang} />
         <CustomerReviews />
         <Faqs />
         <ContactUs />

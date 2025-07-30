@@ -129,7 +129,7 @@ const HeroSectionParallaxComponent = () => {
             width={1200}
             height={800}
             priority
-            className='object-contain relative lg:right-[5rem] lg:w-[1000px] w-full h-auto'
+            className='object-contain relative lg:right-[5rem] lg:w-[1000px] w-full h-auto rtl:lg:right-[-3rem]'
           />
           <Box
             sx={{
@@ -146,7 +146,7 @@ const HeroSectionParallaxComponent = () => {
               alt='dashboard-elements'
               width={1331}
               height={548}
-              className='lg:relative  lg:left-[-10rem] lg:w-[83.19rem] lg:h-[34.25rem] w-full h-auto'
+              className='lg:relative lg:left-[-10rem] lg:w-[83.19rem] lg:h-[34.25rem] w-full h-auto rtl:lg:left-[12rem]'
               style={{
                 transform: isAboveLgScreen ? `translate(${elementsPosition.x}px, ${elementsPosition.y}px)` : 'none'
               }}

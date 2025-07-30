@@ -322,13 +322,7 @@
       "q3": "Can I get data-only eSIM plans?",
       "q4": "What payment methods do you accept?",
       "q5": "How do I get started?",
-      "q6": "How white-labeled is the panel really?",
-      "q7": "Can I upgrade my plan or add features later?",
-      "q8": "Does Bitcall provide a Sippy Softswitch server?",
-      "q9": "Is there an API or bot integration available?",
-      "q10": "How fast can I go live and start selling?",
-      "q11": "How are payments handled for my clients?",
-      "q12": "What kind of support do I get with each plan?"
+      "q6": "How white-labeled is the panel really?"
     },
     "answers": {
       "a1": "We cover A-Z termination, outbound call center routes, CLI/NCLI routes, and inbound virtual numbers.",
@@ -336,13 +330,7 @@
       "a3": "Yes! Our eSIM plans are available in daily, weekly, or monthly packages with broad global coverage.",
       "a4": "We accept ALL payment methods. Visa and Mastercard, and we also accept BTC, USDT, ETH, SOL, and BNB. It’s never been easier or more flexible to start calling worldwide.",
       "a5": "Simply sign up, add your IPs, and make a test payment starting from just $1 to start exploring our services.",
-      "a6": "Completely. Even on Essential, your clients see your domain, logo, and colors. Professional & Elite unlock full white-label control: branded invoices, emails, templates, and login experience.",
-      "a7": "Yes. You can upgrade plans at any time or purchase add-ons like more vendors, routing groups, or support options. It’s fully modular.",
-      "a8": "Yes — with the Elite plan. You get your own hosted Sippy Softswitch server integrated with Bitcall’s management panel, letting you operate like a true telecom provider.",
-      "a9": "The Elite plan includes full API access to automate accounts, billing, notifications, and more. Telegram bot alerts are also included, and WhatsApp alerts are available in the Professional plan.",
-      "a10": "Setup is nearly instant. You can go live in under 15 minutes with one-click provisioning for numbers, trunks, and accounts — no hardware required.",
-      "a11": "Your clients can pay via Stripe, PayPal, Crypto, and more. The panel supports multi-currency pricing and usage-based billing (per minute or per plan).",
-      "a12": "Essential includes email support. Professional adds WhatsApp support and priority response. Elite includes dedicated VIP support via phone or private channels."
+      "a6": "Completely. Even on Essential, your clients see your domain, logo, and colors. Professional & Elite unlock full white-label control: branded invoices, emails, templates, and login experience."
     }
   },
   "contact": {
@@ -353,7 +341,12 @@
     "form": {
       "fullName": "Full name",
       "email": "Email address",
-      "message": "Message"
+      "message": "Message",
+      "placeholders": {
+        "fullName": "Enter your full name",
+        "email": "Enter your email address",
+        "message": "Tell us about your project or question..."
+      }
     },
     "button": {
       "submit": "Get Started",

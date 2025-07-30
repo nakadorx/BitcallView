@@ -380,7 +380,7 @@ const Rates = () => {
   return (
     <section id='rates' ref={sectionRef}>
       <Box
-        className='flex flex-col items-center px-4 min-h-screen pb-8'
+        className='flex flex-col items-center px-4 lg:min-h-screen pb-8'
         sx={{
           backgroundImage: `url(${bgRates})`,
           backgroundSize: 'cover',
