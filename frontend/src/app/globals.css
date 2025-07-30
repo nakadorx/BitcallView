@@ -339,3 +339,5 @@ body {
 .shake-animation {
   animation: shake 0.5s ease-in-out;
 }
+
+/* Intercom styling is now handled via built-in SDK options (action_color, background_color, theme_mode) */

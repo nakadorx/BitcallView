@@ -87,10 +87,15 @@ export function useResolvedTheme(): 'light' | 'dark' {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   useEffect(() => {
-    const resolved = getResolvedTheme()
-    setTheme(resolved)
+    const updateTheme = () => {
+      const resolved = getResolvedTheme()
+      setTheme(resolved)
+    }
 
-    // Listen for changes
+    // Initial theme
+    updateTheme()
+
+    // Listen for system theme changes
     const cleanup = listenForSystemThemeChanges(systemTheme => {
       const currentTheme = getUnifiedTheme()
       if (currentTheme.mode === 'system') {
@@ -98,8 +103,19 @@ export function useResolvedTheme(): 'light' | 'dark' {
       }
     })
 
-    return cleanup
-  }, [])
+    // Poll for manual theme changes every 100ms
+    const pollInterval = setInterval(() => {
+      const currentResolved = getResolvedTheme()
+      if (currentResolved !== theme) {
+        setTheme(currentResolved)
+      }
+    }, 100)
+
+    return () => {
+      cleanup()
+      clearInterval(pollInterval)
+    }
+  }, [theme])
 
   return theme
 }
