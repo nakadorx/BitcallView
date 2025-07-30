@@ -4,7 +4,7 @@ export const ScrollUp = () => (
   <ScrollToTop className='fixed'>
     <button
       className='
-        w-14 h-14
+        w-12 h-12
         bg-primary hover:bg-primary-dark
         text-white
         rounded-full
@@ -20,6 +20,8 @@ export const ScrollUp = () => (
         pulse-glow
         group
         relative
+        bottom-[4rem]
+        right-[.2rem]
         overflow-hidden
       '
       aria-label='Scroll to top'

@@ -35,6 +35,7 @@
     "@fullcalendar/timegrid": "6.1.15",
     "@hookform/resolvers": "3.9.0",
     "@iconify/react": "^5.2.1",
+    "@intercom/messenger-js-sdk": "^0.0.14",
     "@mui/icons-material": "^5.16.14",
     "@mui/lab": "5.0.0-alpha.172",
     "@mui/material": "5.16.4",
