@@ -1,8 +1,156 @@
 {
   "heroSection": {
-    "title1": "Revendez et Développez ",
+    "title1": "Revendez & Grandissez ",
     "title2": "Avec Bitcall OS",
-    "description": "Lancez Votre Entreprise de Télécommunications <strong>À Votre Marque</strong> <strong>en Minutes</strong>,\navec notre <strong>Tableau de Bord Auto-Géré Tout-en-Un</strong> qui offre\nles <strong>tarifs d'appel les moins chers</strong> que vous trouverez partout.",
-    "mainButton": "Devenez Revendeur MAINTENANT"
+    "description": "Lancez Votre Entreprise Télécom <strong>Sous Votre Propre Marque</strong> <strong>en Minutes</strong>, avec notre <strong>Tableau de Bord Auto-Géré tout-en-un</strong> qui offre les <strong>tarifs d'appel les moins chers</strong> que vous trouverez partout.",
+    "mainButton": "Devenir Revendeur MAINTENANT"
+  },
+  "whoIsItFor": {
+    "title": "À Qui S'Adresse-t-il ? Qui peut utiliser ceci ?",
+    "subtitle": "Que vous soyez professionnel informatique, agence marketing, consultant télécom, ou entrepreneur notre plateforme vous offre de :",
+    "feature1": "<strong>Fournir des solutions VOIP fiables pour entreprises</strong> à vos clients",
+    "feature2": "<strong>Servir les PME, freelancers et centres d'appels</strong> avec des outils de communication très demandés",
+    "feature3": "<strong>Lancer</strong> un flux de revenus récurrents et évolutifs sous votre propre nom"
+  },
+  "everythingYouNeedSection": {
+    "title1": "Tout Ce Dont Vous Avez Besoin",
+    "title2": "Pour Construire et Grandir",
+    "description": "De votre premier client à votre propre commutateur, notre plateforme fournit tout : un tableau de bord en marque blanche, des insights d'utilisation en direct, du routage de fournisseurs, de la revente d'eSIM, des contrôles de tarification personnalisés, et plus encore."
+  },
+  "fastSetupSection": {
+    "title1": "Configuration Rapide &",
+    "title2": "Paiements Flexibles",
+    "subtitle": "Commencez la revente en moins de 15 minutes — évoluez avec des modules complémentaires à tout moment.",
+    "features": {
+      "oneClickProvisioning": {
+        "title": "Provisioning en un clic",
+        "description": "pour les numéros, troncs, fournisseurs et comptes"
+      },
+      "noHardware": {
+        "title": "Aucun matériel requis",
+        "description": "Softphones, applications SIP ou téléphones de bureau"
+      },
+      "acceptPayments": {
+        "title": "Accepter les paiements",
+        "description": "Stripe, PayPal, Crypto & plus"
+      },
+      "monthToMonth": {
+        "title": "Plans mois par mois",
+        "description": "pas de contrats, mise à niveau à tout moment"
+      },
+      "scalablePlatform": {
+        "title": "Plateforme évolutive",
+        "description": "Mettez facilement à niveau les fournisseurs, routes ou capacité serveur au fur et à mesure de votre croissance"
+      }
+    }
+  },
+  "whiteLabelSection": {
+    "title1": "Contrôle Complet ",
+    "title2": "en Marque Blanche",
+    "subtitle": "Votre marque. Vos clients. Notre technologie.",
+    "features": {
+      "portalAccess": {
+        "title": "Accès au Portail Personnalisé",
+        "description": "Ajoutez votre logo, couleurs et domaine de connexion personnalisé"
+      },
+      "sipAddress": {
+        "title": "Votre Propre Adresse SIP",
+        "description": "ex : calls.votreentreprise.com"
+      },
+      "whiteLabeledExperience": {
+        "title": "Expérience Entièrement en Marque Blanche",
+        "description": "Vos clients ne nous voient jamais"
+      },
+      "brandedReports": {
+        "title": "Factures, Emails & Rapports Personnalisés",
+        "description": "Documents entièrement personnalisés pour correspondre à votre entreprise"
+      },
+      "customTemplates": {
+        "title": "Modèles de Site Web Personnalisés",
+        "description": "Inclus dans les plans Professionnel et Elite"
+      },
+      "loginExperience": {
+        "title": "Expérience de Connexion Client Personnalisée",
+        "description": "Contrôlez l'écran d'accueil, la langue et la mise en page que vos utilisateurs voient"
+      }
+    },
+    "footerNote": "Vous vous concentrez sur les relations clients et la croissance. Nous fournissons l'épine dorsale technique."
+  },
+  "realTimeInsightsSection": {
+    "title": "Prenez de Meilleures Décisions Avec des Insights en Temps Réel",
+    "subtitle": "Gardez le contrôle des opérations et montrez aux clients la vraie valeur de votre service :",
+    "features": {
+      "dashboards": "Tableaux de bord d'appels en direct",
+      "reports": "Rapports détaillés d'appels et d'utilisateurs",
+      "monitoring": "Monitoring de qualité et statistiques de temps de fonctionnement",
+      "export": "Export facile pour facturation, suivi ou intégrations",
+      "analytics": "Aidez les clients à optimiser \n la communication avec des analyses d'utilisation"
+    }
+  },
+  "pricingSection": {
+    "title1": "Choisissez Votre ",
+    "title2": "Plan Revendeur Maintenant",
+    "common": {
+      "popularLabel": "Le Plus Populaire",
+      "currencySymbol": "$",
+      "periodText": "Par mois",
+      "discountText": "Économisez 15% avec la facturation annuelle",
+      "currentPlanText": "Votre Plan Actuel",
+      "upgradeText": "Mettre à niveau"
+    },
+    "basic_plan": {
+      "title": "Revendeur Essential",
+      "price": "99",
+      "per_month": "Par mois",
+      "discount": "Économisez 15% avec la facturation annuelle",
+      "features": [
+        "Revendez uniquement les routes Voice & SMS Bitcall",
+        "Fixez vos propres prix",
+        "IP SIP partagée (backend Bitcall)",
+        "Portail basique en marque blanche (logo, couleurs, domaine)",
+        "Notifications clients par Email uniquement",
+        "Acceptez les paiements : Stripe, PayPal, Crypto",
+        "Analyses basiques & rapports d'utilisation",
+        "Aucun fournisseur externe ou contrôle de routage"
+      ],
+      "button": "Commencer"
+    },
+    "favourite_plan": {
+      "title": "Revendeur Professionnel",
+      "price": "249",
+      "per_month": "Par mois",
+      "discount": "Économisez 15% avec la facturation annuelle",
+      "features": [
+        "Tout dans Essential",
+        "Revendez tous les services Bitcall (Voice, SMS, eSIM, HLR, OTPs, DIDs)",
+        "IP SIP dédiée",
+        "Ajoutez jusqu'à 3 fournisseurs VoIP externes",
+        "1 groupe de routage personnalisé (en plus des défauts Bitcall)",
+        "Modules complémentaires payants optionnels : plus de fournisseurs & groupes de routage",
+        "Marque blanche avancée (factures, portail, branding)",
+        "Notifications clients par Email + WhatsApp",
+        "Facturation basée sur l'utilisation (par minute ou par package)",
+        "Analyses avancées & outils d'export"
+      ],
+      "button": "Commencer"
+    },
+    "standard_plan": {
+      "title": "Revendeur Elite",
+      "price": "499",
+      "per_month": "Par mois",
+      "discount": "À partir de 499$/mois selon la capacité",
+      "features": [
+        "Tout dans Professionnel",
+        "Serveur Sippy Softswitch hébergé avec panneau Bitcall",
+        "Fournisseurs VoIP externes illimités",
+        "Groupes de routage illimités",
+        "Accès API complet (comptes, facturation, routes, services)",
+        "Notifications & alertes bot Telegram en temps réel",
+        "Support de sous-revendeurs optionnel",
+        "SLAs personnalisés & prêt pour l'automatisation",
+        "Canaux de support téléphonique & VIP"
+      ],
+      "button": "Nous Contacter"
+    }
   }
 }

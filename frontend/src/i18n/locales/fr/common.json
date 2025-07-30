@@ -1,22 +1,22 @@
 {
   "topbar": {
-    "announcementParagraph": "📢 Pas de limites. Pas de restrictions ! Les tarifs d'appel les moins chers — Garantie !",
-    "announcementParagraphMobile": "📢 Les tarifs d'appel les moins chers — Garantie !"
+    "announcementParagraph": "📢 Aucune Limite. Aucune Restriction ! Les Tarifs d'Appel les Plus Bas—Garantis !",
+    "announcementParagraphMobile": "📢 Tarifs d'Appel les Plus Bas—Garantis !"
   },
   "navigation": {
     "dashboards": "Tableaux de bord",
     "crm": "CRM",
     "analytics": "Analyses",
-    "blog": "Blog",
+    "blog": "blog",
     "academy": "Académie",
     "logistics": "Logistique",
-    "frontPages": "Pages principales",
+    "frontPages": "Pages d'accueil",
     "landing": "Page d'atterrissage",
-    "pricing": "Tarifs",
+    "pricing": "Tarification",
     "payment": "Paiement",
-    "checkout": "Caisse",
+    "checkout": "Commande",
     "helpCenter": "Centre d'aide",
-    "appsPages": "Applications & Pages",
+    "appsPages": "Apps et Pages",
     "apps": "Applications",
     "dashboard": "Tableau de bord",
     "posts": "Publications",
@@ -33,7 +33,7 @@
     "myCourses": "Mes cours",
     "courseDetails": "Détails du cours",
     "fleet": "Flotte",
-    "email": "E-mail",
+    "email": "Email",
     "chat": "Chat",
     "calendar": "Calendrier",
     "kanban": "Kanban",
@@ -42,7 +42,7 @@
     "edit": "Modifier",
     "user": "Utilisateur",
     "view": "Voir",
-    "rolesPermissions": "Rôles & Permissions",
+    "rolesPermissions": "Rôles et Permissions",
     "roles": "Rôles",
     "permissions": "Permissions",
     "pages": "Pages",
@@ -58,13 +58,13 @@
     "login": "Connexion",
     "loginV1": "Connexion v1",
     "loginV2": "Connexion v2",
-    "register": "Inscription",
-    "registerV1": "Inscription v1",
-    "registerV2": "Inscription v2",
+    "register": "S'inscrire",
+    "registerV1": "S'inscrire v1",
+    "registerV2": "S'inscrire v2",
     "registerMultiSteps": "Inscription multi-étapes",
-    "verifyEmail": "Vérifier l'e-mail",
-    "verifyEmailV1": "Vérifier l'e-mail v1",
-    "verifyEmailV2": "Vérifier l'e-mail v2",
+    "verifyEmail": "Vérifier l'email",
+    "verifyEmailV1": "Vérifier l'email v1",
+    "verifyEmailV2": "Vérifier l'email v2",
     "forgotPassword": "Mot de passe oublié",
     "forgotPasswordV1": "Mot de passe oublié v1",
     "forgotPasswordV2": "Mot de passe oublié v2",
@@ -75,7 +75,7 @@
     "twoStepsV1": "Deux étapes v1",
     "twoStepsV2": "Deux étapes v2",
     "wizardExamples": "Exemples d'assistant",
-    "propertyListing": "Annonce immobilière",
+    "propertyListing": "Liste de propriétés",
     "createDeal": "Créer une offre",
     "dialogExamples": "Exemples de dialogue",
     "widgetExamples": "Exemples de widgets",
@@ -84,21 +84,21 @@
     "statistics": "Statistiques",
     "gamification": "Gamification",
     "actions": "Actions",
-    "formsAndTables": "Formulaires & Tableaux",
+    "formsAndTables": "Formulaires et Tableaux",
     "formLayouts": "Mise en page des formulaires",
     "formValidation": "Validation des formulaires",
     "formWizard": "Assistant de formulaire",
     "reactTable": "Table React",
     "formELements": "Éléments de formulaire",
     "muiTables": "Tables MUI",
-    "chartsMisc": "Graphiques & Divers",
+    "chartsMisc": "Graphiques et Divers",
     "charts": "Graphiques",
     "recharts": "Recharts",
     "apex": "Apex",
-    "foundation": "Foundation",
+    "foundation": "Fondation",
     "components": "Composants",
     "menuExamples": "Exemples de menu",
-    "raiseSupport": "Demander de l'assistance",
+    "raiseSupport": "Demander de l'aide",
     "documentation": "Documentation",
     "others": "Autres",
     "itemWithBadge": "Élément avec badge",
@@ -108,132 +108,132 @@
     "menuLevel3": "Niveau de menu 3",
     "disabledMenu": "Menu désactivé",
     "frontMenu1": "Bitcall OS",
-    "frontMenu2": "Devenir revendeur",
-    "frontMenu3": "Nos eSIM",
-    "frontMenu4": "Contactez-nous",
+    "frontMenu2": "Devenir Revendeur",
+    "frontMenu3": "Nos eSIMs",
+    "frontMenu4": "Nous contacter",
     "frontMenu5": "Blog",
     "frontMenu6": "Centre d'aide"
   },
   "heroSection": {
-    "title": "Les meilleures eSIM pour les voyageurs",
-    "titlePart1": "Croissez davantage",
-    "titlePart2": "Dépensez moins",
-    "descriptionPart1": "Nous avons créé un tableau de bord tout-en-un ",
-    "boldPart1": "auto-géré",
-    "descriptionPart2": " conçu pour ",
+    "title": "Les Meilleures eSIMs pour Voyageurs",
+    "titlePart1": "Développez Plus",
+    "titlePart2": "Dépensez Moins",
+    "descriptionPart1": "Nous avons créé un ",
+    "boldPart1": "Tableau de Bord Auto-Géré",
+    "descriptionPart2": " tout-en-un conçu pour ",
     "boldPart2": "optimiser",
     "descriptionPart3": " et ",
-    "boldPart3": "développer les opérations télécom",
+    "boldPart3": "développer les opérations Télécom",
     "descriptionPart4": " avec les ",
-    "boldPart4": "tarifs d'appel les plus bas",
+    "boldPart4": "tarifs d'appel les moins chers",
     "descriptionPart5": " que vous trouverez jamais.",
     "cta1": "Réserver une démo",
     "cta2": "Commencer"
   },
   "trustSection": {
-    "headline.prefix": "ILS NOUS FONT CONFIANCE",
-    "headline.suffix": "ENTREPRISES ET CENTRES D'APPEL DANS LE MONDE ENTIER",
-    "description": "Pendant une décennie, nous avons <1>aidé</1> les entreprises à <3>se développer</3> et à <5>atteindre</5> une <7>croissance</7> significative en tirant parti de stratégies innovantes et de technologies de pointe."
+    "headline.prefix": "APPROUVÉ PAR",
+    "headline.suffix": "ENTREPRISES ET CENTRES D'APPELS DANS LE MONDE",
+    "description": "Depuis une décennie, nous avons <1>aidé</1> les entreprises à <3>se développer</3> et à <5>atteindre</5> une <7>croissance</7> significative en exploitant des stratégies innovantes et une technologie de pointe."
   },
   "advantages": {
     "headline": "Facile à utiliser • Auto-géré",
-    "subheadline": "Pas de limites & Pas de restrictions",
+    "subheadline": "Aucune Limite & Aucune Restriction",
     "items": [
       {
-        "title": "Configuration en 1 minute—Littéralement une minute",
-        "description": "Réclamez instantanément des numéros virtuels, configurez des trunks SIP et gérez l'ensemble de votre infrastructure télécom depuis un tableau de bord intuitif. Pas d'étapes complexes ni de frais cachés."
+        "title": "Configuration en 1 Minute—Littéralement une minute",
+        "description": "Réclamez instantanément des numéros virtuels, configurez des troncs SIP et gérez toute votre infrastructure télécom depuis un tableau de bord intuitif. Aucune étape complexe ni frais cachés."
       },
       {
-        "title": "Parfait pour les ventes, le support client, et plus encore",
-        "description": "Donnez aux équipes—que ce soit en ventes, centres d'appel, service client ou marketing—les moyens de gérer tous les appels entrants et sortants en un seul endroit, garantissant une communication efficace et performante."
+        "title": "Parfait pour les Ventes, le Support Client et Plus",
+        "description": "Donnez aux équipes—que ce soit en vente, centres d'appels, service client ou marketing—la possibilité de gérer tous les appels entrants et sortants en un seul endroit, garantissant une communication efficace et effective."
       },
       {
-        "title": "Prenez de l'avance grâce aux données",
-        "description": "Accédez à des analyses avancées sur la productivité, prenez des décisions basées sur les données et maintenez votre rentabilité grâce aux journaux d'appels en temps réel et aux indicateurs de performance."
+        "title": "Gardez l'Avantage avec les Données",
+        "description": "Accédez aux analyses avancées sur la productivité, prenez des décisions basées sur les données et maintenez votre rentabilité avec des journaux d'appels en temps réel et des insights de performance."
       },
       {
-        "title": "Options de paiement flexibles",
-        "description": "Payez par carte de crédit, Stripe, PayPal ou crypto—sans frais supplémentaires. Réduisez les coûts et assurez le bon fonctionnement de vos opérations."
+        "title": "Options de Paiement Flexibles",
+        "description": "Payez par carte de crédit, Stripe, PayPal ou crypto—sans frais supplémentaires. Gardez les coûts bas et vos opérations fluides."
       }
     ]
   },
   "benefits": {
-    "headline": "La véritable croissance des entreprises commence ici…",
-    "subheadline": "Voici ce que Bitcall OS offre",
+    "headline": "La vraie croissance commerciale commence ici..",
+    "subheadline": "Voici ce que Bitcall OS fournit",
     "items": [
       {
-        "title": "Appels vocaux d'une clarté cristalline",
-        "description": "Profitez d'une qualité audio supérieure dans toutes vos communications."
+        "title": "Appels Vocaux Ultra-Clairs",
+        "description": "Expérimentez une qualité audio supérieure dans toutes vos communications."
       },
       {
-        "title": "Messagerie multicanal",
+        "title": "Messagerie Multi-Canal",
         "description": "Atteignez les clients via SMS, MMS et applications de chat populaires."
       },
       {
-        "title": "Couverture mondiale des numéros",
+        "title": "Couverture Numérique Mondiale",
         "description": "Établissez une présence locale avec des numéros de téléphone internationaux."
       },
       {
-        "title": "Routage d'appels intelligent",
+        "title": "Routage d'Appels Intelligent",
         "description": "Optimisez les flux d'appels pour des interactions client efficaces."
       },
       {
-        "title": "Communication sécurisée",
-        "description": "Protégez vos données avec un cryptage de niveau entreprise."
+        "title": "Communication Sécurisée",
+        "description": "Protégez vos données avec un chiffrement de niveau entreprise."
       },
       {
-        "title": "Tableau de bord analytique",
-        "description": "Obtenez des informations à partir de données de communication complètes."
+        "title": "Tableau de Bord d'Analyses",
+        "description": "Obtenez des insights à partir de données de communication complètes."
       }
     ]
   },
   "whyChoose": {
-    "headline": "Pourquoi choisir Bitcall ?",
-    "description": "Parce que nous offrons le seul tableau de bord facile à utiliser et auto-géré avec un support 24h/24 et 7j/7 sur le marché des télécommunications.\nNous prenons en charge tout le travail technique pour que vous puissiez vous concentrer sur la fourniture d'expériences exceptionnelles à vos clients.",
+    "headline": "Pourquoi choisir Bitcall ?",
+    "description": "Parce que nous offrons le seul tableau de bord facile à utiliser et auto-géré avec un support 24/7 sur le marché des télécommunications.\nNous gérons essentiellement les aspects techniques lourds pour que vous puissiez vous concentrer sur la livraison d'expériences exceptionnelles à vos clients.",
     "cta": "Commencer",
     "benefits": [
       {
-        "title": "Tableau de bord facile",
-        "description": "Interface auto-gérée pour des informations rapides."
+        "title": "Tableau de Bord Facile",
+        "description": "Interface auto-gérée pour des insights rapides."
       },
       {
         "title": "Support 24/7",
-        "description": "Toujours là pour vous aider."
+        "description": "Toujours là pour vous aider à tout moment."
       },
       {
-        "title": "Excellence technique",
+        "title": "Excellence Technique",
         "description": "Nous gérons tout le travail lourd pour que vous n'ayez pas à le faire."
       }
     ]
   },
   "allInOne": {
-    "headline": "Hub de communication tout-en-un",
-    "subheadline": "Pas de limites. Pas de restrictions",
+    "headline": "Hub de Communication Tout-en-Un",
+    "subheadline": "Aucune Limite. Aucune Restriction",
     "columns": [
       {
-        "alt": "Numéros de téléphone",
-        "title": "Numéros de téléphone",
-        "description": "Établissez une présence mondiale grâce à nos solutions complètes de numéros de téléphone. Accédez à des numéros locaux, verts et internationaux pour atteindre vos clients où qu'ils soient.",
+        "alt": "Numéros de Téléphone",
+        "title": "Numéros de Téléphone",
+        "description": "Établissez une présence mondiale avec nos solutions complètes de numéros de téléphone. Accédez aux numéros locaux, gratuits et internationaux pour atteindre vos clients où qu'ils soient.",
         "list": [
-          "Numéro de téléphone virtuel",
-          "Deuxième numéro de téléphone",
-          "Numéro de téléphone local",
-          "Numéro à la carte",
-          "Organisation vocale",
-          "Grossiste vocal"
+          "Numéro de Téléphone Virtuel",
+          "Deuxième Numéro de Téléphone",
+          "Numéro de Téléphone Local",
+          "Numéro Personnalisé",
+          "Organisation Vocale",
+          "Grossiste Vocal"
         ]
       },
       {
-        "alt": "Services vocaux",
+        "alt": "Services Vocaux",
         "title": "Voix",
-        "description": "Profitez d'une communication d'une clarté cristalline grâce à nos solutions VoIP avancées. Obtenez un audio de haute qualité, un routage d'appels intelligent et des analyses complètes—le tout en un.",
+        "description": "Expérimentez une communication ultra-claire avec nos solutions VoIP avancées. Obtenez une audio de haute qualité, un routage d'appels intelligent et des analyses complètes—tout en un.",
         "list": [
-          "Terminaison vocale",
+          "Terminaison Vocale",
           "Fournisseurs VoIP",
-          "Organisation vocale",
-          "Grossiste vocal",
-          "API vocale",
-          "Fournisseurs de trunk SIP"
+          "Organisation Vocale",
+          "Grossiste Vocal",
+          "API Vocale",
+          "Fournisseurs de Troncs SIP"
         ]
       }
     ],
@@ -241,115 +241,122 @@
   },
   "callToAction": {
     "headline": "Activez Bitcall sur n'importe quel appareil que vous utilisez déjà.",
-    "description.part1": "Aucun matériel, aucun temps d'arrêt—juste simple,",
-    "description.part2": "communication globale efficace et peu coûteuse",
+    "description.part1": "Pas de matériel, pas d'arrêt—juste une communication",
+    "description.part2": "mondiale simple, efficace et bon marché",
     "cta": "Commencer maintenant"
   },
   "ratesSection": {
     "headline": {
-      "part1": "Terminaison vocale A-Z fiable à",
-      "part2": "Les meilleurs tarifs !"
+      "part1": "Terminaison Vocale A-Z Fiable Aux",
+      "part2": "Meilleurs Tarifs !"
     },
-    "description": "Trouvez instantanément les meilleurs tarifs d'appel !",
-    "descriptionSub": "Entrez un pays, un préfixe ou une description ci-dessous.",
+    "description": "Trouvez les meilleurs tarifs d'appel instantanément !",
+    "descriptionSub": "Entrez un pays, préfixe ou description ci-dessous.",
     "seeAllCountries": "Voir tous les pays",
     "searchPlaceholder": "Rechercher par préfixe, pays ou description",
     "tabs": {
       "CC": "CC",
       "Retail": "Détail",
-      "Low Cost": "Bas coût"
+      "Low Cost": "Bas Coût"
     },
     "table": {
       "prefix": "Préfixe",
       "country": "Pays",
       "description": "Description",
-      "price": "Prix de départ (USD)"
+      "price": "Prix de Départ (USD)"
     },
     "noMatchingData": "Aucune donnée correspondante disponible."
   },
   "customerReviews": {
-    "title": "Témoignages de nos clients",
+    "title": "Histoires de Succès de Nos Clients",
     "subtitle": "Découvrez ce que nos clients disent de leur expérience.",
     "items": [
       {
-        "desc": "« Nous avons réduit nos coûts télécom de 70 % ! »\n\nPasser à Bitcall a été l'une des meilleures décisions que nous ayons prises. Nous dépensions une fortune pour les appels internationaux—maintenant nous payons une fraction de ce coût tout en bénéficiant d'une qualité vocale cristalline. Le tableau de bord est très intuitif et notre équipe a été configurée en quelques minutes.",
+        "desc": "\"J'ai lancé ma marque télécom en 20 minutes !\"\n\nLe plan Essential de Bitcall m'a donné un panneau entièrement personnalisé. J'ai fixé mes prix, ajouté mon logo et commencé l'intégration des clients—tout avant le déjeuner. C'est l'avenir de la revente VoIP.",
         "rating": 5,
-        "name": "Sophie Martinez",
-        "position": "Responsable des opérations chez Callbox CRM (Espagne)"
+        "name": "Leila Ben Hammouda",
+        "position": "Freelancer & Revendeur (Tunisie)"
       },
       {
-        "desc": "« Bitcall m'a aidé à lancer ma propre entreprise de télécommunications »\n\nJ'ai lancé mon panneau de revente en moins d'une journée et j'ai déjà 15 clients récurrents. Bitcall gère tout le travail en coulisses, je me concentre uniquement sur la vente. On a l'impression de diriger sa propre entreprise VoIP—sans les coûts élevés.",
+        "desc": "\"Le contrôle de routage a tout changé pour moi\"\n\nAvec le plan Professionnel, j'ai pu connecter 3 de mes fournisseurs VoIP préférés et configurer mes propres règles de routage. Je suis passé du générique au service premium instantanément.",
         "rating": 5,
-        "name": "Ahmed Elmasry",
-        "position": "Revendeur d'Égypte"
+        "name": "David Peterson",
+        "position": "Fondateur, TalkFlex (Royaume-Uni)"
       },
       {
-        "desc": "« Les analyses ont tout changé pour nous »\n\nDisposer de données en temps réel sur la durée des appels, les taux de réponse et la performance des agents nous a aidés à restructurer tout notre processus de vente. Avant, nous faisions des suppositions—maintenant nous savons exactement ce qui se passe et pourquoi.",
+        "desc": "\"Elite est ce dont une vraie startup télécom a besoin\"\n\nNous avons essayé d'autres fournisseurs, mais seul Bitcall nous a donné notre propre serveur Sippy avec routage complet, APIs et automatisation. Nous gérons tout nous-mêmes, mais sans les maux de tête d'infrastructure.",
         "rating": 5,
-        "name": "Julie Reynolds",
-        "position": "Responsable des ventes chez Orbit Communications (R.-U.)"
+        "name": "Rania Osman",
+        "position": "CTO chez EchoTel (EAU)"
       },
       {
-        "desc": "« Parfait pour les équipes à distance »\n\nNous avons des agents dans 4 pays, et Bitcall donne l'impression qu'ils sont tous dans la même pièce. La qualité des appels est incroyable, la configuration a pris moins de 5 minutes et nous n'avons eu aucune interruption pendant 9 mois.",
+        "desc": "\"L'eSIM a rendu mon offre unique\"\n\nJ'ai commencé à revendre les plans eSIM de Bitcall dans mon package et mes inscriptions ont triplé. Mes clients adorent pouvoir activer des plans de données instantanément quand ils voyagent.",
         "rating": 5,
-        "name": "Daniel Kowalski",
-        "position": "Responsable du support chez Skynote (Pologne)"
+        "name": "Marco Silva",
+        "position": "Revendeur TravelTech (Portugal)"
       },
       {
-        "desc": "« Support et fiabilité inégalés »\n\nChaque fois que nous avions une question—même à des heures inhabituelles—l'équipe Bitcall répond rapidement et professionnellement. Leur support 24/7 fait vraiment la différence. On ne voit plus ce niveau d'engagement de nos jours.",
+        "desc": "\"Bitcall est le seul qui soutient vraiment les revendeurs\"\n\nLe support est incroyable. Que j'aie une question de configuration ou un problème client, quelqu'un était là 24/7. Et ils écoutent vraiment les revendeurs. J'ai vu deux de mes demandes implémentées.",
         "rating": 5,
-        "name": "Natalie Carter",
-        "position": "Fondatrice de VoxBridge Media (Canada)"
+        "name": "Aisha K.",
+        "position": "Fondatrice de Startup (Nigeria)"
       },
       {
-        "desc": "« Des tarifs tellement bas que je pensais à une erreur »\n\nJ'ai revérifié la liste des tarifs car je n'arrivais pas à croire à quel point les prix étaient bas. Désormais, nous appelons la France, les États-Unis et le Nigéria tous les jours sans nous soucier des coûts. Bitcall est vraiment ce qu'il y a de mieux.",
+        "desc": "\"Je gagne plus en revendant qu'à mon travail à temps plein\"\n\nCommencé avec le plan Essential comme activité secondaire, mis à niveau vers Pro en 2 semaines. Je gère maintenant plus de 40 clients à travers l'Europe. Il est facile de se développer avec Bitcall.",
         "rating": 5,
-        "name": "Seyi Oluwa",
-        "position": "Propriétaire d'une agence marketing (Nigéria)"
+        "name": "Nicolas Vermeer",
+        "position": "Revendeur Indépendant (Pays-Bas)"
       },
       {
-        "desc": "« De zéro à rentable en 2 semaines »\n\nJ'ai commencé avec Bitcall comme activité secondaire. Deux semaines plus tard, j'avais 20 utilisateurs payants et un flux de revenus stable. Pas de formation technique, pas d'installation compliquée. Juste un ordinateur portable, un peu de travail acharné et Bitcall.",
+        "desc": "\"Les analyses m'ont vendu\"\n\nJe peux suivre chaque minute, chaque appel et chaque client avec une visibilité totale. Cela rend les rapports et la satisfaction client beaucoup plus faciles. Tout fonctionne simplement.",
         "rating": 5,
-        "name": "Nina Patel",
-        "position": "Revendeur indépendant (Inde)"
+        "name": "Huda Al-Saadi",
+        "position": "Responsable Opérations chez GlobalLink (KSA)"
       }
     ]
   },
   "faq": {
     "questions": {
-      "q1": "Quels services VoIP Bitcall propose-t-il ?",
-      "q2": "Comment fonctionne votre panneau de revente ?",
-      "q3": "Puis-je obtenir des forfaits eSIM uniquement data ?",
-      "q4": "Quels moyens de paiement acceptez-vous ?",
-      "q5": "Comment commencer ?"
+      "q1": "Quels services VoIP Bitcall offre-t-il ?",
+      "q2": "Comment fonctionne votre panneau revendeur ?",
+      "q3": "Puis-je obtenir des plans eSIM données uniquement ?",
+      "q4": "Quels modes de paiement acceptez-vous ?",
+      "q5": "Comment puis-je commencer ?",
+      "q6": "À quel point le panneau est-il vraiment en marque blanche ?"
     },
     "answers": {
-      "a1": "Nous couvrons la terminaison de A à Z, les routes de centres d'appels sortants, les routes CLI/NCLI et les numéros virtuels entrants.",
-      "a2": "Notre panneau de revente est une solution clé en main. Vous achetez à des tarifs de gros et vendez à votre prix—aucun investissement dans l'infrastructure n'est nécessaire.",
-      "a3": "Oui ! Nos forfaits eSIM sont disponibles en formules journalières, hebdomadaires ou mensuelles avec une large couverture mondiale.",
-      "a4": "Nous acceptons TOUS les moyens de paiement. Visa et Mastercard, ainsi que BTC, USDT, ETH, SOL et BNB. Il n'a jamais été aussi facile et flexible de passer des appels dans le monde entier.",
-      "a5": "Inscrivez-vous simplement, ajoutez vos IP et effectuez un paiement test à partir de seulement 1 $ pour commencer à explorer nos services."
+      "a1": "Nous couvrons la terminaison A-Z, les routes de centres d'appels sortants, les routes CLI/NCLI et les numéros virtuels entrants.",
+      "a2": "Notre panneau revendeur est une solution clé en main. Vous achetez aux tarifs de gros et vendez à votre propre prix—aucun investissement d'infrastructure nécessaire.",
+      "a3": "Oui ! Nos plans eSIM sont disponibles en packages quotidiens, hebdomadaires ou mensuels avec une large couverture mondiale.",
+      "a4": "Nous acceptons TOUS les modes de paiement. Visa et Mastercard, et nous acceptons aussi BTC, USDT, ETH, SOL et BNB. Il n'a jamais été aussi facile ou plus flexible de commencer à appeler dans le monde entier.",
+      "a5": "Inscrivez-vous simplement, ajoutez vos IPs et effectuez un paiement test à partir de seulement 1 $ pour commencer à explorer nos services.",
+      "a6": "Complètement. Même sur Essential, vos clients voient votre domaine, logo et couleurs. Professionnel & Elite débloquent le contrôle complet de marque blanche : factures personnalisées, emails, modèles et expérience de connexion."
     }
   },
   "contact": {
     "headline": "Travaillons ensemble",
-    "subheading": "Une question ou remarque ? Envoyez-nous simplement un message",
-    "leftTitle": "Contactez-nous",
-    "leftSubtitle": "Partagez vos idées ou besoins avec nos experts.",
+    "subheading": "Une question ou remarque ? Écrivez-nous simplement un message",
+    "leftTitle": "Contactons-nous",
+    "leftSubtitle": "Partagez vos idées ou exigences avec nos experts.",
     "form": {
       "fullName": "Nom complet",
-      "email": "Adresse e-mail",
-      "message": "Message"
+      "email": "Adresse email",
+      "message": "Message",
+      "placeholders": {
+        "fullName": "Entrez votre nom complet",
+        "email": "Entrez votre adresse email",
+        "message": "Parlez-nous de votre projet ou question..."
+      }
     },
     "button": {
       "submit": "Commencer",
-      "loading": "Envoi en cours…"
+      "loading": "Envoi en cours..."
     }
   },
   "footer": {
     "tagline": "Connectez sans limites, grandissez sans frontières.",
     "subscribeLabel": "S'abonner à la newsletter",
-    "subscribePlaceholder": "Votre e-mail",
+    "subscribePlaceholder": "Votre email",
     "subscribeButton": "S'abonner",
     "sections": {
       "explore": "Explorer",
@@ -357,55 +364,59 @@
     },
     "exploreLinks": {
       "home": "Accueil",
-      "esims": "Nos eSIM",
-      "reseller": "Programme de revente",
+      "esims": "Nos eSIMs",
+      "reseller": "Programme Revendeur",
       "blog": "Blog",
-      "helpCenter": "Centre d'aide",
-      "contact": "Nous contacter"
+      "helpCenter": "Centre d'Aide",
+      "contact": "Nous Contacter"
     },
     "getStartedLinks": {
-      "demo": "Réserver une démo",
-      "startReselling": "Lancez votre activité de revente",
-      "pricing": "Tarifs",
-      "activateEsim": "Activez votre eSIM",
-      "reviews": "Avis clients",
+      "demo": "Réserver une Démo",
+      "startReselling": "Démarrer Votre Entreprise de Revente",
+      "pricing": "Tarification",
+      "activateEsim": "Activer votre eSIM",
+      "reviews": "Avis Clients",
       "blog": "Blog",
-      "helpCenter": "Centre d'aide",
-      "contact": "Nous contacter"
+      "helpCenter": "Centre d'Aide",
+      "contact": "Nous Contacter"
     },
     "copyright": {
       "madeWith": "Fait avec ❤️ par"
     },
-    "legal": "Mentions légales"
+    "legal": "Juridique"
   },
   "esim": {
-    "titleLine1": "Forfaits eSIM data & appels ",
-    "titleLine2": "pour les voyageurs",
+    "titleLine1": "Plans de Données et d'Appels eSIM ",
+    "titleLine2": "pour voyageurs",
     "subtitlePart1": "pour une connectivité",
     "subtitlePart2": "instantanée",
     "tabs": {
-      "local": "eSIM locales",
-      "regional": "eSIM régionales",
-      "global": "eSIM globales"
+      "local": "eSIMs Locales",
+      "regional": "eSIMs Régionales",
+      "global": "eSIM Globale"
     },
     "search": {
-      "globalPlaceholder": "Rechercher un forfait global…",
-      "countryPlaceholder": "Rechercher des forfaits dans {{country}}…",
+      "globalPlaceholder": "Rechercher un plan global...",
+      "countryPlaceholder": "Rechercher des plans dans {{country}}...",
       "defaultPlaceholder": "Rechercher par pays ou région",
       "globalTag": "Global"
     },
     "loadMore": "Charger plus",
-    "loadingPlans": "Chargement des forfaits, veuillez patienter…",
-    "loadingCountryPlans": "Chargement des détails du forfait, veuillez patienter…"
+    "loadingPlans": "Chargement des Plans, veuillez patienter...",
+    "loadingCountryPlans": "Chargement des Détails du Plan, veuillez patienter..."
   },
   "plansDetails": {
-    "filterTitle": "Filtrer les forfaits",
-    "cheapest": "Le moins cher",
-    "longest": "Validité la plus longue",
-    "largest": "Plus de Go",
+    "filterTitle": "Filtrer les Plans",
+    "cheapest": "Le Moins Cher",
+    "longest": "Validité la Plus Longue",
+    "largest": "Plus Grande Capacité GB",
     "validity": "Validité",
     "data": "Données",
-    "noPlans": "Aucun forfait disponible.",
-    "loading": "Chargement des forfaits, veuillez patienter…"
+    "noPlans": "Aucun plan disponible.",
+    "loading": "Chargement des plans, veuillez patienter..."
+  },
+  "comingSoon": {
+    "title": "Bientôt Disponible",
+    "description": "Cette fonctionnalité arrive bientôt. Veuillez revenir plus tard."
   }
 }
