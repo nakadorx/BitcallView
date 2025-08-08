@@ -18,7 +18,12 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    domains: ['bitcall.io', 'www.bitcall.io', 'res.cloudinary.com'], // Add your domains
+    remotePatterns: [
+      { protocol: 'https', hostname: 'bitcall.io' },
+      { protocol: 'https', hostname: 'www.bitcall.io' },
+      { protocol: 'https', hostname: 'res.cloudinary.com' },
+      { protocol: 'https', hostname: 'www.airhubapp.com' }
+    ], // Add your domains
     unoptimized: false // Enable optimization
   },
 

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Flag icons for country flags */
+@import 'flag-icons/css/flag-icons.min.css';
+
 @custom-variant dark (&:where(.dark, .dark *));
 /* Custom fonts */
 @font-face {

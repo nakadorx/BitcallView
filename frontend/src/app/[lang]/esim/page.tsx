@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 
 const siteBaseUrl = process.env.NEXT_PUBLIC_SITE_BASE_URL || 'https://bitcall.io'
 const esimUrl = `${siteBaseUrl}/en/esim`
+import EsimSection from '@/views/front-pages/esim'
 
 // Dynamically load the client-side eSIM component from the correct path
 const EsimClient = dynamic(() => import('@/views/front-pages/landing-page/esim/Esim'), { ssr: false })
@@ -60,9 +61,10 @@ export default function EsimPage() {
 
       {/* JSON‑LD Structured Data */}
       <EsimStructuredData />
+      <EsimClient />
 
       {/* Render the interactive eSIM component */}
-      <EsimClient />
+      <EsimSection />
     </>
   )
 }

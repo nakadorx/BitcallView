@@ -90,7 +90,7 @@ const ThemeProvider = (props: Props) => {
       case '/reseller':
         primaryColor = primaryColorConfig[1].main
         break
-      case '/esim2':
+      case '/esim':
         primaryColor = primaryColorConfig[2].main
         break
 

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
+import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://bitcall.io'
 
