@@ -14,6 +14,10 @@ export type SectionContainerProps = {
     | 'plans-bg'
     | 'FAQ-bg'
     | 'real-time-insights-bg'
+    | 'esim-choose-Bitcall-esim-data-bg'
+    | 'esim-how-it-works-bg'
+    | 'esim-fast-reliable-bg'
+    | 'esim-for-whom-bg'
   containerClassName?: string
   ariaLabel?: string
   id?: string

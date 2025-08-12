@@ -15,28 +15,28 @@ export const TitleSkeleton: React.FC = () => {
 
 export const CountryCardSkeleton: React.FC = () => {
   return (
-    <li className='group relative z-5 w-[16rem] overflow-hidden rounded-2xl border-2 border-primary bg-backgroundPaper p-4 shadow-md'>
+    <li className='group relative z-5 w-[18rem] cursor-default overflow-hidden rounded-2xl border-2 border-primary/30 bg-backgroundPaper p-4 shadow-md'>
       <div className='animate-pulse'>
         <div className='flex items-center gap-3'>
-          <div className='h-16 w-16 rounded-full border-2 border-primary/40 ring-2 ring-primary/5 bg-gray-200' />
+          <div className='h-16 w-16 rounded-full border-2 border-primary/60 bg-gray-200' />
           <div className='h-6 w-40 rounded bg-gray-200' />
         </div>
         <div className='mt-4 flex items-end justify-between'>
           <div>
-            <div className='mb-2 h-2.5 w-12 rounded bg-gray-200' />
+            <div className='mb-1 h-2.5 w-10 rounded bg-gray-200' />
             <div className='h-7 w-24 rounded bg-gray-200' />
           </div>
           <div className='h-4 w-20 rounded bg-gray-200' />
         </div>
       </div>
-      <div className='mt-4 h-[3px] w-full rounded bg-gray-200/70' />
+      <div className='mt-4 h-[3px] w-full bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-40' />
     </li>
   )
 }
 
 export const CountryCardSkeletonList: React.FC<{ count?: number }> = ({ count = 8 }) => {
   return (
-    <ul className='flex gap-10 flex-col'>
+    <ul className='flex gap-10 mt-10 flex-col'>
       <div className='flex flex-wrap gap-6 justify-center'>
         {Array.from({ length: count }).map((_, index) => (
           <CountryCardSkeleton key={index} />

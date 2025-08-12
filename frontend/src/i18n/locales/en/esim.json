@@ -1,6 +1,8 @@
 {
   "hero": {
-    "title": "Stay Connected Worldwide, Global Data at Local Prices",
+    "title1": "Stay ",
+    "title2": "Connected ",
+    "title3": "Worldwide, Global Data at Local Prices",
     "subtitle": "Travel smarter with Bitcall’s ultra-affordable eSIM plans. Say goodbye to roaming charges and SIM card hassles. Whether you’re exploring new cities or working remotely, Bitcall offers instant eSIM activation with coverage in over 200 countries at local rates. No contracts, no hidden fees — just fast, reliable data wherever you go.",
     "cta": "Get My Bitcall eSIM Now",
     "secondaryCta": "Stay connected in seconds"
@@ -139,7 +141,9 @@
     ]
   },
   "testimonials": {
-    "title": "What Our Customers Are Saying",
+    "title1": "What ",
+    "title2": "Our Customers",
+    "title3": " Are Saying",
     "quotes": [
       {
         "text": "As a freelance designer, having a global eSIM that just works is priceless. Bitcall’s speeds were excellent even in remote areas. It’s now an essential tool for my digital nomad lifestyle.",
@@ -152,10 +156,33 @@
     ]
   },
   "ctaFinal": {
-    "title": "Ready to Connect?",
+    "title1": "Ready to ",
+    "title2": "Connect?",
     "text": "Staying connected while traveling should be easy and affordable. With Bitcall eSIM, it finally is. Stop overpaying for roaming and the hassle of SIM cards. Instead, enjoy instant, cheap data wherever you go. Join thousands of savvy travelers who travel smarter with Bitcall. Choose your plan, get your QR code, and you’re ready to explore the world.",
     "button": "Get My Bitcall eSIM Now",
     "active": "Activate in minutes, travel with confidence.",
     "footer": "For any questions or assistance, our 24/7 support team is here to help. We’re ready to assist you via live chat or email whenever you need it."
+  },
+  "buy": {
+    "tabs": {
+      "local": "Local eSIMs",
+      "regional": "Regional eSIMs",
+      "global": "Global eSIMs"
+    },
+    "back": "Back",
+    "search": {
+      "placeholder": "Search for countries to find eSIM plans..."
+    },
+    "viewMore": "View More",
+    "loadMore": "Load More",
+    "global": "Global eSIM",
+    "plansExist": "plans exist",
+    "buyNow": "Buy Now ({{count}})",
+    "from": "from",
+    "validity": "Validity",
+    "data": "Data",
+    "regionLabel": "Region",
+    "noResults": "No results for \"{{term}}\"",
+    "validityPrefix": "{{validity}}"
   }
 }

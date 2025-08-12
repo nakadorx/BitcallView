@@ -121,10 +121,10 @@ export const RenderCardListCore = ({
         />
       )}
       <ul
-        className={`flex flex-col gap-3 ${
+        className={`flex flex-col gap-3  ${
           isForVideoCardList
             ? 'rtl:lg:left-[0rem] lg:left-[0] left-[1rem] items-center  justify-center relative  rtl:left-[-1rem]'
-            : ''
+            : 'items-start'
         }`}
         role='list'
       >

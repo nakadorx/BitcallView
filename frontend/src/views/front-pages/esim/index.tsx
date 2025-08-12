@@ -19,10 +19,14 @@ const EsimSection = async () => {
 
   return (
     <div className='pt-10'>
-      <HeroSection title={[t('hero.title')]} description={t('hero.subtitle')}>
+      <HeroSection
+        title={['', t('hero.title1'), t('hero.title2'), t('hero.title3')]}
+        description={t('hero.subtitle')}
+        bgSection='bg-sectionEsim-1'
+      >
         <BuyEsimTool />
       </HeroSection>
-      {/* <WhyChoseBitCallSection /> */}
+      <WhyChoseBitCallSection />
       <BitcallDataSection />
       <EasyStepsSection />
       <FastReliableSection />

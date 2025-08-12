@@ -108,3 +108,51 @@
   opacity: 0.4;
   z-index: -1;
 }
+
+.esim-choose-Bitcall-esim-data-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1754998975/BGHeroEsim_myscms.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.esim-how-it-works-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1754998975/esimBG2_bl9qbp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+  animation: float 20s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.esim-fast-reliable-bg::before {
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1754998975/esimBG1_wmiwb8.png');
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 50px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.esim-for-whom-bg::before {
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1754998975/esimBG1_wmiwb8.png');
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 50px;
+  opacity: 0.4;
+  z-index: -1;
+}

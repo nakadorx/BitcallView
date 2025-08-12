@@ -48,9 +48,8 @@ export const ImageCardList = ({ data, title, withContent = false }: ImageCardLis
       {title && <Text value={title} as='h2' className='text-2xl font-bold mb-4' />}
       <div
         className='max-w-7xl mx-auto
-        bg-backgroundPaper shadow-xl
        rounded-3xl grid grid-cols-1
-       lg:grid-cols-12 gap-4 lg:px-[2rem] py-5'
+       lg:grid-cols-12 gap-10 lg:px-[2rem] py-5'
       >
         <RenderCardListCore
           indicatorStyle={indicatorStyle}
@@ -60,7 +59,7 @@ export const ImageCardList = ({ data, title, withContent = false }: ImageCardLis
           itemRefs={itemRefs}
           hideSelector={userIsMobile}
           containerClassName='order-2 lg:order-1 col-span-6'
-          isForVideoCardList
+          listIsInclined={false}
         />
 
         <RenderImageCardListCore
@@ -85,7 +84,10 @@ const RenderImageCardListCore = ({
   isImageVisible: boolean
   setIsImageVisible: (visible: boolean) => void
 }) => (
-  <div className='flex items-center justify-center h-full order-1 lg:order-2 col-span-6 '>
+  <div
+    className='flex items-center justify-center h-full order-1 lg:order-2 col-span-6
+  '
+  >
     <Image
       role='presentation'
       aria-hidden='true'
@@ -97,7 +99,8 @@ const RenderImageCardListCore = ({
       width={800}
       height={800}
       onLoad={() => setIsImageVisible(true)}
-      className={`w-full h-full object-cover rounded-lg
+      className={`w-full h-full object-cover rounded-3xl border-2 border-primary
+        shadow-lg
         relative overflow-hidden  aspect-square
         transition-opacity duration-500 ease-in-out ${isImageVisible ? 'opacity-100' : 'opacity-0'}`}
     />

@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 interface TabData {
   label: string
   value: EsimTabTypeEnum
+  icon?: React.ReactNode
 }
 
 interface HeaderTabsViewProps {
@@ -63,7 +64,10 @@ export const HeaderTabsView = ({ tabsData, activeTab, handleTabChange }: HeaderT
                   }`}
                 onClick={() => handleTabChange(tab.value)}
               >
-                {tab.label}
+                <span className='inline-flex items-center gap-2'>
+                  {tab.icon ? <span className='inline-flex items-center'>{tab.icon}</span> : null}
+                  <span>{tab.label}</span>
+                </span>
               </button>
             </li>
           ))}

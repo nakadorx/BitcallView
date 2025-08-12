@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { SButton } from '@/components/common/button/SButton'
+import { useT } from '@/i18n/client'
 import { CountryCardSkeletonList } from '@/components/common/Skeletons'
 import { CountryData, ContentTabsCardsViewApiResponse } from '../type'
 
@@ -22,12 +23,12 @@ const Card = ({
   setSelectedItemPayload: (payload: { data: string }) => void
 }) => (
   <li
-    className='group relative z-5 w-[16rem] cursor-pointer overflow-hidden rounded-2xl border-2 border-primary bg-backgroundPaper shadow-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:bg-backgroundDefault'
+    className='group relative z-5 w-[18rem] cursor-pointer overflow-hidden rounded-2xl border-2 border-primary bg-backgroundPaper shadow-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:bg-backgroundDefault'
     onClick={() => setSelectedItemPayload({ data: code })}
   >
     <div className='p-4'>
       <div className='flex items-center gap-3'>
-        <div className='relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/60 ring-2 ring-primary/10 shadow-sm'>
+        <div className='relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full border-2 border-primary/60  shadow-sm'>
           <Image src={flag} alt={`${name} flag`} fill className='object-cover' />
         </div>
         <h2 className='truncate text-lg font-extrabold leading-tight'>{name}</h2>
@@ -46,11 +47,12 @@ const Card = ({
   </li>
 )
 
-export const ContentTabsCardsView = ({
+export const ContentTabLocalCardsView = ({
   setSelectedItemPayload
 }: {
   setSelectedItemPayload: (payload: { data: string }) => void
 }) => {
+  const { t } = useT('esim')
   const [countries, setCountries] = useState<CountryData[]>([])
   const [allData, setAllData] = useState<CountryData[]>([])
   const [loading, setLoading] = useState(true)
@@ -112,7 +114,7 @@ export const ContentTabsCardsView = ({
         ))}
       </div>
       <div>
-        <SButton label='Load More' variant='contained' onClick={handleLoadMore} />
+        <SButton label={t('buy.loadMore')} variant='contained' onClick={handleLoadMore} />
       </div>
     </ul>
   )

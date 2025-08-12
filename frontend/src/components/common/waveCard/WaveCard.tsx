@@ -5,13 +5,14 @@ import { ReactElement, useEffect, useState } from 'react'
 type WaveCardProps = {
   children?: ReactElement | ReactElement[] | string | null
   ariaLabel?: string
+  className?: string
   waveColor?: {
     Container?: string
     Svg?: string
   }
 }
 
-export const WaveCard = ({ children, ariaLabel, waveColor }: WaveCardProps) => {
+export const WaveCard = ({ children, ariaLabel, waveColor, className }: WaveCardProps) => {
   const [userIsMobile, setUserIsMobile] = useState(false)
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export const WaveCard = ({ children, ariaLabel, waveColor }: WaveCardProps) => {
   return (
     <section
       aria-label={ariaLabel}
-      className={`shadow-lg  audience-section
+      className={`shadow-lg  audience-section ${className}
       lg:dark:border-2 lg:dark:border-solid
       lg:dark:border-primary relative z-[5]
       overflow-hidden ${waveColor?.Container}

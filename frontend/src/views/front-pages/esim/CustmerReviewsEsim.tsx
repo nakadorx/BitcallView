@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useT } from '@/i18n/client'
 import { Text } from '@/components/common/text'
 import { SectionContainer } from '@/components/common/SectionContainer/SectionContainer'
+import { IconRoundButton } from '@/components/common/button/IconRoundButton'
 
 interface CustomerReview {
   id: number
@@ -39,22 +40,20 @@ const CustomerReviewsEsim = () => {
   const review = customerReviews[currentReview]
 
   return (
-    <SectionContainer title={[t('testimonials.title')]}>
-      <div className='px-[20rem] mt-10'>
-        <div className='bg-white rounded-3xl shadow-lg overflow-hidden'>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-0'>
-            <div className='relative h-64 lg:h-full min-h-[400px] flex items-center justify-start'>
+    <SectionContainer title={['', t('testimonials.title1'), t('testimonials.title2'), t('testimonials.title3')]}>
+      <div className='px-[20rem] mt-10 '>
+        <div className='bg-[#ed7760]  bg-opacity-30 rounded-3xl shadow-lg overflow-hidden'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch'>
+            <div className='relative w-full h-[420px] lg:h-[520px] min-h-[420px] lg:min-h-[520px] overflow-hidden flex items-center justify-center shrink-0'>
               <Image
                 src={review.image}
                 alt={`${review.author} testimonial`}
-                height={500}
-                width={500}
+                fill
                 className='object-cover rounded-4xl'
-                sizes='(max-width: 1024px) 100vw, 50vw'
               />
             </div>
 
-            <div className='py-8 lg:p-12 flex flex-col justify-center'>
+            <div className='py-8 lg:p-12 flex flex-col justify-center min-h-[420px] lg:min-h-[520px]'>
               <Text as='div' className='text-2xl lg:text-3xl font-light text-gray-800 leading-relaxed mb-8'>
                 <Text as='span' className='text-4xl text-gray-400 mr-2' value='"' />
                 {review.text}
@@ -66,23 +65,22 @@ const CustomerReviewsEsim = () => {
               </div>
 
               <div className='flex space-x-4'>
-                <button
+                <IconRoundButton
                   onClick={prevReview}
-                  className='w-12 h-12 rounded-full bg-orange-400 hover:bg-orange-500 text-white flex items-center justify-center transition-colors duration-200 disabled:opacity-50'
+                  ariaLabel='Previous review'
                   disabled={customerReviews.length <= 1}
-                  aria-label='Previous review'
-                >
-                  <i className='ri-arrow-left-s-line text-xl' />
-                </button>
-
-                <button
+                  icon={<i className='ri-arrow-left-s-line' />}
+                  size='md'
+                  variant='primary'
+                />
+                <IconRoundButton
                   onClick={nextReview}
-                  className='w-12 h-12 rounded-full bg-orange-400 hover:bg-orange-500 text-white flex items-center justify-center transition-colors duration-200 disabled:opacity-50'
+                  ariaLabel='Next review'
                   disabled={customerReviews.length <= 1}
-                  aria-label='Next review'
-                >
-                  <i className='ri-arrow-right-s-line text-xl' />
-                </button>
+                  icon={<i className='ri-arrow-right-s-line' />}
+                  size='md'
+                  variant='primary'
+                />
               </div>
 
               {customerReviews.length > 1 && (
@@ -92,7 +90,7 @@ const CustomerReviewsEsim = () => {
                       key={index}
                       onClick={() => setCurrentReview(index)}
                       className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                        index === currentReview ? 'bg-orange-400' : 'bg-gray-300'
+                        index === currentReview ? 'bg-primary' : 'bg-gray-300'
                       }`}
                       aria-label={`Go to review ${index + 1}`}
                     />

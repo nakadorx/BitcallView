@@ -25,7 +25,8 @@ const ForWhomCard = ({
     shadow-md cursor-pointer
     flex items-center gap-4
     hover:border-primary hover:border
-    bg-gray-800/10
+    bg-gray-200/50
+    dark:bg-backgroundPaper
     ${index % 2 === 0 ? 'flex-row-reverse' : 'relative left-[4rem]'}
     `}
     >
@@ -67,7 +68,7 @@ const ForWhomSection = async () => {
     }
   ]
   return (
-    <SectionContainer title={['', t('forWhom.title1'), t('forWhom.title2')]}>
+    <SectionContainer title={['', t('forWhom.title1'), t('forWhom.title2')]} bgClass='esim-for-whom-bg'>
       <ul className='flex flex-col gap-10 mt-10'>
         {data.map((item, index) => (
           <ForWhomCard key={index} {...item} index={index} />

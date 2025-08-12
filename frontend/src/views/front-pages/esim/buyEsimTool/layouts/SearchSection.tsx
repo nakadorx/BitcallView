@@ -4,40 +4,51 @@ import { useState, useRef, useEffect } from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import ClearIcon from '@mui/icons-material/Clear'
 import { countryList, type Country } from '@/data/countries'
+import { EsimTabTypeEnum } from '../type'
+import { useT } from '@/i18n/client'
 
 interface SearchSectionProps {
-  onCountrySelect?: (country: Country) => void
+  onSelect?: (option: { type: 'country' | 'region'; name: string; code?: string }) => void
   placeholder?: string
+  activeTab: EsimTabTypeEnum
 }
 
-export const SearchSection = ({ onCountrySelect, placeholder = 'Search for countries...' }: SearchSectionProps) => {
+export const SearchSection = ({ onSelect, placeholder = 'Search for countries...', activeTab }: SearchSectionProps) => {
+  const { t } = useT('esim')
   const [searchTerm, setSearchTerm] = useState('')
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const [filteredCountries, setFilteredCountries] = useState<Country[]>([])
+  const [options, setOptions] = useState<Array<{ type: 'country' | 'region'; name: string; code?: string }>>([])
   const [highlightedIndex, setHighlightedIndex] = useState(-1)
 
   const searchRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
-  // Filter countries based on search term
   useEffect(() => {
-    if (searchTerm.trim()) {
-      const filtered = countryList
-        .filter(
-          country =>
-            country.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            country.code.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-        .slice(0, 8) // Show max 8 results
-
-      setFilteredCountries(filtered)
-      setIsDropdownOpen(true)
-      setHighlightedIndex(-1)
-    } else {
-      setFilteredCountries([])
+    const term = searchTerm.trim().toLowerCase()
+    if (!term) {
+      setOptions([])
       setIsDropdownOpen(false)
+      setHighlightedIndex(-1)
+      return
     }
-  }, [searchTerm])
+
+    if (activeTab === EsimTabTypeEnum.REGIONAL) {
+      const REGIONS = ['North-America', 'Asia-Pacific', 'Europe', 'Latin America', 'Middle East', 'Oceania']
+      const filtered = REGIONS.filter(r => r.toLowerCase().includes(term))
+        .slice(0, 8)
+        .map(r => ({ type: 'region' as const, name: r }))
+      setOptions(filtered)
+    } else {
+      const filtered = countryList
+        .filter(c => c.name.toLowerCase().includes(term) || c.code.toLowerCase().includes(term))
+        .slice(0, 8)
+        .map(c => ({ type: 'country' as const, name: c.name, code: c.code }))
+      setOptions(filtered)
+    }
+
+    setIsDropdownOpen(true)
+    setHighlightedIndex(-1)
+  }, [searchTerm, activeTab])
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -53,21 +64,23 @@ export const SearchSection = ({ onCountrySelect, placeholder = 'Search for count
 
   // Handle keyboard navigation
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (!isDropdownOpen || filteredCountries.length === 0) return
+    const listLength = options.length
+    if (!isDropdownOpen || listLength === 0) return
 
     switch (e.key) {
       case 'ArrowDown':
         e.preventDefault()
-        setHighlightedIndex(prev => (prev < filteredCountries.length - 1 ? prev + 1 : 0))
+        setHighlightedIndex(prev => (prev < listLength - 1 ? prev + 1 : 0))
         break
       case 'ArrowUp':
         e.preventDefault()
-        setHighlightedIndex(prev => (prev > 0 ? prev - 1 : filteredCountries.length - 1))
+        setHighlightedIndex(prev => (prev > 0 ? prev - 1 : listLength - 1))
         break
       case 'Enter':
         e.preventDefault()
         if (highlightedIndex >= 0) {
-          handleCountrySelect(filteredCountries[highlightedIndex])
+          const chosen = options[highlightedIndex]
+          if (chosen) handleSelect(chosen)
         }
         break
       case 'Escape':
@@ -78,11 +91,11 @@ export const SearchSection = ({ onCountrySelect, placeholder = 'Search for count
     }
   }
 
-  const handleCountrySelect = (country: Country) => {
-    setSearchTerm(country.name)
+  const handleSelect = (opt: { type: 'country' | 'region'; name: string; code?: string }) => {
+    setSearchTerm(opt.name)
     setIsDropdownOpen(false)
     setHighlightedIndex(-1)
-    onCountrySelect?.(country)
+    onSelect?.(opt)
   }
 
   const clearSearch = () => {
@@ -126,34 +139,31 @@ export const SearchSection = ({ onCountrySelect, placeholder = 'Search for count
           )}
         </div>
 
-        {/* Dropdown Results */}
-        {isDropdownOpen && filteredCountries.length > 0 && (
-          <div
-            className='absolute z-50 w-full mt-1 bg-white border border-gray-200
-                        rounded-xl shadow-lg max-h-64 overflow-y-auto'
-          >
-            {filteredCountries.map((country, index) => (
+        {isDropdownOpen && options.length > 0 && (
+          <div className='absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg max-h-64 overflow-y-auto'>
+            {options.map((opt, index) => (
               <button
-                key={country.code}
-                onClick={() => handleCountrySelect(country)}
+                key={`${opt.type}-${opt.code || opt.name}`}
+                onClick={() => handleSelect(opt)}
                 className={`bg-backgroundPaper cursor-pointer  w-full px-4 py-3 text-left flex items-center gap-3
                           hover:bg-gray-50 transition-colors duration-150
                           ${index === highlightedIndex ? 'bg-primary bg-opacity-10' : ''}
                           ${index === 0 ? 'rounded-t-xl' : ''}
-                          ${index === filteredCountries.length - 1 ? 'rounded-b-xl' : ''}
+                          ${index === options.length - 1 ? 'rounded-b-xl' : ''}
                           border-b border-gray-100 last:border-b-0`}
               >
-                {/* Country Flag */}
-                <span
-                  className={`fi fi-${country.code.toLowerCase()} text-lg`}
-                  style={{ width: '24px', height: '18px' }}
-                />
-
-                {/* Country Info */}
+                {opt.type === 'country' ? (
+                  <span
+                    className={`fi fi-${opt.code?.toLowerCase()} text-lg`}
+                    style={{ width: '24px', height: '18px' }}
+                  />
+                ) : (
+                  <span className='text-lg'>🌐</span>
+                )}
                 <div className='flex-1 min-w-0'>
-                  <div className='font-medium text-gray-900 truncate'>{country.name}</div>
+                  <div className='font-medium text-gray-900 truncate'>{opt.name}</div>
                   <div className='text-sm text-gray-500'>
-                    {country.code} • {country.region}
+                    {opt.type === 'country' ? opt.code : t('buy.regionLabel')}
                   </div>
                 </div>
               </button>
@@ -162,12 +172,12 @@ export const SearchSection = ({ onCountrySelect, placeholder = 'Search for count
         )}
 
         {/* No Results */}
-        {isDropdownOpen && searchTerm && filteredCountries.length === 0 && (
+        {isDropdownOpen && searchTerm && options.length === 0 && (
           <div
             className='absolute z-50 w-full mt-1 bg-white border border-gray-200
                         rounded-xl shadow-lg p-4 text-center text-gray-500'
           >
-            No countries found for "{searchTerm}"
+            {t('buy.noResults', { term: searchTerm })}
           </div>
         )}
       </div>

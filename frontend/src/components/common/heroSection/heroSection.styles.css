@@ -28,3 +28,10 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+
+.bg-sectionEsim-1 {
+  background-image: url('https://res.cloudinary.com/dat6ipt7d/image/upload/v1754998974/BGHeroEsimR_m2ppwt.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}

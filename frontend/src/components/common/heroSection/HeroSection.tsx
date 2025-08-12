@@ -10,22 +10,29 @@ type heroSectionProps = {
   description: string
   buttons?: (SButtonProps & { label: string })[]
   children?: React.ReactNode
+  bgSection?: 'bg-sectionEsim-1' | 'bg-section-1'
 }
 
-export const HeroSection = ({ title, description, buttons = [], children }: heroSectionProps) => {
+export const HeroSection = ({
+  title,
+  description,
+  buttons = [],
+  children,
+  bgSection = 'bg-section-1'
+}: heroSectionProps) => {
   return (
     <section
       role='banner'
-      className='text-center relative z-10 flex flex-col items-center pt-12 sm:pt-8 mb-16
+      className={`text-center relative z-10 flex flex-col items-center pt-12 sm:pt-8 mb-16
        bg-no-repeat bg-scroll hero-float transition-transform duration-100 ease-out
-       bg-section-1
-       '
+       ${bgSection}
+       `}
     >
       {title && (
         <Text
           as='h1'
-          className='lg:mt-7 mb-9 px-4 text-[2rem] md:text-6xl lg:text-6xl  font-extrabold font-["Open_Sans_Extra_Bold"]
-          lg:max-w-[70rem]'
+          className='lg:mt-0 mb-9 px-4 text-[2rem] md:text-6xl lg:text-6xl  font-extrabold font-["Open_Sans_Extra_Bold"]
+          lg:max-w-[75rem]'
         >
           {title?.map((t, index) => (
             <span key={index} className={`${index % 2 === 0 ? 'text-primary' : 'text-secondary'}`}>

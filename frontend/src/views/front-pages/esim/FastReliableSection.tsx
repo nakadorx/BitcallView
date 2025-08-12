@@ -29,7 +29,11 @@ export const FastReliableSection = async () => {
   ]
 
   return (
-    <SectionContainer title={['', t('useCases.title'), t('useCases.title2')]} description={t('useCases.description')}>
+    <SectionContainer
+      title={['', t('useCases.title'), t('useCases.title2')]}
+      description={t('useCases.description')}
+      bgClass='esim-fast-reliable-bg'
+    >
       <ImageCardList data={data} />
       <Text
         as='p'

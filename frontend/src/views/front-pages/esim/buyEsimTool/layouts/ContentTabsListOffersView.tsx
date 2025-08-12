@@ -2,15 +2,24 @@
 
 import { useState, useEffect } from 'react'
 import { PlanListSkeleton } from '@/components/common/Skeletons'
-import { PlanInformationApiResponse } from '../type'
+import { EsimTabTypeEnum, PlanInformationApiResponse } from '../type'
+import { useT } from '@/i18n/client'
 import { SButton } from '@/components/common/button/SButton'
-import { getCurrencySymbol } from '../utils'
+import { getCurrencySymbol, fetchPlanInformation } from '../utils'
 
-export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedItemPayload: { data: string } }) => {
+export const ContentTabsListOffersView = ({
+  selectedItemPayload,
+  activeTab
+}: {
+  selectedItemPayload: { data: string | string[] }
+  activeTab: EsimTabTypeEnum
+}) => {
+  const { t } = useT('esim')
   const [planData, setPlanData] = useState<PlanInformationApiResponse | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [selectedPlans, setSelectedPlans] = useState<Set<string>>(new Set())
+  const [visibleCount, setVisibleCount] = useState<number>(12)
 
   const toggleSelect = (planCode: string) => {
     setSelectedPlans(prev => {
@@ -29,49 +38,43 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
     console.log('Selected plans:', selectedArray)
   }
 
-  useEffect(() => {
-    const fetchPlanInformation = async () => {
-      try {
-        setLoading(true)
-        setError(null)
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + 12)
+  }
+  const loadPlanInformation = async () => {
+    try {
+      setLoading(true)
+      setError(null)
 
-        const response = await fetch('https://api.demo-bc.site/esim/plan-information-countrywise', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            type: 1,
-            countryCode: selectedItemPayload?.data
-          })
-        })
+      const response = await fetchPlanInformation({ data: selectedItemPayload?.data || '', activeTab })
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`)
-        }
-
-        const data = (await response.json()) as PlanInformationApiResponse
-        setPlanData(data)
-        try {
-          const popularPlanCodes = (data.getInformation || [])
-            .filter(plan => plan.capacity === '3')
-            .map(plan => plan.planCode)
-          if (popularPlanCodes.length > 0) {
-            setSelectedPlans(new Set(popularPlanCodes))
-          }
-        } catch {
-          // no-op: default selection is optional
-        }
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'An error occurred while fetching plan information')
-        console.error('Error fetching plan information:', err)
-      } finally {
-        setLoading(false)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
       }
-    }
 
-    fetchPlanInformation()
-  }, [])
+      const data = (await response.json()) as PlanInformationApiResponse
+      setPlanData(data)
+      try {
+        const popularPlanCodes = (data.getInformation || [])
+          .filter(plan => plan.capacity === '3')
+          .map(plan => plan.planCode)
+        if (popularPlanCodes.length > 0) {
+          setSelectedPlans(new Set(popularPlanCodes))
+        }
+      } catch {
+        // no-op: default selection is optional
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred while fetching plan information')
+      console.error('Error fetching plan information:', err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    loadPlanInformation()
+  }, [selectedItemPayload?.data, activeTab])
 
   if (loading) {
     return <PlanListSkeleton />
@@ -91,9 +94,16 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
         <div>
           {(() => {
             const planCount = planData.getInformation.length
-            const countryName = planData.getInformation[0]?.countryName || ''
-            const countryCode = selectedItemPayload?.data || ''
-            const countryCodeToEmoji = (code: string) => {
+            const firstCountryName = planData.getInformation[0]?.countryName || ''
+            const dataValue = selectedItemPayload?.data
+            const regionName = Array.isArray(dataValue)
+              ? dataValue[0]
+              : typeof dataValue === 'string'
+                ? dataValue.replace(/^REGION:/, '')
+                : ''
+
+            const countryCode = Array.isArray(dataValue) ? '' : dataValue || ''
+            const toFlagEmoji = (code: string) => {
               if (!code || code.length !== 2) return '🏳️'
               const base = 127397
               const upper = code.toUpperCase()
@@ -102,18 +112,23 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
               if (!first || !second) return '🏳️'
               return String.fromCodePoint(base + first) + String.fromCodePoint(base + second)
             }
-            const flagEmoji = countryCodeToEmoji(countryCode)
+
+            const isRegional = activeTab === EsimTabTypeEnum.REGIONAL
+            const isGlobal = activeTab === EsimTabTypeEnum.GLOBAL
+            const icon = isRegional || isGlobal ? '🌐' : toFlagEmoji(countryCode)
+            const titleName = isGlobal ? t('buy.global') : isRegional ? regionName : firstCountryName
+
             return (
               <h3 className='text-4xl  mb-10 text-center font-semibold  font-["Open_Sans_Extra_Bold"]  flex justify-center items-center gap-2'>
-                <span aria-hidden>{flagEmoji}</span>
+                <span aria-hidden>{icon}</span>
                 <span>
-                  {countryName} <span className='text-primary'>({planCount})</span> plans exist
+                  {titleName} <span className='text-primary'>({planCount})</span> {t('buy.plansExist')}
                 </span>
               </h3>
             )
           })()}
           <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center'>
-            {planData.getInformation.map(plan => {
+            {planData.getInformation.slice(0, visibleCount).map(plan => {
               const currencySymbol = getCurrencySymbol(plan.currency)
               const isPopular = plan.capacity === '3'
 
@@ -134,7 +149,7 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
                   )}
                   <div className='flex items-start justify-between gap-2'>
                     <div className='flex flex-col'>
-                      <span className='text-[10px] uppercase tracking-wide text-gray-500'>Data</span>
+                      <span className='text-[10px] uppercase tracking-wide text-gray-500'>{t('buy.data')}</span>
                       <span className='text-xl font-extrabold text-gray-900'>
                         {plan.capacity}
                         {plan.capacityUnit}
@@ -142,7 +157,7 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
                     </div>
 
                     <div className='text-right'>
-                      <span className='text-[10px] text-gray-500'>Validity</span>
+                      <span className='text-[10px] text-gray-500'>{t('buy.validity')}</span>
                       <div className='text-xs font-medium text-gray-800'>
                         {plan.vaildity} {plan.validityType}
                       </div>
@@ -151,7 +166,7 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
 
                   <div className='mt-4 flex items-center justify-between'>
                     <div className='flex flex-col'>
-                      <span className='text-[10px] text-secondary'>from</span>
+                      <span className='text-[10px] text-secondary'>{t('buy.from')}</span>
                       <span className='text-xl font-bold text-primary'>
                         {currencySymbol}
                         {plan.price.toFixed(2)}
@@ -171,9 +186,13 @@ export const ContentTabsListOffersView = ({ selectedItemPayload }: { selectedIte
               )
             })}
           </ul>
-          <div className='mt-6 flex justify-center'>
+
+          <div className='mt-6 flex justify-center gap-4'>
+            {planData.getInformation.length > visibleCount && (
+              <SButton label={t('buy.loadMore')} variant='outlined' onClick={handleLoadMore} />
+            )}
             <SButton
-              label={`Buy Now (${selectedPlans.size})`}
+              label={t('buy.buyNow', { count: selectedPlans.size })}
               variant='contained'
               disabled={selectedPlans.size === 0}
               onClick={handleBuyNow}

@@ -10,7 +10,10 @@ const BitcallDataSection = async () => {
   const t = await getT(locale, 'esim')
 
   return (
-    <SectionContainer title={['', t('features.title1'), t('features.title2'), t('features.title3')]}>
+    <SectionContainer
+      title={['', t('features.title1'), t('features.title2'), t('features.title3')]}
+      bgClass='esim-choose-Bitcall-esim-data-bg'
+    >
       <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[4rem] mt-10'>
         <li
           className='w-[30rem] h-[48rem]

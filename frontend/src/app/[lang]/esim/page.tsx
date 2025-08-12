@@ -61,7 +61,6 @@ export default function EsimPage() {
 
       {/* JSON‑LD Structured Data */}
       <EsimStructuredData />
-      <EsimClient />
 
       {/* Render the interactive eSIM component */}
       <EsimSection />

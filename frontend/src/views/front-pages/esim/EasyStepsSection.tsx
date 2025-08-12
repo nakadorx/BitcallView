@@ -19,7 +19,7 @@ const SetpsCard = ({
 }) => {
   return (
     <li
-      className='hover:scale-105 transition-all duration-300
+      className='bg-backgroundPaper hover:scale-105 transition-all duration-300
     w-[23rem] h-[30rem] rounded-4xl p-5
     border border-primary shadow-md cursor-pointer'
     >
@@ -83,8 +83,8 @@ const EasyStepsSection = async () => {
   ]
 
   return (
-    <SectionContainer title={['', t('howItWorks.title1'), t('howItWorks.title2')]}>
-      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
+    <SectionContainer title={['', t('howItWorks.title1'), t('howItWorks.title2')]} bgClass='esim-how-it-works-bg'>
+      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 z-10'>
         {Data.map((item, index) => (
           <SetpsCard key={item.title} title={item.title} description={item.description} index={(index + 1).toString()}>
             {item.children}
