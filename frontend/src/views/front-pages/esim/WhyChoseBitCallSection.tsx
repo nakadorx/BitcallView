@@ -33,7 +33,7 @@ const WhyChoseBitCallSection = async () => {
         leading-relaxed mb-2 max-w-[650px] mx-auto font-roboto'
       />
       <div
-        className='flex justify-center items-center bg-gray-200  bg-opacity-20 rounded-4xl p-4 w-[70rem]
+        className='flex justify-center items-center bg-gray-200 dark:bg-transparent  bg-opacity-20 rounded-4xl p-4 w-[70rem]
        mx-auto my-[2rem]'
       >
         <Text

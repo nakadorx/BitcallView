@@ -20,6 +20,7 @@ export const BuyEsimTool = () => {
 
   const handleTabChange = (tab: EsimTabTypeEnum) => {
     setActiveTab(tab)
+    setSelectedItemPayload({ data: '' })
   }
 
   const tabsData = [
@@ -75,7 +76,7 @@ export const BuyEsimTool = () => {
   }
 
   return (
-    <div className='px-[20rem] pb-[5rem] relative lg:w-[120rem] md:w-[80rem] w-full'>
+    <div className='px-[20rem] pb-[5rem] relative lg:w-[100rem] md:w-[80rem] w-full'>
       <div className='relative px-[1rem] py-[2rem] border-2 border-primary rounded-4xl bg-backgroundPaper'>
         {selectedItemPayload?.data && (
           <div className='absolute top-[2rem] left-[3rem] z-10'>
@@ -100,9 +101,8 @@ export const BuyEsimTool = () => {
             </button>
           </div>
         )}
-        {!selectedItemPayload?.data && (
-          <HeaderTabsView tabsData={tabsData} activeTab={activeTab} handleTabChange={handleTabChange} />
-        )}
+
+        <HeaderTabsView tabsData={tabsData} activeTab={activeTab} handleTabChange={handleTabChange} />
 
         <div className='mt-8 mb-6'>
           {!selectedItemPayload?.data && (

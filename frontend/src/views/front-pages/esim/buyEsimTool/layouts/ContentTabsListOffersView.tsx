@@ -130,6 +130,7 @@ export const ContentTabsListOffersView = ({
           <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center'>
             {planData.getInformation.slice(0, visibleCount).map(plan => {
               const currencySymbol = getCurrencySymbol(plan.currency)
+              // TODO: change this to is popular flag when its done
               const isPopular = plan.capacity === '3'
 
               return (
@@ -150,7 +151,7 @@ export const ContentTabsListOffersView = ({
                   <div className='flex items-start justify-between gap-2'>
                     <div className='flex flex-col'>
                       <span className='text-[10px] uppercase tracking-wide text-gray-500'>{t('buy.data')}</span>
-                      <span className='text-xl font-extrabold text-gray-900'>
+                      <span className='text-xl font-extrabold text-secondary'>
                         {plan.capacity}
                         {plan.capacityUnit}
                       </span>
@@ -158,7 +159,7 @@ export const ContentTabsListOffersView = ({
 
                     <div className='text-right'>
                       <span className='text-[10px] text-gray-500'>{t('buy.validity')}</span>
-                      <div className='text-xs font-medium text-gray-800'>
+                      <div className='text-xs font-medium text-secondary'>
                         {plan.vaildity} {plan.validityType}
                       </div>
                     </div>

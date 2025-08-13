@@ -45,8 +45,12 @@ const BitcallDataSection = async () => {
           role='img'
           aria-label='The Most Affordable eSIM on the Planet'
         >
-          <Text as='h3' value={t('features.points.flexible.title')} className=' text-2xl mb-4' />
-          <Text as='p' value={t('features.points.flexible.description')} className='text-base mb-4' />
+          <Text as='h3' value={t('features.points.flexible.title')} className=' text-2xl mb-4 dark:text-gray-800' />
+          <Text
+            as='p'
+            value={t('features.points.flexible.description')}
+            className='text-base mb-4 dark:text-gray-800'
+          />
           <ul className='space-y-2 w-[12rem] relative left-[14.5rem] top-10'>
             {t('features.points.flexible.featList').map((item: string, index: number) => (
               <li
@@ -113,7 +117,7 @@ const BitcallDataSection = async () => {
             className=' text-2xl mb-4  '
             textColor='primary'
           />
-          <Text as='p' value={t('features.points.peaceOfMind.description')} className='text-base ' />
+          <Text as='p' value={t('features.points.peaceOfMind.description')} className='text-base dark:text-gray-800 ' />
         </li>
       </ul>
     </SectionContainer>

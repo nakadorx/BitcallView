@@ -15,7 +15,7 @@ const PlanCard = ({ name, items, price }: { name: string; items: string[]; price
         ))}
       </div>
       <div className='relative left-[21rem] top-[-3.5rem]'>
-        <div className='shadow-sm bg-white border-primary border-4 rounded-full h-[5rem] w-[5rem] flex items-center justify-center'>
+        <div className='shadow-sm bg-backgroundPaper border-primary border-4 rounded-full h-[5rem] w-[5rem] flex items-center justify-center'>
           <Text value={price} className='text-lg font-bold' as='span' textColor='primary' />
         </div>
       </div>
@@ -52,7 +52,7 @@ const FlexiblePlansSection = async () => {
       <div className='grid grid-cols-6 mt-10'>
         <Image
           src='/images/assets/esimPageAsserts/16.png'
-          className='col-span-3 rounded-3xl border-2 border-primary shadow-lg'
+          className='col-span-3 rounded-[2rem] border-2 border-primary shadow-lg'
           alt='Flexible Plans'
           width={600}
           height={600}
