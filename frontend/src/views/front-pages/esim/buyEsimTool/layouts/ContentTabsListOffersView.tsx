@@ -127,7 +127,7 @@ export const ContentTabsListOffersView = ({
               </h3>
             )
           })()}
-          <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center'>
+          <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 justify-center'>
             {planData.getInformation.slice(0, visibleCount).map(plan => {
               const currencySymbol = getCurrencySymbol(plan.currency)
               // TODO: change this to is popular flag when its done

@@ -18,29 +18,29 @@ const ForWhomCard = ({
   return (
     <li
       className={`hover:scale-105 transition-all duration-300
-    w-[50rem]
-    h-[12rem]
-    overflow-hidden
-    rounded-[4rem] p-5
-    shadow-md cursor-pointer
-    flex items-center gap-4
-    hover:border-primary hover:border
-    bg-gray-200/50
-    dark:bg-backgroundPaper
-    ${index % 2 === 0 ? 'flex-row-reverse' : 'relative left-[4rem]'}
-    `}
+        w-full max-w-[50rem]
+        h-auto lg:h-[12rem]
+        overflow-hidden
+        rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] p-4 sm:p-5
+        shadow-md cursor-pointer
+        flex flex-col lg:flex-row items-stretch gap-4
+        hover:border-primary hover:border
+        bg-gray-200/50
+        dark:bg-backgroundPaper
+        ${index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:relative lg:left-[4rem]'}
+      `}
     >
-      <div className='w-[30%] flex-shrink-0'>
-        <Image src={imgSrc} alt={title} width={50} height={30} className='w-full h-auto object-cover rounded-2xl' />
+      <div className='relative w-full lg:w-[30%] h-40 sm:h-56 lg:h-auto flex-shrink-0'>
+        <Image src={imgSrc} alt={title} fill className='w-full h-full object-cover rounded-2xl' />
       </div>
-      <div className='flex flex-col gap-4 w-[70%] px-4'>
+      <div className='flex flex-col gap-3 sm:gap-4 w-full lg:w-[70%] px-2 sm:px-4 pb-2'>
         <Text
           textColor='primary'
           as='h3'
           value={title}
-          className='text-xl text-primary hover:text-primary transition-all duration-300'
+          className='text-lg sm:text-xl text-primary hover:text-primary transition-all duration-300'
         />
-        <Text as='p' value={description} className='text-base' />
+        <Text as='p' value={description} className='text-sm sm:text-base' />
       </div>
     </li>
   )
@@ -74,7 +74,7 @@ const ForWhomSection = async () => {
           <ForWhomCard key={index} {...item} index={index} />
         ))}
       </ul>
-      <div aria-hidden='true'>
+      <div aria-hidden='true' className='hidden lg:block'>
         <Image
           src={'/images/assets/Arrows/4.png'}
           alt='arrow button'

@@ -99,8 +99,8 @@ export const ContentTabLocalCardsView = ({
   }
 
   return (
-    <ul className='flex gap-10 mt-10 flex-col'>
-      <div className='flex flex-wrap gap-6 justify-center '>
+    <ul className='flex gap-6 sm:gap-8 mt-6 sm:mt-10 flex-col'>
+      <div className='flex flex-wrap gap-4 sm:gap-6 justify-center '>
         {countries.map(country => (
           <Card
             key={country?.code}

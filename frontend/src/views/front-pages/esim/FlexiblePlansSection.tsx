@@ -7,16 +7,25 @@ import { Text } from '@/components/common/text'
 
 const PlanCard = ({ name, items, price }: { name: string; items: string[]; price: string }) => {
   return (
-    <li key={name} className='cursor-pointer hover:scale-110 transition-all duration-300 h-[13rem]'>
-      <div className=' bg-primary bg-opacity-5 p-4 rounded-4xl  w-[25rem] shadow-lg'>
-        <Text value={name} className='text-white text-2xl font-bold mb-4' as='h3' />
-        {items.map(item => (
-          <Text key={item} value={item} className='text-lg text-white pl-3' />
-        ))}
-      </div>
-      <div className='relative left-[21rem] top-[-3.5rem]'>
-        <div className='shadow-sm bg-backgroundPaper border-primary border-4 rounded-full h-[5rem] w-[5rem] flex items-center justify-center'>
-          <Text value={price} className='text-lg font-bold' as='span' textColor='primary' />
+    <li key={name} className='cursor-pointer hover:scale-105 transition-all duration-300'>
+      <div className='relative bg-primary bg-opacity-5 p-4 rounded-3xl sm:rounded-4xl  w-[25rem] shadow-lg'>
+        <Text value={name} className='text-white text-xl sm:text-2xl font-bold mb-3 sm:mb-4' as='h3' />
+        <ul className='space-y-1'>
+          {items.map(item => (
+            <li key={item}>
+              <Text value={item} className='text-sm sm:text-lg text-white pl-3' />
+            </li>
+          ))}
+        </ul>
+
+        {/* Price badge */}
+        <div className='absolute -right-3 -top-3 sm:-right-4 sm:-top-4'>
+          <div
+            className='shadow-sm bg-backgroundPaper border-primary border-4 rounded-full lg:h-[5rem] lg:w-[5rem]
+           h-[4rem] w-[4rem] flex items-center justify-center'
+          >
+            <Text value={price} className='text-sm sm:text-base font-bold' as='span' textColor='primary' />
+          </div>
         </div>
       </div>
     </li>
@@ -49,21 +58,26 @@ const FlexiblePlansSection = async () => {
       title={['', t('plans.title1'), t('plans.title2'), t('plans.title3')]}
       bgClass='esim-choose-Bitcall-esim-data-bg'
     >
-      <div className='grid grid-cols-6 mt-10'>
-        <Image
-          src='/images/assets/esimPageAsserts/16.png'
-          className='col-span-3 rounded-[2rem] border-2 border-primary shadow-lg'
-          alt='Flexible Plans'
-          width={600}
-          height={600}
-        />
-        <ul className='flex flex-col  items-center justify-start my-auto h-full col-span-3'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8 mt-8'>
+        <div className='col-span-1 sm:col-span-2 lg:col-span-3 lg:w-[35rem]'>
+          <Image
+            src='/images/assets/esimPageAsserts/16.png'
+            className='rounded-[1.5rem] sm:rounded-[2rem] border-2 border-primary shadow-lg w-full h-auto'
+            alt='Flexible Plans'
+            width={700}
+            height={700}
+          />
+        </div>
+        <ul className='col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col items-center sm:items-start gap-4 sm:gap-6'>
           {plans.map(plan => (
             <PlanCard key={plan.name} {...plan} />
           ))}
         </ul>
       </div>
-      <Text value={t('plans.description')} className='text-2xl lg:w-[70rem] text-center' />
+      <Text
+        value={t('plans.description')}
+        className='text-base sm:text-xl lg:w-[70rem] text-center mt-6 sm:mt-10 px-4'
+      />
     </SectionContainer>
   )
 }

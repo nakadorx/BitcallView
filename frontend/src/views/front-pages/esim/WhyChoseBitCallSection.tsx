@@ -10,9 +10,9 @@ const WhyChoseBitCallSection = async () => {
 
   return (
     <WaveCard
-      className='hover:scale-105 transition-all duration-300 cursor-pointer'
+      className='hover:scale-105 transition-all duration-300 cursor-pointer px-4 sm:px-6'
       waveColor={{
-        Container: `bg-gradient-to-br from-primary to-primary/50 dark:bg-none `,
+        Container: ` md:bg-gradient-to-br md:from-primary md:to-primary/50 dark:bg-none  bg-primary`,
         Svg: `fill-primary dark:fill-primary`
       }}
     >
@@ -32,15 +32,12 @@ const WhyChoseBitCallSection = async () => {
         className='text-center  italic text-[.9rem] sm:text-[1.4rem]
         leading-relaxed mb-2 max-w-[650px] mx-auto font-roboto'
       />
-      <div
-        className='flex justify-center items-center bg-gray-200 dark:bg-transparent  bg-opacity-20 rounded-4xl p-4 w-[70rem]
-       mx-auto my-[2rem]'
-      >
+      <div className='flex justify-center items-center bg-gray-200 dark:bg-transparent bg-opacity-20 rounded-4xl p-4 w-full max-w-[70rem] mx-auto my-[2rem]'>
         <Text
           as='p'
           value={t('features.points.affordable.description')}
           textColor='white'
-          className='text-center text-[1.03rem] px-[1rem] sm:text-[1.4rem] leading-relaxed  mx-auto font-bold'
+          className='text-center text-[1rem] sm:text-[1.2rem] md:text-[1.4rem] leading-relaxed px-2 sm:px-4 mx-auto font-bold'
         />
       </div>
     </WaveCard>

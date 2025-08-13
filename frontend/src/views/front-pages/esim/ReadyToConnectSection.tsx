@@ -24,9 +24,10 @@ export const ReadyToConnectSection = async () => {
             <Image
               src='/images/assets/esimPageAsserts/19-B.png'
               alt='Ready to Connect'
-              width={550}
-              height={500}
-              className='rounded-4xl'
+              width={0}
+              height={0}
+              sizes='100vw'
+              className='w-full h-auto rounded-4xl'
             />
           </div>
           <div className='flex flex-col gap-4 p-5'>

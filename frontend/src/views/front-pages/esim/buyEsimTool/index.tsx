@@ -76,10 +76,10 @@ export const BuyEsimTool = () => {
   }
 
   return (
-    <div className='px-[20rem] pb-[5rem] relative lg:w-[100rem] md:w-[80rem] w-full'>
-      <div className='relative px-[1rem] py-[2rem] border-2 border-primary rounded-4xl bg-backgroundPaper'>
+    <div className='w-full max-w-[120rem] mx-auto pb-[5rem] relative px-4 sm:px-8 md:px-12 lg:px-[20rem]'>
+      <div className='relative px-4 sm:px-6 py-[2rem] border-2 border-primary rounded-4xl bg-backgroundPaper'>
         {selectedItemPayload?.data && (
-          <div className='absolute top-[2rem] left-[3rem] z-10'>
+          <div className='absolute z-10 top-[11rem] left-[2rem] sm:top-[11.5rem] sm:left-[10rem] md:top-[2rem] md:left-[3rem]'>
             <button
               aria-label='Go back «'
               className='cursor-pointer w-12 h-12 flex
@@ -94,7 +94,7 @@ export const BuyEsimTool = () => {
                 }
               }}
             >
-              <span className='text-6xl leading-none drop-shadow-md'>«</span>
+              <span className='leading-none drop-shadow-md text-4xl sm:text-5xl md:text-6xl'>«</span>
               <span className='ml-2 text-xl leading-none font-["Open_Sans_Extra_Bold"] relative top-1'>
                 {t('buy.back')}
               </span>
@@ -112,7 +112,7 @@ export const BuyEsimTool = () => {
 
         <div>{renderContent()}</div>
       </div>
-      <div aria-hidden='true'>
+      <div aria-hidden='true' className='hidden lg:block'>
         <Image
           src='https://res.cloudinary.com/dat6ipt7d/image/upload/v1753184310/AR4_piigth.png'
           alt=''

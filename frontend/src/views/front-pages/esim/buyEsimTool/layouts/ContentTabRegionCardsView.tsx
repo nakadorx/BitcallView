@@ -47,20 +47,20 @@ export const ContentTabRegionCardsView = ({
 
   return (
     <div className='w-full'>
-      <ul className='flex flex-wrap gap-6 justify-center'>
+      <ul className='flex flex-wrap gap-4 sm:gap-6 justify-center'>
         {data.map(region => (
           <li
             key={region.code}
             onClick={() => setSelectedItemPayload({ data: region.code })}
-            className={`w-[18rem] h-[10.5rem] rounded-xl cursor-pointer select-none
+            className={`w-[16rem] sm:w-[18rem] h-[9.5rem] sm:h-[10.5rem] rounded-xl cursor-pointer select-none
               shadow-md hover:shadow-xl transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-0.5 border overflow-hidden bg-cover bg-center ${styles.regionCardBg}`}
           >
             <div className='h-full w-full p-4 relative'>
               <div className='relative z-10 h-full flex flex-col justify-between'>
-                <div className='absolute top-0 right-0 inline-block bg-white/20 text-white text-sm font-semibold rounded-full px-3 py-1'>
+                <div className='absolute top-0 right-0 inline-block bg-white/20 text-white text-xs sm:text-sm font-semibold rounded-full px-2 sm:px-3 py-1'>
                   {region.name}
                 </div>
-                <div className='flex-1 flex items-center justify-center relative right-[4rem]'>
+                <div className='flex-1 flex items-center justify-center relative right-[3rem] sm:right-[4rem]'>
                   <Image src={region.flag} alt={region.name} fill className='object-contain' />
                 </div>
               </div>

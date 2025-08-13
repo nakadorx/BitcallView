@@ -41,10 +41,10 @@ const CustomerReviewsEsim = () => {
 
   return (
     <SectionContainer title={['', t('testimonials.title1'), t('testimonials.title2'), t('testimonials.title3')]}>
-      <div className='px-[20rem] mt-10 '>
+      <div className='px-4 sm:px-8 lg:px-[20rem] mt-10'>
         <div className='bg-[#ed7760]  bg-opacity-30 rounded-3xl shadow-lg overflow-hidden'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch'>
-            <div className='relative w-full h-[420px] lg:h-[520px] min-h-[420px] lg:min-h-[520px] overflow-hidden flex items-center justify-center shrink-0'>
+            <div className='relative w-full h-[260px] sm:h-[360px] lg:h-[520px] min-h-[260px] sm:min-h-[360px] lg:min-h-[520px] overflow-hidden flex items-center justify-center shrink-0'>
               <Image
                 src={review.image}
                 alt={`${review.author} testimonial`}
@@ -53,18 +53,25 @@ const CustomerReviewsEsim = () => {
               />
             </div>
 
-            <div className='py-8 lg:p-12 flex flex-col justify-center min-h-[420px] lg:min-h-[520px]'>
-              <Text as='div' className='text-2xl lg:text-3xl font-light text-gray-800 leading-relaxed mb-8'>
-                <Text as='span' className='text-4xl text-gray-400 mr-2' value='"' />
+            <div className='p-6 sm:p-8 lg:p-12 flex flex-col justify-center min-h-[260px] sm:min-h-[360px] lg:min-h-[520px]'>
+              <Text
+                as='div'
+                className='text-xl sm:text-2xl lg:text-3xl font-light text-gray-800 leading-relaxed mb-6 sm:mb-8'
+              >
+                <Text as='span' className='text-3xl sm:text-4xl text-gray-400 mr-2' value='"' />
                 {review.text}
-                <Text as='span' className='text-4xl text-gray-400 ml-2' value='"' />
+                <Text as='span' className='text-3xl sm:text-4xl text-gray-400 ml-2' value='"' />
               </Text>
 
               <div className='mb-8'>
-                <Text as='p' value={review.author} className='text-lg font-medium text-gray-800' />
+                <Text
+                  as='p'
+                  value={review.author}
+                  className='text-base sm:text-lg font-medium text-gray-800 text-center sm:text-left'
+                />
               </div>
 
-              <div className='flex space-x-4'>
+              <div className='flex space-x-4 justify-center sm:justify-start'>
                 <IconRoundButton
                   onClick={prevReview}
                   ariaLabel='Previous review'
@@ -84,7 +91,7 @@ const CustomerReviewsEsim = () => {
               </div>
 
               {customerReviews.length > 1 && (
-                <div className='flex space-x-2 mt-6'>
+                <div className='flex space-x-2 mt-6 justify-center sm:justify-start'>
                   {customerReviews.map((_, index) => (
                     <button
                       key={index}
