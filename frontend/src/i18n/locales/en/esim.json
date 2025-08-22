@@ -183,6 +183,7 @@
     "data": "Data",
     "regionLabel": "Region",
     "noResults": "No results for \"{{term}}\"",
-    "validityPrefix": "{{validity}}"
+    "validityPrefix": "{{validity}}",
+    "from7Days": "from 7 days"
   }
 }

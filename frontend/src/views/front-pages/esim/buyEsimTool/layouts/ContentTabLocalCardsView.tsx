@@ -13,7 +13,8 @@ const Card = ({
   minPrice,
   validity,
   code,
-  setSelectedItemPayload
+  setSelectedItemPayload,
+  t
 }: {
   name: string
   flag: string
@@ -21,6 +22,7 @@ const Card = ({
   validity: string
   code: string
   setSelectedItemPayload: (payload: { data: string }) => void
+  t: (key: string) => string
 }) => (
   <li
     className='group relative z-5 w-[18rem] cursor-pointer overflow-hidden rounded-2xl border-2 border-primary bg-backgroundPaper shadow-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:bg-backgroundDefault'
@@ -36,7 +38,7 @@ const Card = ({
 
       <div className='mt-4 flex items-end justify-between'>
         <div>
-          <span className='block text-[10px] uppercase tracking-wide text-secondary'>from</span>
+          <span className='block text-[10px] uppercase tracking-wide text-secondary'>{t('buy.from')}</span>
           <span className='text-2xl font-bold text-primary'>${minPrice}</span>
         </div>
         <span className='text-xs text-gray-500'>{validity}</span>
@@ -107,9 +109,10 @@ export const ContentTabLocalCardsView = ({
             name={country?.name}
             flag={country?.flag}
             minPrice={country?.minPrice?.toFixed(2)?.toString()}
-            validity='from 7 days'
+            validity={t('buy.from7Days')}
             setSelectedItemPayload={setSelectedItemPayload}
             code={country?.code}
+            t={t}
           />
         ))}
       </div>

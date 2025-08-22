@@ -71,7 +71,7 @@ const CustomerReviewsEsim = () => {
                 />
               </div>
 
-              <div className='flex space-x-4 justify-center sm:justify-start'>
+              <div className='rtl:flex-row-reverse  flex flex-row space-x-4 justify-center sm:justify-start'>
                 <IconRoundButton
                   onClick={prevReview}
                   ariaLabel='Previous review'
@@ -91,7 +91,7 @@ const CustomerReviewsEsim = () => {
               </div>
 
               {customerReviews.length > 1 && (
-                <div className='flex space-x-2 mt-6 justify-center sm:justify-start'>
+                <div className='rtl:flex-row-reverse  flex flex-row   space-x-2 mt-6 justify-center sm:justify-start'>
                   {customerReviews.map((_, index) => (
                     <button
                       key={index}

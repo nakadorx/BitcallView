@@ -2,47 +2,21 @@
 import { useState } from 'react'
 import { EsimTabTypeEnum } from './type'
 import { useT } from '@/i18n/client'
-import LocationOnIcon from '@mui/icons-material/LocationOn'
-import MapIcon from '@mui/icons-material/Map'
-import PublicIcon from '@mui/icons-material/Public'
 import { ContentTabLocalCardsView } from './layouts/ContentTabLocalCardsView'
 import { ContentTabsListOffersView } from './layouts/ContentTabsListOffersView'
 import { HeaderTabsView } from './layouts/HeaderTabsView'
 import { SearchSection } from './layouts/SearchSection'
-import { Country } from '@/data/countries'
 import { ContentTabRegionCardsView } from './layouts/ContentTabRegionCardsView'
 import Image from 'next/image'
 
-export const BuyEsimTool = () => {
-  const { t } = useT('esim')
+export const BuyEsimTool = ({ lang }: { lang: string }) => {
+  const { t } = useT(lang, 'esim')
   const [activeTab, setActiveTab] = useState<EsimTabTypeEnum>(EsimTabTypeEnum.LOCAL)
   const [selectedItemPayload, setSelectedItemPayload] = useState<{ data: string }>({ data: '' })
 
   const handleTabChange = (tab: EsimTabTypeEnum) => {
     setActiveTab(tab)
     setSelectedItemPayload({ data: '' })
-  }
-
-  const tabsData = [
-    {
-      label: t('buy.tabs.local'),
-      value: EsimTabTypeEnum.LOCAL,
-      icon: <LocationOnIcon fontSize='small' />
-    },
-    {
-      label: t('buy.tabs.regional'),
-      value: EsimTabTypeEnum.REGIONAL,
-      icon: <MapIcon fontSize='small' />
-    },
-    {
-      label: t('buy.tabs.global'),
-      value: EsimTabTypeEnum.GLOBAL,
-      icon: <PublicIcon fontSize='small' />
-    }
-  ]
-
-  const handleCountrySelect = (country: Country) => {
-    setSelectedItemPayload({ data: country.code })
   }
 
   const handleSelect = (opt: { type: 'country' | 'region'; name: string; code?: string }) => {
@@ -102,7 +76,7 @@ export const BuyEsimTool = () => {
           </div>
         )}
 
-        <HeaderTabsView tabsData={tabsData} activeTab={activeTab} handleTabChange={handleTabChange} />
+        <HeaderTabsView activeTab={activeTab} handleTabChange={handleTabChange} />
 
         <div className='mt-8 mb-6'>
           {!selectedItemPayload?.data && (

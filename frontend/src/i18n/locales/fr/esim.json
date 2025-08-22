@@ -1,109 +1,189 @@
 {
   "hero": {
-    "title": "Stay Connected Worldwide, Global Data at Local Prices",
-    "subtitle": "Travel smarter with Bitcall’s ultra-affordable eSIM plans. Say goodbye to roaming charges and SIM card hassles. Whether you’re exploring new cities or working remotely, Bitcall offers instant eSIM activation with coverage in over 200 countries at local rates. No contracts, no hidden fees — just fast, reliable data wherever you go.",
-    "cta": "Get My Bitcall eSIM Now",
-    "secondaryCta": "Stay connected in seconds"
+    "title1": "Restez ",
+    "title2": "connecté ",
+    "title3": "dans le monde entier, des données globales à des prix locaux",
+    "subtitle": "Voyagez plus intelligemment avec les forfaits eSIM ultra-abordables de Bitcall. Dites adieu aux frais d’itinérance et aux tracas des cartes SIM. Que vous exploriez de nouvelles villes ou travailliez à distance, Bitcall offre une activation eSIM instantanée avec une couverture dans plus de 200 pays à des tarifs locaux. Sans contrat, sans frais cachés — juste des données rapides et fiables où que vous alliez.",
+    "cta": "Obtenir mon eSIM Bitcall maintenant",
+    "secondaryCta": "Restez connecté en quelques secondes"
   },
   "features": {
-    "title": "Why Choose Bitcall eSIM Data?",
+    "title1": "Pourquoi choisir Bitcall ",
+    "title2": "eSIM",
+    "title3": " Data ?",
     "points": {
       "affordable": {
-        "title": "The Most Affordable eSIM on the Planet",
-        "description": "Save up to 90% compared to traditional roaming fees. Bitcall’s prepaid eSIM plans let you know exactly what you pay upfront—no hidden charges. You’ll save money on every trip, leaving more for the things you love."
+        "title": "L’eSIM la plus abordable de la planète",
+        "description": "Économisez jusqu’à 90 % par rapport aux frais d’itinérance traditionnels. Les forfaits eSIM prépayés de Bitcall vous permettent de savoir exactement ce que vous payez à l’avance — sans frais cachés. Vous économiserez à chaque voyage, pour garder plus d’argent pour ce que vous aimez.",
+        "textContent": "50+ en frais d’itinérance ? Bitcall coûte une fraction de cela. Forfaits de données mondiales abordables à partir de 2,99$"
       },
       "trusted": {
-        "title": "Trusted Connectivity, Anytime, Anywhere",
-        "description": "Thousands of savvy travelers trust Bitcall to stay online abroad. We partner with top carriers worldwide to ensure fast, reliable 4G/5G speeds in over 200 countries."
+        "title": "Connectivité fiable, à tout moment et partout",
+        "description": "Des milliers de voyageurs avisés font confiance à Bitcall pour rester en ligne à l’étranger. Nous collaborons avec les meilleurs opérateurs du monde entier pour garantir des vitesses 4G/5G rapides et fiables dans plus de 200 pays.",
+        "featList": [
+          "Notes 5 étoiles et avis élogieux de voyageurs et de professionnels",
+          "Appels vidéo nets, téléchargements rapides et connexions fiables"
+        ]
       },
       "flexible": {
-        "title": "Flexible Plans for Every Traveler",
-        "description": "Whether you need just 1GB for a short trip or unlimited data for a month-long remote work stint, we’ve got you covered. Choose from local, regional, or global eSIM options, and only pay for what you need."
+        "title": "Forfaits flexibles pour chaque voyageur",
+        "description": "Que vous ayez besoin d’1 Go pour un court séjour ou de données illimitées pour un mois de télétravail, nous avons ce qu’il vous faut. Choisissez des options eSIM locales, régionales ou globales et ne payez que ce dont vous avez besoin.",
+        "featList": [
+          "Forfaits locaux pour 1 pays",
+          "Forfaits régionaux pour l’Europe, l’Asie, etc.",
+          "Forfaits globaux pour une couverture mondiale",
+          "Changez ou rechargez facilement à tout moment pendant votre voyage"
+        ]
       },
       "peaceOfMind": {
-        "title": "Travel with Peace of Mind",
-        "description": "No contracts. No SIM card hunting. No worries. If your plans change, we’ve got you covered with a 6-month refund guarantee. Plus, our 24/7 customer support is always here to assist you, no matter where you are."
+        "title": "Voyagez l’esprit tranquille",
+        "description": "Pas de contrat. Pas de chasse aux cartes SIM. Aucun souci. Si vos plans changent, nous vous couvrons avec une garantie de remboursement de 6 mois. De plus, notre assistance 24/7 est toujours là pour vous aider, où que vous soyez."
       }
     }
   },
   "plans": {
-    "title": "Flexible Plans for Every Trip",
-    "description": "Choose a plan that suits your needs, from a weekend getaway to long-term remote work. Top up or change plans as needed.",
+    "title1": "Forfaits ",
+    "title2": "flexibles",
+    "title3": " pour chaque voyageur",
+    "description": "<strong>Choisissez un forfait</strong> adapté à vos besoins, d’un <strong>week-end</strong> à un <strong>travail à distance de longue durée</strong>. <strong>Rechargez</strong> ou <strong>changez de forfait</strong> selon vos besoins.",
     "list": {
       "local": {
-        "name": "Plan A - Local",
-        "use": "Short trips, single-country travel",
-        "coverage": "1 country",
+        "name": "Forfait A",
+        "region": "Local",
+        "use": "Courts séjours, voyage dans un seul pays",
+        "coverage": "1 pays",
         "price": "$2.99"
       },
       "regional": {
-        "name": "Plan B - Regional",
-        "use": "Backpackers, business tours",
-        "coverage": "Europe, Asia, etc.",
+        "name": "Forfait B",
+        "region": "Régional",
+        "use": "Routards, tournées d’affaires",
+        "coverage": "Europe, Asie, etc.",
         "price": "$8.99"
       },
       "global": {
-        "name": "Plan C - Global",
-        "use": "Frequent travelers, multi-continent",
-        "coverage": "200+ countries",
+        "name": "Forfait C",
+        "region": "Global",
+        "use": "Grands voyageurs, multi‑continents",
+        "coverage": "200+ pays",
         "price": "$14.90"
       }
     }
   },
   "howItWorks": {
-    "title": "How It Works? Get Online in 3 Easy Steps",
+    "title1": "Comment ça marche ? ",
+    "title2": "En ligne en 3 étapes simples",
     "steps": {
       "step1": {
-        "title": "Choose Your Plan",
-        "description": "Select a plan that fits your trip. Choose from Local, Regional, or Global options. Pick how much data you need and the duration of your plan."
+        "title": "Choisissez votre forfait",
+        "description": "Sélectionnez un forfait adapté à votre voyage. Choisissez parmi les options locales, régionales ou globales. Déterminez la quantité de données et la durée du forfait."
       },
       "step2": {
-        "title": "Get Your eSIM Instantly",
-        "description": "After checkout, you’ll immediately receive a QR code and simple installation instructions via email. Just scan the code on your eSIM-compatible phone to install your Bitcall eSIM. No physical SIM card required."
+        "title": "Recevez votre eSIM instantanément",
+        "description": "Après le paiement, vous recevrez immédiatement un code QR et des instructions d’installation simples par e‑mail. Scannez simplement le code avec votre téléphone compatible eSIM pour installer votre eSIM Bitcall. Aucune carte SIM physique requise."
       },
       "step3": {
-        "title": "Activate & Go",
-        "description": "Once you land at your destination, your eSIM activates automatically. You’ll be online within seconds. Use your data for navigating, streaming, emailing, or staying connected with friends. Your physical SIM stays active for calls and SMS."
+        "title": "Activez et partez",
+        "description": "Une fois arrivé à destination, votre eSIM s’active automatiquement. Vous serez en ligne en quelques secondes. Utilisez vos données pour naviguer, diffuser, envoyer des e‑mails ou rester en contact avec vos proches. Votre SIM physique reste active pour les appels et SMS."
       }
     },
-    "examples": ["1GB for a weekend getaway", "10GB for a week-long city tour", "Unlimited for a month of remote work"]
+    "examples": {
+      "one": "1 Go pour un week‑end",
+      "two": "10 Go pour une semaine en ville",
+      "three": "Illimité pour un mois de travail à distance"
+    }
   },
   "useCases": {
-    "title": "Fast, Reliable 4G/5G Data Anywhere",
+    "title": "Données 4G/5G rapides et fiables ",
+    "title2": "partout",
     "cases": {
-      "business": "Video conferences, emails, and large file transfers without delay.",
-      "vacation": "Stream videos, share photos, and navigate unfamiliar cities with ease.",
-      "hotspot": "Share your data with your laptop or companions at no extra cost, whether you’re working remotely or traveling with friends."
+      "business": {
+        "title": "Voyages d’affaires",
+        "description": "Visioconférences, e‑mails et transferts de gros fichiers sans délai."
+      },
+      "vacation": {
+        "title": "Vacances",
+        "description": "Diffusez des vidéos, partagez des photos et naviguez facilement dans des villes inconnues."
+      },
+      "hotspot": {
+        "title": "Point d’accès partout",
+        "description": "Partagez vos données avec votre ordinateur portable ou vos compagnons sans coût supplémentaire, que vous travailliez à distance ou voyagiez entre amis."
+      }
     },
-    "guarantee": "Bitcall eSIM guarantees you’ll stay connected with high-speed data on the same 4G/5G networks that locals use."
+    "description": "L’eSIM Bitcall vous garantit de rester connecté avec des données haut débit sur les mêmes réseaux 4G/5G que les locaux. Que vous soyez dans des centres‑villes animés ou des zones reculées, Bitcall offre un internet rapide et stable.",
+    "footerText": "Conçu pour les <strong>nomades digitaux, voyageurs et équipes</strong>"
   },
   "forWhom": {
-    "title": "Built for Digital Nomads, Travelers & Teams",
+    "title1": "L’eSIM Bitcall est conçue pour ",
+    "title2": "les voyageurs modernes :",
     "users": {
-      "nomads": "Avoid local SIM hassles in each country. One eSIM covers your entire multi-country trip. Enjoy data as soon as you land, without searching for SIM vendors or Wi-Fi hotspots.",
-      "remoteWorkers": "Work from anywhere with confidence. Bitcall offers affordable unlimited data plans, so you’ll always have a stable connection for video calls and file sharing.",
-      "teams": "Bitcall is the perfect solution for employee travel. Managers can instantly purchase eSIM data for employees, saving on roaming fees and simplifying travel logistics."
+      "nomads": {
+        "title": "Globetrotteurs et routards",
+        "description": "Évitez la corvée des cartes SIM locales dans chaque pays. Une seule eSIM couvre tout votre voyage multi‑pays. Profitez des données dès l’atterrissage, sans chercher des vendeurs de SIM ni des points Wi‑Fi."
+      },
+      "remoteWorkers": {
+        "title": "Nomades digitaux et télétravailleurs",
+        "description": "Travaillez de n’importe où en toute confiance. Bitcall propose des forfaits de données illimités et abordables, pour une connexion stable lors des appels vidéo et du partage de fichiers. Que vous soyez dans un café, un espace de coworking ou un chalet de montagne isolé."
+      },
+      "teams": {
+        "title": "Voyageurs d’affaires et équipes",
+        "description": "Bitcall est la solution idéale pour les déplacements des employés. Les responsables peuvent acheter instantanément des données eSIM pour leurs équipes, économisant sur les frais d’itinérance et simplifiant la logistique des voyages. Avec une assistance 24/7, votre équipe n’est jamais seule en cas de problème."
+      }
     }
   },
   "included": {
-    "title": "All Plans Include",
-    "list": ["Instant Activation", "Free Hotspot Tethering", "No Roaming Charges", "4G/5G High-Speed Data"]
+    "title": "Tous les forfaits incluent",
+    "list": [
+      "Activation instantanée",
+      "Partage de connexion gratuit",
+      "Aucun frais d’itinérance",
+      "Données haut débit 4G/5G"
+    ]
   },
   "testimonials": {
-    "title": "What Our Customers Are Saying",
+    "title1": "Ce que ",
+    "title2": "disent nos clients",
+    "title3": " ",
     "quotes": [
       {
-        "text": "As a freelance designer, having a global eSIM that just works is priceless. Bitcall’s speeds were excellent even in remote areas. It’s now an essential tool for my digital nomad lifestyle.",
-        "author": "Nina K., Thailand"
+        "text": "En tant que designer freelance, avoir une eSIM globale qui fonctionne tout simplement n’a pas de prix. Les vitesses de Bitcall étaient excellentes même dans les zones reculées. C’est devenu un outil essentiel de ma vie de nomade digital.",
+        "author": "Nina K., Thaïlande"
+      },
+      {
+        "text": "En tant que designer freelance 22, avoir une eSIM globale qui fonctionne tout simplement n’a pas de prix. Les vitesses de Bitcall étaient excellentes même dans les zones reculées. C’est devenu un outil essentiel de ma vie de nomade digital.",
+        "author": "Nina K., Thaïlande"
       }
     ]
   },
   "ctaFinal": {
-    "title": "Ready to Connect?",
-    "text": "Staying connected while traveling should be easy and affordable. With Bitcall eSIM, it finally is. Stop overpaying for roaming and the hassle of SIM cards. Instead, enjoy instant, cheap data wherever you go. Join thousands of savvy travelers who travel smarter with Bitcall. Choose your plan, get your QR code, and you’re ready to explore the world.",
-    "button": "Get My Bitcall eSIM Now"
+    "title1": "Prêt à ",
+    "title2": "vous connecter ?",
+    "text": "Rester connecté en voyage devrait être simple et abordable. Avec l’eSIM Bitcall, c’est enfin le cas. Cessez de trop payer l’itinérance et d’endurer les tracas des cartes SIM. Profitez plutôt de données instantanées et bon marché où que vous alliez. Rejoignez des milliers de voyageurs avisés qui voyagent plus intelligemment avec Bitcall. Choisissez votre forfait, recevez votre code QR et partez à la découverte du monde.",
+    "button": "Obtenir mon eSIM Bitcall maintenant",
+    "active": "Activez en quelques minutes, voyagez en toute confiance.",
+    "footer": "Pour toute question ou assistance, notre équipe de support 24/7 est là pour vous aider. Nous sommes prêts à vous assister par chat en direct ou e‑mail à tout moment."
   },
-  "support": {
-    "text": "For any questions or assistance, our 24/7 support team is here to help. We’re ready to assist you via live chat or email whenever you need it."
+  "buy": {
+    "tabs": {
+      "local": "eSIM locales",
+      "regional": "eSIM régionales",
+      "global": "eSIM globales"
+    },
+    "back": "Retour",
+    "search": {
+      "placeholder": "Recherchez des pays pour trouver des forfaits eSIM..."
+    },
+    "viewMore": "Voir plus",
+    "loadMore": "Charger plus",
+    "global": "eSIM globale",
+    "plansExist": "forfaits disponibles",
+    "buyNow": "Acheter maintenant ({{count}})",
+    "from": "à partir de",
+    "validity": "Validité",
+    "data": "Données",
+    "regionLabel": "Région",
+    "noResults": "Aucun résultat pour \"{{term}}\"",
+    "validityPrefix": "{{validity}}",
+    "from7Days": "à partir de 7 jours"
   }
 }

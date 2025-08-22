@@ -6,9 +6,8 @@ import { SectionContainer } from '@/components/common/SectionContainer/SectionCo
 import { Text } from '@/components/common/text'
 import { ImageCardList } from '@/components/common/cards/ImageCardList'
 
-export const FastReliableSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+export const FastReliableSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'esim')
 
   const data = [
     {

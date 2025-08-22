@@ -137,7 +137,7 @@ export const RenderCardListCore = ({
               // this should be done as SX or inline styles Dont Change
               sx={{
                 marginLeft: listIsInclined ? { lg: index * 10, xs: 0 } : 0,
-                width: listIsInclined ? { md: '33rem', xs: 'auto' } : 'auto'
+                width: listIsInclined ? { md: '33rem', xs: 'auto' } :  { md: '29rem', xs: 'auto' }
               }}
             >
               <SCard

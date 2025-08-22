@@ -28,7 +28,7 @@ const EsimStructuredData = () => {
   return <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregatedSchema) }} />
 }
 
-export default function EsimPage() {
+export default function EsimPage({ params }: { params: { lang: string } }) {
   return (
     <>
       <Head>
@@ -63,7 +63,7 @@ export default function EsimPage() {
       <EsimStructuredData />
 
       {/* Render the interactive eSIM component */}
-      <EsimSection />
+      <EsimSection lang={params.lang} />
     </>
   )
 }

@@ -8,7 +8,7 @@ import { Text } from '@/components/common/text'
 const PlanCard = ({ name, items, price }: { name: string; items: string[]; price: string }) => {
   return (
     <li key={name} className='cursor-pointer hover:scale-105 transition-all duration-300'>
-      <div className='relative bg-primary bg-opacity-5 p-4 rounded-3xl sm:rounded-4xl  w-[25rem] shadow-lg'>
+      <div className='relative bg-primary bg-opacity-5 p-4 rounded-3xl sm:rounded-4xl  lg:w-[25rem] w-[20rem] shadow-lg'>
         <Text value={name} className='text-white text-xl sm:text-2xl font-bold mb-3 sm:mb-4' as='h3' />
         <ul className='space-y-1'>
           {items.map(item => (
@@ -19,10 +19,10 @@ const PlanCard = ({ name, items, price }: { name: string; items: string[]; price
         </ul>
 
         {/* Price badge */}
-        <div className='absolute -right-3 -top-3 sm:-right-4 sm:-top-4'>
+        <div className='absolute rtl:right-[22rem] right-3 top-3 sm:-right-4 sm:-top-4'>
           <div
             className='shadow-sm bg-backgroundPaper border-primary border-4 rounded-full lg:h-[5rem] lg:w-[5rem]
-           h-[4rem] w-[4rem] flex items-center justify-center'
+           h-[4rem] w-[4rem] flex items-center justify-center  '
           >
             <Text value={price} className='text-sm sm:text-base font-bold' as='span' textColor='primary' />
           </div>
@@ -32,9 +32,8 @@ const PlanCard = ({ name, items, price }: { name: string; items: string[]; price
   )
 }
 
-const FlexiblePlansSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+const FlexiblePlansSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'esim')
 
   const plans = [
     {
@@ -68,7 +67,7 @@ const FlexiblePlansSection = async () => {
             height={700}
           />
         </div>
-        <ul className='col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col items-center sm:items-start gap-4 sm:gap-6'>
+        <ul className=' col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col items-center sm:items-start gap-4 sm:gap-6'>
           {plans.map(plan => (
             <PlanCard key={plan.name} {...plan} />
           ))}

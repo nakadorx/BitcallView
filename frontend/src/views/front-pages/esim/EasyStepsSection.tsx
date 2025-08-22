@@ -20,7 +20,7 @@ const SetpsCard = ({
   return (
     <li
       className='bg-backgroundPaper hover:scale-105 transition-all duration-300
-    w-[23rem] h-[30rem] rounded-4xl p-5
+    lg:w-[23rem]     md:w-[23rem]  w-[19rem] lg:h-[30rem] h-[30rem]md: h-[33rem] rounded-4xl p-5
     border border-primary shadow-md cursor-pointer'
     >
       <Text
@@ -39,9 +39,9 @@ const SetpsCard = ({
   )
 }
 
-const EasyStepsSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+const EasyStepsSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'esim')
+
   const Data = [
     {
       title: t('howItWorks.steps.step1.title') + ':',
@@ -63,7 +63,7 @@ const EasyStepsSection = async () => {
           alt='step2'
           width={320}
           height={200}
-          className='mt-[3rem]'
+          className='mt-[3rem] w-full h-auto'
         />
       )
     },
@@ -76,7 +76,7 @@ const EasyStepsSection = async () => {
           alt='step3'
           width={320}
           height={200}
-          className='mt-[1rem]'
+          className='mt-[1rem]  w-full h-auto'
         />
       )
     }

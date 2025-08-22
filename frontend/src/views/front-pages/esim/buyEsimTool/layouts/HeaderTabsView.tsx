@@ -1,5 +1,9 @@
+import { useT } from '@/i18n/client'
 import { EsimTabTypeEnum } from '../type'
 import { useRef, useEffect, useState } from 'react'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import MapIcon from '@mui/icons-material/Map'
+import PublicIcon from '@mui/icons-material/Public'
 
 interface TabData {
   label: string
@@ -8,17 +12,33 @@ interface TabData {
 }
 
 interface HeaderTabsViewProps {
-  tabsData: TabData[]
   activeTab: EsimTabTypeEnum
   handleTabChange: (tab: EsimTabTypeEnum) => void
 }
 
-export const HeaderTabsView = ({ tabsData, activeTab, handleTabChange }: HeaderTabsViewProps) => {
+export const HeaderTabsView = ({ activeTab, handleTabChange }: HeaderTabsViewProps) => {
   const [underlineStyle, setUnderlineStyle] = useState({ width: 0, left: 0 })
   const buttonsRef = useRef<(HTMLButtonElement | null)[]>([])
   const mobileListRef = useRef<HTMLUListElement | null>(null)
   const mobileScrollTimeout = useRef<number | null>(null)
-
+  const { t } = useT('esim')
+  const tabsData = [
+    {
+      label: t('buy.tabs.local'),
+      value: EsimTabTypeEnum.LOCAL,
+      icon: <LocationOnIcon fontSize='small' />
+    },
+    {
+      label: t('buy.tabs.regional'),
+      value: EsimTabTypeEnum.REGIONAL,
+      icon: <MapIcon fontSize='small' />
+    },
+    {
+      label: t('buy.tabs.global'),
+      value: EsimTabTypeEnum.GLOBAL,
+      icon: <PublicIcon fontSize='small' />
+    }
+  ]
   useEffect(() => {
     const updateUnderlinePosition = () => {
       const activeIndex = tabsData.findIndex(tab => tab.value === activeTab)
@@ -171,7 +191,7 @@ export const HeaderTabsView = ({ tabsData, activeTab, handleTabChange }: HeaderT
           ))}
         </ul>
         {/* Sliding underline */}
-        <div className='absolute bottom-0 rounded-4xl h-1 bg-primary transition-all duration-150 ease-out w-[var(--underline-width)] translate-x-[var(--underline-left)]' />
+        <div className='rtl:top-50 absolute bottom-0 rounded-4xl h-1 bg-primary transition-all duration-150 ease-out w-[var(--underline-width)] translate-x-[var(--underline-left)]' />
       </div>
     </div>
   )

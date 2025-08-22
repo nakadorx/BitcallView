@@ -5,9 +5,9 @@ import { getT } from '@/i18n/server'
 import { getLocale } from '@/utils/commons'
 import { SButton } from '@/components/common/button/SButton'
 
-export const ReadyToConnectSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+export const ReadyToConnectSection = async ({ lang }: { lang: string }) => {
+
+  const t = await getT(lang, 'esim')
 
   return (
     <SectionContainer containerClassName='lg:px-[20rem]' bgClass='esim-choose-Bitcall-esim-data-bg'>

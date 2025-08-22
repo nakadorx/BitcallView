@@ -46,9 +46,8 @@ const ForWhomCard = ({
   )
 }
 
-const ForWhomSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+const ForWhomSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'esim')
 
   const data = [
     {

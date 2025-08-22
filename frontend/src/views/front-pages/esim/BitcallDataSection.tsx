@@ -5,9 +5,8 @@ import { getLocale } from '@/utils/commons'
 import { Text } from '@/components/common/text'
 import { SButton } from '@/components/common/button/SButton'
 
-const BitcallDataSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+const BitcallDataSection = async ({ lang }: { lang: string }) => {
+  const t = await getT(lang, 'esim')
 
   return (
     <SectionContainer
@@ -63,7 +62,7 @@ const BitcallDataSection = async () => {
             value={t('features.points.flexible.description')}
             className='text-sm sm:text-base mb-2 sm:mb-4 dark:text-gray-800 hidden lg:block'
           />
-          <ul className='space-y-2 w-full sm:w-[16rem] lg:w-[12rem] relative left-0 sm:left-10 lg:left-[14.5rem] top-2 sm:top-6 lg:top-10 hidden lg:block'>
+          <ul className='rtl:right-[1rem] space-y-2 w-full sm:w-[16rem] lg:w-[12rem] relative left-0 sm:left-10 lg:left-[14.5rem] top-2 sm:top-6 lg:top-10 hidden lg:block'>
             {t('features.points.flexible.featList').map((item: string, index: number) => (
               <li
                 key={index}
@@ -87,9 +86,8 @@ const BitcallDataSection = async () => {
            px-5 py-4
            flex flex-col'
           role='img'
-          aria-label='The Most Affordable eSIM on the Planet'
         >
-          <ul className='space-y-2 w-full sm:w-[18rem] lg:w-[20rem] relative left-0 sm:left-8 lg:left-[7rem] top-0 sm:top-1 hidden lg:block'>
+          <ul className='rtl:right-[1rem] space-y-2 w-full sm:w-[18rem] lg:w-[20rem] relative left-0 sm:left-8 lg:left-[7rem] top-0 sm:top-1 hidden lg:block'>
             {t('features.points.trusted.featList').map((item: string, index: number) => (
               <li
                 key={index}
@@ -102,7 +100,7 @@ const BitcallDataSection = async () => {
               </li>
             ))}
           </ul>
-          <div className='relative top-[6rem] lg:right-0 right-[4rem] md:bottom-[10rem] lg:top-[25.5rem]'>
+          <div className='relative top-[6rem] lg:right-0  md:top-0  md:left-[1rem] right-[4rem] md:bottom-[10rem] lg:top-[25.5rem]'>
             <Text
               as='h3'
               value={t('features.points.trusted.title')}

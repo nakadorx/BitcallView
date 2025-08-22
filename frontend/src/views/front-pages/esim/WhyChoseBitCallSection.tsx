@@ -4,9 +4,9 @@ import { Text } from '@/components/common/text'
 import { getT } from '@/i18n/server'
 import { getLocale } from '@/utils/commons'
 
-const WhyChoseBitCallSection = async () => {
-  const locale = await getLocale()
-  const t = await getT(locale, 'esim')
+const WhyChoseBitCallSection = async ({ lang }: { lang: string }) => {
+
+  const t = await getT(lang, 'esim')
 
   return (
     <WaveCard
@@ -15,6 +15,7 @@ const WhyChoseBitCallSection = async () => {
         Container: ` md:bg-gradient-to-br md:from-primary md:to-primary/50 dark:bg-none  bg-primary`,
         Svg: `fill-primary dark:fill-primary`
       }}
+    
     >
       <Text
         as='h2'

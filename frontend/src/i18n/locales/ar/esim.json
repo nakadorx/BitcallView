@@ -1,109 +1,189 @@
 {
   "hero": {
-    "title": "Stay Connected Worldwide, Global Data at Local Prices",
-    "subtitle": "Travel smarter with Bitcall’s ultra-affordable eSIM plans. Say goodbye to roaming charges and SIM card hassles. Whether you’re exploring new cities or working remotely, Bitcall offers instant eSIM activation with coverage in over 200 countries at local rates. No contracts, no hidden fees — just fast, reliable data wherever you go.",
-    "cta": "Get My Bitcall eSIM Now",
-    "secondaryCta": "Stay connected in seconds"
+    "title1": "ابقَ ",
+    "title2": "متصلاً ",
+    "title3": "حول العالم، بيانات عالمية بأسعار محلية",
+    "subtitle": "سافر بذكاء مع باقات eSIM فائقة التكلفة من Bitcall. قل وداعًا لرسوم التجوال ومتاعب شرائح SIM. سواء كنت تستكشف مدنًا جديدة أو تعمل عن بُعد، توفر Bitcall تفعيلًا فوريًا لـ eSIM مع تغطية في أكثر من 200 دولة بأسعار محلية. بلا عقود، ولا رسوم خفية — فقط بيانات سريعة وموثوقة أينما ذهبت.",
+    "cta": "احصل على شريحة eSIM من Bitcall الآن",
+    "secondaryCta": "اتصل في ثوانٍ"
   },
   "features": {
-    "title": "Why Choose Bitcall eSIM Data?",
+    "title1": "لماذا تختار Bitcall ",
+    "title2": "eSIM",
+    "title3": " للبيانات؟",
     "points": {
       "affordable": {
-        "title": "The Most Affordable eSIM on the Planet",
-        "description": "Save up to 90% compared to traditional roaming fees. Bitcall’s prepaid eSIM plans let you know exactly what you pay upfront—no hidden charges. You’ll save money on every trip, leaving more for the things you love."
+        "title": "أكثر eSIM توفيرًا في العالم",
+        "description": "وفّر ما يصل إلى 90٪ مقارنةً برسوم التجوال التقليدية. تمنحك باقات eSIM المدفوعة مسبقًا من Bitcall معرفة واضحة بما تدفعه مقدمًا — بدون رسوم خفية. ستوفّر المال في كل رحلة، لتبقى المزيد للأشياء التي تحبها.",
+        "textContent": "50+ رسوم تجوال؟ Bitcall يكلف جزءًا بسيطًا من ذلك. باقات بيانات عالمية بأسعار تبدأ من 2.99$"
       },
       "trusted": {
-        "title": "Trusted Connectivity, Anytime, Anywhere",
-        "description": "Thousands of savvy travelers trust Bitcall to stay online abroad. We partner with top carriers worldwide to ensure fast, reliable 4G/5G speeds in over 200 countries."
+        "title": "اتصال موثوق، في أي وقت وأي مكان",
+        "description": "آلاف المسافرين الأذكياء يثقون بـ Bitcall للبقاء على اتصال أثناء السفر. نحن نتعاون مع أفضل شركات الاتصالات حول العالم لضمان سرعات 4G/5G سريعة وموثوقة في أكثر من 200 دولة.",
+        "featList": [
+          "تقييمات خمس نجوم وآراء مبهرة من المسافرين ومحترفي الأعمال",
+          "مكالمات فيديو واضحة، وتنزيلات سريعة، واتصال موثوق"
+        ]
       },
       "flexible": {
-        "title": "Flexible Plans for Every Traveler",
-        "description": "Whether you need just 1GB for a short trip or unlimited data for a month-long remote work stint, we’ve got you covered. Choose from local, regional, or global eSIM options, and only pay for what you need."
+        "title": "باقات مرنة لكل مسافر",
+        "description": "سواء كنت بحاجة إلى 1 جيجابايت لرحلة قصيرة أو بيانات غير محدودة لشهر من العمل عن بُعد، فنحن نوفر لك ما تحتاجه. اختر من بين باقات eSIM محلية أو إقليمية أو عالمية، وادفع فقط مقابل ما تحتاجه.",
+        "featList": [
+          "باقات محلية لبلد واحد",
+          "باقات إقليمية لأوروبا وآسيا وما إلى ذلك",
+          "باقات عالمية لتغطية العالم بالكامل",
+          "بدّل أو أعد الشحن بسهولة في أي وقت أثناء رحلتك"
+        ]
       },
       "peaceOfMind": {
-        "title": "Travel with Peace of Mind",
-        "description": "No contracts. No SIM card hunting. No worries. If your plans change, we’ve got you covered with a 6-month refund guarantee. Plus, our 24/7 customer support is always here to assist you, no matter where you are."
+        "title": "سافر براحة بال",
+        "description": "لا عقود. لا عناء في البحث عن شرائح SIM. لا قلق. إذا تغيرت خططك، فنحن نوفر لك ضمان استرجاع لمدة 6 أشهر. بالإضافة إلى ذلك، دعمنا متوفر على مدار الساعة طوال الأسبوع لمساعدتك أينما كنت."
       }
     }
   },
   "plans": {
-    "title": "Flexible Plans for Every Trip",
-    "description": "Choose a plan that suits your needs, from a weekend getaway to long-term remote work. Top up or change plans as needed.",
+    "title1": "باقات ",
+    "title2": "مرنة",
+    "title3": " لكل مسافر",
+    "description": "<strong>اختر باقة</strong> تناسب احتياجاتك، من <strong>عطلة نهاية أسبوع</strong> إلى <strong>عمل عن بُعد طويل الأمد</strong>. يمكنك <strong>إعادة الشحن</strong> أو <strong>تغيير الباقة</strong> عند الحاجة.",
     "list": {
       "local": {
-        "name": "Plan A - Local",
-        "use": "Short trips, single-country travel",
-        "coverage": "1 country",
+        "name": "الخطة A",
+        "region": "محلي",
+        "use": "رحلات قصيرة، سفر لبلد واحد",
+        "coverage": "بلد واحد",
         "price": "$2.99"
       },
       "regional": {
-        "name": "Plan B - Regional",
-        "use": "Backpackers, business tours",
-        "coverage": "Europe, Asia, etc.",
+        "name": "الخطة B",
+        "region": "إقليمي",
+        "use": "رحالة حقائب الظهر، جولات عمل",
+        "coverage": "أوروبا، آسيا، إلخ.",
         "price": "$8.99"
       },
       "global": {
-        "name": "Plan C - Global",
-        "use": "Frequent travelers, multi-continent",
-        "coverage": "200+ countries",
+        "name": "الخطة C",
+        "region": "عالمي",
+        "use": "مسافرون متكررون، متعدد القارات",
+        "coverage": "200+ دولة",
         "price": "$14.90"
       }
     }
   },
   "howItWorks": {
-    "title": "How It Works? Get Online in 3 Easy Steps",
+    "title1": "كيف يعمل؟ ",
+    "title2": "اتصل بالإنترنت في 3 خطوات سهلة",
     "steps": {
       "step1": {
-        "title": "Choose Your Plan",
-        "description": "Select a plan that fits your trip. Choose from Local, Regional, or Global options. Pick how much data you need and the duration of your plan."
+        "title": "اختر خطتك",
+        "description": "اختر باقة تناسب رحلتك. اختر من بين الخيارات المحلية أو الإقليمية أو العالمية. حدّد مقدار البيانات الذي تحتاجه ومدة الباقة."
       },
       "step2": {
-        "title": "Get Your eSIM Instantly",
-        "description": "After checkout, you’ll immediately receive a QR code and simple installation instructions via email. Just scan the code on your eSIM-compatible phone to install your Bitcall eSIM. No physical SIM card required."
+        "title": "احصل على eSIM فورًا",
+        "description": "بعد إتمام الدفع، ستتلقى على الفور رمز QR وتعليمات تثبيت بسيطة عبر البريد الإلكتروني. ما عليك سوى مسح الرمز على هاتفك المتوافق مع eSIM لتثبيت eSIM من Bitcall. لا حاجة لبطاقة SIM فعلية."
       },
       "step3": {
-        "title": "Activate & Go",
-        "description": "Once you land at your destination, your eSIM activates automatically. You’ll be online within seconds. Use your data for navigating, streaming, emailing, or staying connected with friends. Your physical SIM stays active for calls and SMS."
+        "title": "فعّل وانطلق",
+        "description": "بمجرد وصولك إلى وجهتك، يتم تفعيل eSIM تلقائيًا. ستكون متصلاً خلال ثوانٍ. استخدم بياناتك للتنقل أو البث أو البريد الإلكتروني أو البقاء على اتصال مع الأصدقاء. تبقى شريحتك الفعلية نشطة للمكالمات والرسائل."
       }
     },
-    "examples": ["1GB for a weekend getaway", "10GB for a week-long city tour", "Unlimited for a month of remote work"]
+    "examples": {
+      "one": "1 جيجابايت لعطلة نهاية الأسبوع",
+      "two": "10 جيجابايت لأسبوع من جولة في المدينة",
+      "three": "غير محدود لشهر من العمل عن بُعد"
+    }
   },
   "useCases": {
-    "title": "Fast, Reliable 4G/5G Data Anywhere",
+    "title": "بيانات 4G/5G سريعة وموثوقة ",
+    "title2": "في كل مكان",
     "cases": {
-      "business": "Video conferences, emails, and large file transfers without delay.",
-      "vacation": "Stream videos, share photos, and navigate unfamiliar cities with ease.",
-      "hotspot": "Share your data with your laptop or companions at no extra cost, whether you’re working remotely or traveling with friends."
+      "business": {
+        "title": "رحلات عمل",
+        "description": "مؤتمرات فيديو وبريد إلكتروني ونقل ملفات كبيرة بدون تأخير."
+      },
+      "vacation": {
+        "title": "إجازة",
+        "description": "قم ببث الفيديوهات، وشارك الصور، وتنقل بسهولة في المدن غير المألوفة."
+      },
+      "hotspot": {
+        "title": "نقطة اتصال في أي مكان",
+        "description": "شارك بياناتك مع حاسوبك المحمول أو مرافقيك دون أي تكلفة إضافية، سواء كنت تعمل عن بُعد أو تسافر مع الأصدقاء."
+      }
     },
-    "guarantee": "Bitcall eSIM guarantees you’ll stay connected with high-speed data on the same 4G/5G networks that locals use."
+    "description": "تضمن لك eSIM من Bitcall البقاء متصلاً ببيانات عالية السرعة على نفس شبكات 4G/5G التي يستخدمها السكان المحليون. سواء كنت في مراكز المدن المزدحمة أو في مناطق نائية، تقدم Bitcall إنترنتًا سريعًا ومستقرًا.",
+    "footerText": "مصمم لـ <strong>الرحالة الرقميين، والمسافرين، والفرق</strong>"
   },
   "forWhom": {
-    "title": "Built for Digital Nomads, Travelers & Teams",
+    "title1": "تم تصميم eSIM من Bitcall لـ ",
+    "title2": "المسافرين العصريين:",
     "users": {
-      "nomads": "Avoid local SIM hassles in each country. One eSIM covers your entire multi-country trip. Enjoy data as soon as you land, without searching for SIM vendors or Wi-Fi hotspots.",
-      "remoteWorkers": "Work from anywhere with confidence. Bitcall offers affordable unlimited data plans, so you’ll always have a stable connection for video calls and file sharing.",
-      "teams": "Bitcall is the perfect solution for employee travel. Managers can instantly purchase eSIM data for employees, saving on roaming fees and simplifying travel logistics."
+      "nomads": {
+        "title": "عشّاق السفر وحقائب الظهر",
+        "description": "تجنب عناء شرائح SIM المحلية في كل بلد. شريحة eSIM واحدة تغطي رحلتك متعددة البلدان بالكامل. استمتع بالبيانات بمجرد الهبوط، دون البحث عن بائعي الشرائح أو نقاط Wi‑Fi."
+      },
+      "remoteWorkers": {
+        "title": "الرحالة الرقميون والعاملون عن بُعد",
+        "description": "اعمل من أي مكان بثقة. تقدم Bitcall باقات بيانات غير محدودة وبأسعار معقولة، لذا ستحصل دائمًا على اتصال مستقر لمكالمات الفيديو ومشاركة الملفات. سواء كنت في مقهى أو مساحة عمل مشتركة أو كوخ جبلي ناءٍ."
+      },
+      "teams": {
+        "title": "مسافرو الأعمال والفرق",
+        "description": "تُعد Bitcall الحل المثالي لرحلات الموظفين. يمكن للمديرين شراء بيانات eSIM للموظفين فورًا، مما يوفر رسوم التجوال ويبسّط ترتيبات السفر. ومع الدعم المتوفر على مدار الساعة، لن تكون فريقك وحده إذا ظهرت أي مشكلات."
+      }
     }
   },
   "included": {
-    "title": "All Plans Include",
-    "list": ["Instant Activation", "Free Hotspot Tethering", "No Roaming Charges", "4G/5G High-Speed Data"]
+    "title": "تشمل جميع الباقات",
+    "list": [
+      "تفعيل فوري",
+      "مشاركة نقطة اتصال مجانية",
+      "بدون رسوم تجوال",
+      "بيانات عالية السرعة 4G/5G"
+    ]
   },
   "testimonials": {
-    "title": "What Our Customers Are Saying",
+    "title1": "ماذا ",
+    "title2": "يقول عملاؤنا",
+    "title3": " عنا",
     "quotes": [
       {
-        "text": "As a freelance designer, having a global eSIM that just works is priceless. Bitcall’s speeds were excellent even in remote areas. It’s now an essential tool for my digital nomad lifestyle.",
-        "author": "Nina K., Thailand"
+        "text": "بصفتي مصممة مستقلة، فإن امتلاك eSIM عالمي يعمل ببساطة أمر لا يقدر بثمن. كانت سرعات Bitcall ممتازة حتى في المناطق النائية. أصبح الآن أداة أساسية لأسلوب حياتي كرحالة رقمي.",
+        "author": "نينا ك.، تايلاند"
+      },
+      {
+        "text": "بصفتي مصممة مستقلة 22، فإن امتلاك eSIM عالمي يعمل ببساطة أمر لا يقدر بثمن. كانت سرعات Bitcall ممتازة حتى في المناطق النائية. أصبح الآن أداة أساسية لأسلوب حياتي كرحالة رقمي.",
+        "author": "نينا ك.، تايلاند"
       }
     ]
   },
   "ctaFinal": {
-    "title": "Ready to Connect?",
-    "text": "Staying connected while traveling should be easy and affordable. With Bitcall eSIM, it finally is. Stop overpaying for roaming and the hassle of SIM cards. Instead, enjoy instant, cheap data wherever you go. Join thousands of savvy travelers who travel smarter with Bitcall. Choose your plan, get your QR code, and you’re ready to explore the world.",
-    "button": "Get My Bitcall eSIM Now"
+    "title1": "هل أنت ",
+    "title2": "جاهز للاتصال؟",
+    "text": "يجب أن يكون البقاء على اتصال أثناء السفر سهلًا وميسور التكلفة. مع eSIM من Bitcall، أصبح الأمر كذلك أخيرًا. توقف عن دفع مبالغ زائدة مقابل التجوال ومتاعب شرائح SIM. بدلًا من ذلك، استمتع ببيانات فورية ورخيصة أينما ذهبت. انضم إلى الآلاف من المسافرين الأذكياء الذين يسافرون بذكاء مع Bitcall. اختر باقتك، واحصل على رمز QR الخاص بك، وستكون جاهزًا لاستكشاف العالم.",
+    "button": "احصل على شريحة eSIM من Bitcall الآن",
+    "active": "فعّل خلال دقائق، وسافر بثقة.",
+    "footer": "لأي أسئلة أو مساعدة، فإن فريق الدعم لدينا المتاح على مدار الساعة طوال الأسبوع هنا لمساعدتك. نحن جاهزون لمساعدتك عبر الدردشة المباشرة أو البريد الإلكتروني متى احتجت."
   },
-  "support": {
-    "text": "For any questions or assistance, our 24/7 support team is here to help. We’re ready to assist you via live chat or email whenever you need it."
+  "buy": {
+    "tabs": {
+      "local": "eSIM محلية",
+      "regional": "eSIM إقليمية",
+      "global": "eSIM عالمية"
+    },
+    "back": "رجوع",
+    "search": {
+      "placeholder": "ابحث عن الدول للعثور على باقات eSIM..."
+    },
+    "viewMore": "عرض المزيد",
+    "loadMore": "تحميل المزيد",
+    "global": "eSIM عالمي",
+    "plansExist": "باقات متوفرة",
+    "buyNow": "اشترِ الآن ({{count}})",
+    "from": "بدءًا من",
+    "validity": "الصلاحية",
+    "data": "البيانات",
+    "regionLabel": "المنطقة",
+    "noResults": "لا توجد نتائج لـ \"{{term}}\"",
+    "validityPrefix": "{{validity}}",
+    "from7Days": "من 7 أيام"
   }
 }
